@@ -9,6 +9,9 @@
 ' -------------------------------------------------------------------------
 ' History:
 ' 12/14/2017 - runnerZ project created.
+' 12/15/2017 - power ups added and the ability to jump.
+' 12/16/2017 - animation for level ups and power ups.
+' 12/17/2017 - inprovement to animation and power ups.
 ' =========================================================================
 
 INCLUDE "constants.bas"
@@ -28,8 +31,8 @@ dim #objectColor(4)
 #objectColor(1) = SPR_GREY
 #objectColor(2) = SPR_YELLOW
 #objectColor(3) = SPR_RED
-#objectColor(4) = SPR_BLACK
-#objectColor(5) = SPR_WHITE
+#objectColor(4) = SPR_BLUE
+#objectColor(5) = SPR_BLACK
 #objectColor(6) = SPR_GREEN
 
 
@@ -43,10 +46,13 @@ for a = 0 to 2
 next a
 
 playerX = random(3)
+#playerColor = SPR_RED
 playerDX = 1
 playerY = 10
 playerF = 2
 invisible = 0
+bonus_exp = 0
+bonus_lives = 0
 
 chance = 0
 
@@ -60,7 +66,7 @@ percentage(2) = 23/100
 percentage(3) = 4/100
 percentage(4) = 2/100
 
-
+highestDifficulty = 7
 scene = 0
 jump = 0
 #score = 0
@@ -106,6 +112,7 @@ main:
 	IF scene = 0 THEN GOSUB scene1
 	IF scene = 1 THEN GOSUB scene2
 	IF scene = 2 THEN GOSUB scene3
+	IF scene = 3 THEN GOSUB scene4
 	
 	#univclock = #univclock + 1
 goto main
@@ -113,7 +120,7 @@ goto main
 scene1: procedure
 	wait
 	print at SCREENPOS(1, 0) color CS_WHITE,"- RunnerZ"
-	print at SCREENPOS(1, 1) color CS_WHITE,"- v0.1"
+	print at SCREENPOS(1, 1) color CS_WHITE,"- v0.5"
 	print at SCREENPOS(1, 2) color CS_WHITE,"- Made by: Josue"
 	print at SCREENPOS(1, 3) color CS_WHITE,"- Github: JosueCom"
 	print at SCREENPOS(0, 10) color CS_WHITE, "'Right' to continue"
@@ -137,8 +144,11 @@ scene2: procedure
 	'IF FRAME AND 1 THEN GOSUB move_player
 	'IF FRAME AND 1 THEN GOSUB enemy
 	
-	if lives <= 0 then gosub clearAll : scene = 2
-	if #score >= #maximunScore then level = level + 1 : #score = 0 : gosub levelupAnimation : object(0) = 0 : object(1) = 0 : object(2) = 0
+	if lives <= 0 then gosub clearAll : gosub clearPower : scene = 2
+	if lives > 99 then lives = 10 : invisible = 100
+	if #score >= #maximunScore then level = level + 1 : gosub clearPower : #score = 0 : gosub levelupAnimation
+	
+	wait
 	return
 end
 
@@ -149,19 +159,37 @@ scene3: procedure
 
 	print at SCREENPOS(2, 2) color CS_BLUE,"Made by: Josue"
 	print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
-	print at SCREENPOS(2, 4) color CS_WHITE,"Play Again"
+	print at SCREENPOS(2, 4) color CS_WHITE,"> Play Again"
 	print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
-	print at SCREENPOS(2, 6) color CS_WHITE,"To end it"
+	print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
 	if #univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
 	
 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
 	if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
 	
-	wait
-	if cont1.right then scene = 0: gosub clearAll : #score = 0 : lives = 3 : level = 1
+	if cont1.right then gosub clearAll : #score = 0 : lives = 3 : scene = 0 : level = 1 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
 	if cont1.left then gosub clearAll :goto end
 	
+end
+
+scene4: procedure
+	MODE   SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK
+	wait
+
+	print at SCREENPOS(4, 2) color CS_RED,"PAUSED"
+	print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
+	print at SCREENPOS(2, 4) color CS_WHITE,"> Continue"
+	print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
+	print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
+	if #univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	
+	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
+	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
+	if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
+	
+	if cont1.left then gosub clearAll : #score = 0 : lives = 3 : scene = 0 : level = 1 : #univclock = 0 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
+	if cont1.right then scene = 1
 end
 
 levelupAnimation: procedure
@@ -184,6 +212,8 @@ end
 powerupAnimation: procedure
 	wait
 	gosub clearAll
+	MODE SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK
+	wait
 	for a = 0 to 75
 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
 	
@@ -191,13 +221,15 @@ powerupAnimation: procedure
 		
 		if power = 4 then print at (SCREENPOS(7, 5)) color CS_BLUE, "\319" : print at (SCREENPOS(12, 5)) color CS_BLUE, "\319"
 		if power = 5 then print at (SCREENPOS(7, 5)) color CS_WHITE, "\320" : print at (SCREENPOS(12, 5)) color CS_WHITE, "\320"
-		if power = 5 then print at (SCREENPOS(7, 5)) color CS_GREEN, "\321" : print at (SCREENPOS(12, 5)) color CS_GREEN, "\321"
+		if power = 6 then print at (SCREENPOS(7, 5)) color CS_GREEN, "\321" : print at (SCREENPOS(12, 5)) color CS_GREEN, "\321"
 		
 		wait
 		wait
 		wait
 	next a
 	gosub clearAll
+	mode 1
+	wait
 end
 
 writescore: procedure
@@ -225,6 +257,8 @@ chooseObject: procedure
 	else
 		chance = 0
 	end if
+	
+	if invisible > 0 AND a = 1 then chance = 2
 
 	return
 end
@@ -232,7 +266,7 @@ end
 drawObjects: procedure
 	
 	for a = 0 to 2
-		if (#univclock % (7-dificulty)) = 0 then 
+		if (#univclock % (highestDifficulty-dificulty)) = 0 then 
 			objectY(a) = (objectY(a) + 1) % 8
 			if objectY(a) = 0 then gosub chooseObject : object(a) = chance
 		end if
@@ -260,26 +294,35 @@ drawPlayer: procedure
 	if cont1.left AND #univclock%3 = 0 then playerX = playerX - 1
 	if cont1.right AND #univclock%3 = 0 then playerX = playerX + 1
 	if cont1.up AND #univclock%3 = 0 AND playerY = 10 then jump = 5
+	if cont1.B0 AND #univclock%3 = 0 then scene = 3
 	
 	playerX = playerX % 3
-	if #univclock%(7-dificulty) = 0 AND jump > 0 then playerY = 10 - jump + 2: jump = jump - 1 : playerF = 3
-	if #univclock%(7-dificulty) = 0 AND invisible > 0 then playerY = 8: invisible = invisible - 1 : playerF = 3
-	if #univclock%(7-dificulty) = 0 AND jump = 0 AND invisible = 0 then playerY = 10: playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	if #univclock%(highestDifficulty-dificulty) = 0 AND jump > 0 then playerY = 10 - jump + 2: jump = jump - 1 : playerF = 3
+	if #univclock%(highestDifficulty-dificulty) = 0 AND invisible > 0 then playerY = 8: invisible = invisible - 1 : playerF = 3
+	if #univclock%(highestDifficulty-dificulty) = 0 AND bonus_lives > 0 then gosub add_lives : bonus_lives = bonus_lives - 1
+	if #univclock%(highestDifficulty-dificulty) = 0 AND bonus_exp > 0 then gosub add_points : bonus_exp = bonus_exp - 1
+	if #univclock%(highestDifficulty-dificulty) = 0 AND jump = 0 AND invisible = 0 then playerY = 10: playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
 	
 	if invisible > 0 then
-		SPRITE 0, SpritePosX(2 + 4 * playerX, 0) + VISIBLE + ZOOMX2, SpritePosY(playerY, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_BLUE
-	else
-		SPRITE 0, SpritePosX(2 + 4 * playerX, 0) + VISIBLE + ZOOMX2, SpritePosY(playerY, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
+		#playerColor = SPR_BLUE
+	elseif bonus_lives > 0 then
+		#playerColor = SPR_GREEN
+	elseif bonus_exp > 0 then
+		#playerColor = SPR_BLACK
+	else 
+		#playerColor = SPR_RED
 	end if
 	
+	SPRITE 0, SpritePosX(2 + 4 * playerX, 0) + VISIBLE + ZOOMX2, SpritePosY(playerY, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + #playerColor
+	
 	for a = 0 to 2
-		if (#univclock%(7-dificulty) = 0 AND 4 + objectY(a) = playerY AND objectX(playerX) = objectX(a) AND jump = 0)then
+		if (#univclock%(highestDifficulty-dificulty) = 0 AND 4 + objectY(a) = playerY AND objectX(playerX) = objectX(a) AND jump = 0)then
 			if object(a) = 1 AND invisible = 0 then lives = lives - 1 : gosub lose_points 
 			if object(a) = 2 then gosub add_points : gosub writescore
-			if object(a) = 3 then gosub add_points : lives = lives + 1 : gosub writescore : gosub drawhearts
-			if object(a) = 4 then invisible = 20 : power = 4 : gosub powerupAnimation
-			if object(a) = 5 then gosub add_points : #score = #score + 50 : gosub writescore : power = 5 : gosub powerupAnimation
-			if object(a) = 6 then gosub add_points : lives = lives + 5 : gosub writescore : gosub drawhearts : power = 6 : gosub powerupAnimation
+			if object(a) = 3 then gosub add_points : #score = #score + 1 : lives = lives + 1 : gosub writescore : gosub drawhearts
+			if object(a) = 4 then invisible = 35 : power = 4 : gosub powerupAnimation
+			if object(a) = 5 then bonus_exp = 5 : power = 5 : gosub powerupAnimation
+			if object(a) = 6 then gosub add_points : bonus_lives = 5 : power = 6 : gosub powerupAnimation
 		end if
 	
 	next a
@@ -287,8 +330,8 @@ drawPlayer: procedure
 end
 
 drawhearts: procedure
-	if #univclock%10 = 0 then heartrate = (heartrate + 1) % 2
-	if heartrate then SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR57 + SPR_RED else SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR58 + SPR_RED
+	if #univclock%7 = 0 then heartrate = (heartrate + 1) % 2
+	if heartrate then SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR57 + #playerColor else SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR58 + #playerColor
 	print at (SCREENPOS(17, 5)) color CS_RED,(lives/10%10+16)*8+6
 	print at (SCREENPOS(18, 5)) color CS_RED,(lives%10+16)*8+6
 	return
@@ -303,7 +346,7 @@ end
 
 determinelevel: procedure
 	if(level = 1) then 
-		dificulty=2
+		dificulty=4
 		#maximunScore = 100
 		percentage(0) = 20
 		percentage(1) = 20
@@ -311,7 +354,7 @@ determinelevel: procedure
 		percentage(3) = 10
 		percentage(4) = 2
 	elseif(level = 2) then 
-		dificulty=2
+		dificulty=4
 		#maximunScore = 110
 		percentage(0) = 25
 		percentage(1) = 25
@@ -319,7 +362,7 @@ determinelevel: procedure
 		percentage(3) = 10
 		percentage(4) = 2
 	elseif(level = 3) then 
-		dificulty=2
+		dificulty=4
 		#maximunScore = 130
 		percentage(0) = 38
 		percentage(1) = 23
@@ -327,7 +370,7 @@ determinelevel: procedure
 		percentage(3) = 10
 		percentage(4) = 2
 	elseif(level = 4) then 
-		dificulty=2
+		dificulty=5
 		#maximunScore = 150
 		percentage(0) = 47
 		percentage(1) = 23
@@ -335,7 +378,7 @@ determinelevel: procedure
 		percentage(3) = 7
 		percentage(4) = 3
 	elseif(level = 5) then 
-		dificulty=2
+		dificulty=5
 		#maximunScore = 250
 		percentage(0) = 47
 		percentage(1) = 26
@@ -343,7 +386,7 @@ determinelevel: procedure
 		percentage(3) = 7
 		percentage(4) = 3
 	elseif(level = 6) then 
-		dificulty=2
+		dificulty=5
 		#maximunScore = 500
 		percentage(0) = 50
 		percentage(1) = 30
@@ -351,7 +394,7 @@ determinelevel: procedure
 		percentage(3) = 7
 		percentage(4) = 3
 	elseif(level = 7) then 
-		dificulty=3
+		dificulty=6
 		#maximunScore = 650
 		percentage(0) = 46
 		percentage(1) = 23
@@ -359,7 +402,7 @@ determinelevel: procedure
 		percentage(3) = 5
 		percentage(4) = 4
 	elseif(level = 8) then 
-		dificulty=3
+		dificulty=6
 		#maximunScore = 750
 		percentage(0) = 31
 		percentage(1) = 31
@@ -367,7 +410,7 @@ determinelevel: procedure
 		percentage(3) = 5
 		percentage(4) = 4
 	elseif(level = 9) then 
-		dificulty=3
+		dificulty=6
 		#maximunScore = 1000
 		percentage(0) = 32
 		percentage(1) = 33
@@ -400,7 +443,7 @@ background: procedure
 end
 
 clearAll:procedure
-	cls 
+	cls
 	ResetSprite(0)
 	ResetSprite(1)
 	ResetSprite(2)
@@ -409,6 +452,16 @@ clearAll:procedure
 	ResetSprite(5)
 	ResetSprite(6)
 	ResetSprite(7) 
+end
+
+clearPower:procedure
+	invisible = 0
+	jump = 0
+	bonus_exp = 0
+	bonus_lives = 0
+	object(0) = 0
+	object(1) = 0
+	object(2) = 0
 end
 
 add_points:	PROCEDURE
@@ -429,6 +482,19 @@ lose_points:	PROCEDURE
 	SOUND 1,500,14
 	wait
 	SOUND 1,300,14
+	wait
+	SOUND 1,,0 ' Turn volume to zero
+end
+
+add_lives:	PROCEDURE
+	lives = lives + 1
+	SOUND 1,200,14
+	wait
+	SOUND 1,300,14
+	wait
+	SOUND 1,400,14
+	wait
+	SOUND 1,500,14
 	wait
 	SOUND 1,,0 ' Turn volume to zero
 end

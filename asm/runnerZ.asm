@@ -1644,12 +1644,18 @@ ENDM
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",10
 	;[11] ' 12/14/2017 - runnerZ project created.
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",11
-	;[12] ' =========================================================================
+	;[12] ' 12/15/2017 - power ups added and the ability to jump.
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",12
-	;[13] 
+	;[13] ' 12/16/2017 - animation for level ups and power ups.
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",13
-	;[14] INCLUDE "constants.bas"
+	;[14] ' 12/17/2017 - inprovement to animation and power ups.
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",14
+	;[15] ' =========================================================================
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",15
+	;[16] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",16
+	;[17] INCLUDE "constants.bas"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",17
 	;FILE C:\IntyBASIC SDK\lib\constants.bas
 	;[1] REM -------------------------------------------------------------------------
 	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",1
@@ -3137,83 +3143,83 @@ ENDM
 	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",748
 	;ENDFILE
 	;FILE C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS
-	;[15] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",15
-	;[16] CONST CARD_WIDTH       = 8		' Width of a background card, in pixels
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",16
-	;[17] CONST CARD_HEIGHT      = 8		' Height of a background card, in pixels
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",17
 	;[18] 
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",18
-	;[19] dim objectX(3), objectY(3), object(3)
+	;[19] CONST CARD_WIDTH       = 8		' Width of a background card, in pixels
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",19
-	;[20] dim #objectColor(4)
+	;[20] CONST CARD_HEIGHT      = 8		' Height of a background card, in pixels
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",20
-	;[21] ' 0 = nothing
+	;[21] 
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",21
-	;[22] ' 1 = rock
+	;[22] dim objectX(3), objectY(3), object(3)
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",22
-	;[23] ' 2 = coin
+	;[23] dim #objectColor(4)
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",23
-	;[24] ' 3 = apple (extra live)
+	;[24] ' 0 = nothing
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",24
-	;[25] ' 4 - 6 = power up
+	;[25] ' 1 = rock
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",25
-	;[26] 
+	;[26] ' 2 = coin
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",26
-	;[27] #objectColor(0) = SPR_GREEN
+	;[27] ' 3 = apple (extra live)
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",27
+	;[28] ' 4 - 6 = power up
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",28
+	;[29] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",29
+	;[30] #objectColor(0) = SPR_GREEN
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",30
 	MVII #5,R0
 	MVO R0,Q6
-	;[28] #objectColor(1) = SPR_GREY
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",28
+	;[31] #objectColor(1) = SPR_GREY
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",31
 	MVII #4096,R0
 	MVO R0,Q6+1
-	;[29] #objectColor(2) = SPR_YELLOW
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",29
+	;[32] #objectColor(2) = SPR_YELLOW
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",32
 	MVII #6,R0
 	MVO R0,Q6+2
-	;[30] #objectColor(3) = SPR_RED
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",30
+	;[33] #objectColor(3) = SPR_RED
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",33
 	MVII #2,R0
 	MVO R0,Q6+3
-	;[31] #objectColor(4) = SPR_BLACK
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",31
-	CLRR R0
+	;[34] #objectColor(4) = SPR_BLUE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",34
+	MVII #1,R0
 	MVO R0,Q6+4
-	;[32] #objectColor(5) = SPR_WHITE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",32
-	MVII #7,R0
+	;[35] #objectColor(5) = SPR_BLACK
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",35
+	CLRR R0
 	MVO R0,Q6+5
-	;[33] #objectColor(6) = SPR_GREEN
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",33
+	;[36] #objectColor(6) = SPR_GREEN
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",36
 	MVII #5,R0
 	MVO R0,Q6+6
-	;[34] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",34
-	;[35] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",35
-	;[36] objectX(0) = 4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",36
+	;[37] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",37
+	;[38] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",38
+	;[39] objectX(0) = 4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",39
 	MVII #4,R0
 	MVO R0,Q3
-	;[37] objectX(1) = 7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",37
+	;[40] objectX(1) = 7
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",40
 	MVII #7,R0
 	MVO R0,Q3+1
-	;[38] objectX(2) = 9
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",38
+	;[41] objectX(2) = 9
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",41
 	MVII #9,R0
 	MVO R0,Q3+2
-	;[39] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",39
-	;[40] for a = 0 to 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",40
+	;[42] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",42
+	;[43] for a = 0 to 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",43
 	CLRR R0
 	MVO R0,V1
 T1:
-	;[41]     objectY(a) = random(3)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",41
+	;[44]     objectY(a) = random(3)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",44
 	MVII #3,R1
 	CALL _next_random
 	CALL qs_mpy8
@@ -3222,308 +3228,328 @@ T1:
 	MVII #Q4,R3
 	ADD V1,R3
 	MVO@ R0,R3
-	;[42] 	object(a) = 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",42
+	;[45] 	object(a) = 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",45
 	MVII #2,R0
 	ADDI #(Q5-Q4) AND $FFFF,R3
 	MVO@ R0,R3
-	;[43] next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",43
+	;[46] next a
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",46
 	MVI V1,R0
 	INCR R0
 	MVO R0,V1
 	CMPI #2,R0
 	BLE T1
-	;[44] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",44
-	;[45] playerX = random(3)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",45
+	;[47] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",47
+	;[48] playerX = random(3)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",48
 	MVII #3,R1
 	CALL _next_random
 	CALL qs_mpy8
 	SWAP R0
 	ANDI #255,R0
 	MVO R0,V2
-	;[46] playerDX = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",46
-	MVII #1,R0
-	MVO R0,V3
-	;[47] playerY = 10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",47
-	MVII #10,R0
-	MVO R0,V4
-	;[48] playerF = 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",48
-	MVII #2,R0
-	MVO R0,V5
-	;[49] invisible = 0
+	;[49] #playerColor = SPR_RED
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",49
-	CLRR R0
-	MVO R0,V6
-	;[50] 
+	MVII #2,R0
+	MVO R0,V3
+	;[50] playerDX = 1
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",50
-	;[51] chance = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",51
-	MVO R0,V7
-	;[52] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",52
-	;[53] 'Level ajustament
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",53
-	;[54] dificulty = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",54
 	MVII #1,R0
+	MVO R0,V4
+	;[51] playerY = 10
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",51
+	MVII #10,R0
+	MVO R0,V5
+	;[52] playerF = 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",52
+	MVII #2,R0
+	MVO R0,V6
+	;[53] invisible = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",53
+	CLRR R0
+	MVO R0,V7
+	;[54] bonus_exp = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",54
 	MVO R0,V8
-	;[55] #maximunScore = 100
+	;[55] bonus_lives = 0
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",55
-	MVII #100,R0
+	NOP
 	MVO R0,V9
-	;[56] dim percentage(5)
+	;[56] 
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",56
-	;[57] percentage(0) = 48/100
+	;[57] chance = 0
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",57
+	MVO R0,V10
+	;[58] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",58
+	;[59] 'Level ajustament
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",59
+	;[60] dificulty = 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",60
+	MVII #1,R0
+	MVO R0,V11
+	;[61] #maximunScore = 100
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",61
+	MVII #100,R0
+	MVO R0,V12
+	;[62] dim percentage(5)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",62
+	;[63] percentage(0) = 48/100
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",63
 	CLRR R0
 	MVO R0,Q7
-	;[58] percentage(1) = 23/100
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",58
-	MVO R0,Q7+1
-	;[59] percentage(2) = 23/100
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",59
-	NOP
-	MVO R0,Q7+2
-	;[60] percentage(3) = 4/100
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",60
-	MVO R0,Q7+3
-	;[61] percentage(4) = 2/100
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",61
-	NOP
-	MVO R0,Q7+4
-	;[62] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",62
-	;[63] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",63
-	;[64] scene = 0
+	;[64] percentage(1) = 23/100
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",64
-	MVO R0,V10
-	;[65] jump = 0
+	MVO R0,Q7+1
+	;[65] percentage(2) = 23/100
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",65
 	NOP
-	MVO R0,V11
-	;[66] #score = 0
+	MVO R0,Q7+2
+	;[66] percentage(3) = 4/100
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",66
-	MVO R0,V12
-	;[67] heartrate = 0
+	MVO R0,Q7+3
+	;[67] percentage(4) = 2/100
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",67
 	NOP
-	MVO R0,V13
-	;[68] lives = 3
+	MVO R0,Q7+4
+	;[68] 
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",68
-	MVII #3,R0
-	MVO R0,V14
-	;[69] level = 1
+	;[69] highestDifficulty = 7
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",69
-	MVII #1,R0
-	MVO R0,V15
-	;[70] #univclock=0
+	MVII #7,R0
+	MVO R0,V13
+	;[70] scene = 0
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",70
 	CLRR R0
-	MVO R0,V16
-	;[71] 
+	MVO R0,V14
+	;[71] jump = 0
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",71
-	;[72] street_lineY = 0
+	MVO R0,V15
+	;[72] #score = 0
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",72
-	MVO R0,V17
-	;[73] 
+	NOP
+	MVO R0,V16
+	;[73] heartrate = 0
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",73
-	;[74] MODE   SCREEN_COLOR_STACK, STACK_GREEN, STACK_BLACK, STACK_GREEN, STACK_BLACK
+	MVO R0,V17
+	;[74] lives = 3
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",74
+	MVII #3,R0
+	MVO R0,V18
+	;[75] level = 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",75
+	MVII #1,R0
+	MVO R0,V19
+	;[76] #univclock=0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",76
+	CLRR R0
+	MVO R0,V20
+	;[77] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",77
+	;[78] street_lineY = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",78
+	MVO R0,V21
+	;[79] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",79
+	;[80] MODE   SCREEN_COLOR_STACK, STACK_GREEN, STACK_BLACK, STACK_GREEN, STACK_BLACK
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",80
 	MVII #20485,R0
 	MVO R0,_color
 	MVII #2,R0
 	MVO R0,_mode_select
-	;[75] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",75
-	;[76] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",76
+	;[81] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",81
+	;[82] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",82
 	CALL _wait
-	;[77] DEFINE 0,16,screen_bitmaps_0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",77
+	;[83] DEFINE 0,16,screen_bitmaps_0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",83
 	CLRR R0
 	MVO R0,_gram_target
 	MVII #16,R0
 	MVO R0,_gram_total
 	MVII #Q8,R0
 	MVO R0,_gram_bitmap
-	;[78] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",78
+	;[84] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",84
 	CALL _wait
-	;[79] DEFINE 16,16,screen_bitmaps_1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",79
+	;[85] DEFINE 16,16,screen_bitmaps_1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",85
 	MVII #16,R0
 	MVO R0,_gram_target
 	MVO R0,_gram_total
 	MVII #Q9,R0
 	MVO R0,_gram_bitmap
-	;[80] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",80
+	;[86] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",86
 	CALL _wait
-	;[81] DEFINE 32,16,screen_bitmaps_2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",81
+	;[87] DEFINE 32,16,screen_bitmaps_2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",87
 	MVII #32,R0
 	MVO R0,_gram_target
 	MVII #16,R0
 	MVO R0,_gram_total
 	MVII #Q10,R0
 	MVO R0,_gram_bitmap
-	;[82] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",82
+	;[88] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",88
 	CALL _wait
-	;[83] DEFINE 48,4,screen_bitmaps_3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",83
+	;[89] DEFINE 48,4,screen_bitmaps_3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",89
 	MVII #48,R0
 	MVO R0,_gram_target
 	MVII #4,R0
 	MVO R0,_gram_total
 	MVII #Q11,R0
 	MVO R0,_gram_bitmap
-	;[84] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",84
+	;[90] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",90
 	CALL _wait
-	;[85] define 52,5, player
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",85
+	;[91] define 52,5, player
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",91
 	MVII #52,R0
 	MVO R0,_gram_target
 	MVII #5,R0
 	MVO R0,_gram_total
 	MVII #Q12,R0
 	MVO R0,_gram_bitmap
-	;[86] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",86
+	;[92] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",92
 	CALL _wait
-	;[87] define 57,2, tiles
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",87
+	;[93] define 57,2, tiles
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",93
 	MVII #57,R0
 	MVO R0,_gram_target
 	MVII #2,R0
 	MVO R0,_gram_total
 	MVII #Q13,R0
 	MVO R0,_gram_bitmap
-	;[88] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",88
+	;[94] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",94
 	CALL _wait
-	;[89] define 59,3, street
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",89
+	;[95] define 59,3, street
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",95
 	MVII #59,R0
 	MVO R0,_gram_target
 	MVII #3,R0
 	MVO R0,_gram_total
 	MVII #Q14,R0
 	MVO R0,_gram_bitmap
-	;[90] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",90
+	;[96] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",96
 	CALL _wait
-	;[91] define 62,1, nothing
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",91
+	;[97] define 62,1, nothing
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",97
 	MVII #62,R0
 	MVO R0,_gram_target
 	MVII #1,R0
 	MVO R0,_gram_total
 	MVII #Q15,R0
 	MVO R0,_gram_bitmap
-	;[92] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",92
+	;[98] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",98
 	CALL _wait
-	;[93] define 63,1, rock
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",93
+	;[99] define 63,1, rock
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",99
 	MVII #63,R0
 	MVO R0,_gram_target
 	MVII #1,R0
 	MVO R0,_gram_total
 	MVII #Q16,R0
 	MVO R0,_gram_bitmap
-	;[94] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",94
+	;[100] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",100
 	CALL _wait
-	;[95] define 64,1, coin
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",95
+	;[101] define 64,1, coin
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",101
 	MVII #64,R0
 	MVO R0,_gram_target
 	MVII #1,R0
 	MVO R0,_gram_total
 	MVII #Q17,R0
 	MVO R0,_gram_bitmap
-	;[96] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",96
+	;[102] wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",102
 	CALL _wait
-	;[97] define 65,1, apple
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",97
+	;[103] define 65,1, apple
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",103
 	MVII #65,R0
 	MVO R0,_gram_target
 	MVII #1,R0
 	MVO R0,_gram_total
 	MVII #Q18,R0
 	MVO R0,_gram_bitmap
-	;[98] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",98
-	CALL _wait
-	;[99] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",99
-	;[100] DEF FN SpritePosX(aColumn, anOffset) = ((aColumn + 1) * CARD_WIDTH ) + anOffset
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",100
-	;[101] DEF FN SpritePosY(aRow, anOffset)    = ((aRow    + 1) * CARD_HEIGHT) + anOffset
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",101
-	;[102] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",102
-	;[103] cls
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",103
-	CALL CLRSCR
-	;[104] main:
+	;[104] wait
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",104
-	; MAIN
-Q19:	;[105] 
+	CALL _wait
+	;[105] 
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",105
-	;[106] 	IF scene = 0 THEN GOSUB scene1
+	;[106] DEF FN SpritePosX(aColumn, anOffset) = ((aColumn + 1) * CARD_WIDTH ) + anOffset
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",106
-	MVI V10,R0
+	;[107] DEF FN SpritePosY(aRow, anOffset)    = ((aRow    + 1) * CARD_HEIGHT) + anOffset
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",107
+	;[108] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",108
+	;[109] cls
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",109
+	CALL CLRSCR
+	;[110] main:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",110
+	; MAIN
+Q19:	;[111] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",111
+	;[112] 	IF scene = 0 THEN GOSUB scene1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",112
+	MVI V14,R0
 	TSTR R0
 	BNE T2
 	CALL Q20
 T2:
-	;[107] 	IF scene = 1 THEN GOSUB scene2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",107
-	MVI V10,R0
+	;[113] 	IF scene = 1 THEN GOSUB scene2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",113
+	MVI V14,R0
 	CMPI #1,R0
 	BNE T3
 	CALL Q21
 T3:
-	;[108] 	IF scene = 2 THEN GOSUB scene3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",108
-	MVI V10,R0
+	;[114] 	IF scene = 2 THEN GOSUB scene3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",114
+	MVI V14,R0
 	CMPI #2,R0
 	BNE T4
 	CALL Q22
 T4:
-	;[109] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",109
-	;[110] 	#univclock = #univclock + 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",110
-	MVI V16,R0
+	;[115] 	IF scene = 3 THEN GOSUB scene4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",115
+	MVI V14,R0
+	CMPI #3,R0
+	BNE T5
+	CALL Q23
+T5:
+	;[116] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",116
+	;[117] 	#univclock = #univclock + 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",117
+	MVI V20,R0
 	INCR R0
-	MVO R0,V16
-	;[111] goto main
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",111
+	MVO R0,V20
+	;[118] goto main
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",118
 	B Q19
-	;[112] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",112
-	;[113] scene1: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",113
+	;[119] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",119
+	;[120] scene1: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",120
 	; SCENE1
 Q20:	PROC
 	BEGIN
-	;[114] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",114
+	;[121] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",121
 	CALL _wait
-	;[115] 	print at SCREENPOS(1, 0) color CS_WHITE,"- RunnerZ"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",115
+	;[122] 	print at SCREENPOS(1, 0) color CS_WHITE,"- RunnerZ"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",122
 	MVII #513,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3548,8 +3574,8 @@ Q20:	PROC
 	XORI #832,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[116] 	print at SCREENPOS(1, 1) color CS_WHITE,"- v0.1"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",116
+	;[123] 	print at SCREENPOS(1, 1) color CS_WHITE,"- v0.5"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",123
 	MVII #533,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3566,11 +3592,11 @@ Q20:	PROC
 	MVO@ R0,R4
 	XORI #240,R0
 	MVO@ R0,R4
-	XORI #248,R0
+	XORI #216,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[117] 	print at SCREENPOS(1, 2) color CS_WHITE,"- Made by: Josue"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",117
+	;[124] 	print at SCREENPOS(1, 2) color CS_WHITE,"- Made by: Josue"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",124
 	MVII #553,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3610,8 +3636,8 @@ Q20:	PROC
 	XORI #128,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[118] 	print at SCREENPOS(1, 3) color CS_WHITE,"- Github: JosueCom"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",118
+	;[125] 	print at SCREENPOS(1, 3) color CS_WHITE,"- Github: JosueCom"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",125
 	MVII #573,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3655,8 +3681,8 @@ Q20:	PROC
 	XORI #16,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[119] 	print at SCREENPOS(0, 10) color CS_WHITE, "'Right' to continue"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",119
+	;[126] 	print at SCREENPOS(0, 10) color CS_WHITE, "'Right' to continue"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",126
 	MVII #712,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3702,29 +3728,29 @@ Q20:	PROC
 	XORI #128,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[120] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",120
-	;[121] 	if #univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",121
-	MVI V16,R0
-T6:
+	;[127] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",127
+	;[128] 	if #univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",128
+	MVI V20,R0
+T7:
 	SUBI #15,R0
-	BC T6
+	BC T7
 	ADDI #15,R0
-	BNE T5
-	MVI V13,R0
+	BNE T6
+	MVI V17,R0
 	INCR R0
 	ANDI #1,R0
-	MVO R0,V13
-	MVI V5,R0
-	ADD V3,R0
-	MVO R0,V5
-	MVI V5,R0
+	MVO R0,V17
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
 	CMPI #4,R0
 	MVII #-1,R0
 	BGE $+3
 	INCR R0
-	MVI V5,R1
+	MVI V6,R1
 	CMPI #0,R1
 	MVII #-1,R1
 	BLE $+3
@@ -3733,44 +3759,44 @@ T6:
 	ANDR R1,R0
 	COMR R1
 	XORR R1,R0
-	BEQ T7
-	MVI V3,R0
+	BEQ T8
+	MVI V4,R0
 	MVII #65535,R5
 	CLRR R4
 	CLRC
 	RRC R0,1
-	BEQ T9
-T8:
+	BEQ T10
+T9:
 	BNC $+3
 	ADDR R5,R4
 	ADDR R5,R5
 	SARC R0,1
-	BNE T8
-T9:
+	BNE T9
+T10:
 	BNC $+3
 	ADDR R5,R4
 	MOVR R4,R0
-	MVO R0,V3
-T7:
-T5:
-	;[122] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",122
-	;[123] 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(5, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",123
+	MVO R0,V4
+T8:
+T6:
+	;[129] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",129
+	;[130] 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(5, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",130
 	MVII #1616,R0
 	MVO R0,_mobs
 	MVII #816,R0
 	MVO R0,_mobs+8
-	MVI V5,R0
+	MVI V6,R0
 	SLL R0,2
 	ADDR R0,R0
 	ADDI #2466,R0
 	MVO R0,_mobs+16
-	;[124] 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",124
-	MVI V13,R0
+	;[131] 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",131
+	MVI V17,R0
 	TSTR R0
-	BEQ T10
+	BEQ T11
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3780,8 +3806,8 @@ T5:
 	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	B T11
-T10:
+	B T12
+T11:
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3789,115 +3815,127 @@ T10:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-T11:
-	;[125] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",125
-	;[126] 	IF cont1.right THEN scene = 1: mode 1 : gosub levelupAnimation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",126
+T12:
+	;[132] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",132
+	;[133] 	IF cont1.right THEN scene = 1: mode 1 : gosub levelupAnimation
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",133
 	MVI 511,R0
 	COMR R0
 	ANDI #2,R0
-	BEQ T12
+	BEQ T13
 	MVII #1,R0
-	MVO R0,V10
+	MVO R0,V14
 	MVII #3,R0
 	MVO R0,_mode_select
-	CALL Q24
-T12:
-	;[127] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",127
+	CALL Q25
+T13:
+	;[134] 	return
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",134
 	RETURN
-	;[128] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",128
-	;[129] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",129
+	;[135] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",135
+	;[136] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",136
 	ENDP
-	;[130] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",130
-	;[131] scene2: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",131
+	;[137] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",137
+	;[138] scene2: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",138
 	; SCENE2
 Q21:	PROC
 	BEGIN
-	;[132] 	SCREEN screen_cards
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",132
-	MVII #Q26,R3
+	;[139] 	SCREEN screen_cards
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",139
+	MVII #Q27,R3
 	MVII #512,R2
 	MVII #20,R1
 	MVII #12,R0
 	CALL CPYBLK
-	;[133] 	gosub determinelevel
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",133
-	CALL Q27
-	;[134] 	gosub background
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",134
-	CALL Q28
-	;[135] 	gosub drawObjects
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",135
-	CALL Q29
-	;[136] 	gosub drawPlayer
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",136
-	CALL Q30
-	;[137] 	'IF FRAME AND 1 THEN GOSUB move_player
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",137
-	;[138] 	'IF FRAME AND 1 THEN GOSUB enemy
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",138
-	;[139] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",139
-	;[140] 	if lives <= 0 then gosub clearAll : scene = 2
+	;[140] 	gosub determinelevel
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",140
-	MVI V14,R0
-	CMPI #0,R0
-	BGT T13
-	CALL Q31
-	MVII #2,R0
-	MVO R0,V10
-T13:
-	;[141] 	if #score >= #maximunScore then level = level + 1 : #score = 0 : gosub levelupAnimation : object(0) = 0 : object(1) = 0 : object(2) = 0
+	CALL Q28
+	;[141] 	gosub background
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",141
-	MVI V12,R0
-	CMP V9,R0
-	BLT T14
-	MVI V15,R0
-	INCR R0
-	MVO R0,V15
-	CLRR R0
-	MVO R0,V12
-	CALL Q24
-	CLRR R0
-	MVO R0,Q5
-	MVO R0,Q5+1
-	NOP
-	MVO R0,Q5+2
-T14:
-	;[142] 	return
+	CALL Q29
+	;[142] 	gosub drawObjects
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",142
-	RETURN
-	;[143] end
+	CALL Q30
+	;[143] 	gosub drawPlayer
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",143
-	ENDP
-	;[144] 
+	CALL Q31
+	;[144] 	'IF FRAME AND 1 THEN GOSUB move_player
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",144
-	;[145] scene3: procedure
+	;[145] 	'IF FRAME AND 1 THEN GOSUB enemy
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",145
+	;[146] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",146
+	;[147] 	if lives <= 0 then gosub clearAll : gosub clearPower : scene = 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",147
+	MVI V18,R0
+	CMPI #0,R0
+	BGT T14
+	CALL Q32
+	CALL Q33
+	MVII #2,R0
+	MVO R0,V14
+T14:
+	;[148] 	if lives > 99 then lives = 10 : invisible = 100
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",148
+	MVI V18,R0
+	CMPI #99,R0
+	BLE T15
+	MVII #10,R0
+	MVO R0,V18
+	MVII #100,R0
+	MVO R0,V7
+T15:
+	;[149] 	if #score >= #maximunScore then level = level + 1 : gosub clearPower : #score = 0 : gosub levelupAnimation
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",149
+	MVI V16,R0
+	CMP V12,R0
+	BLT T16
+	MVI V19,R0
+	INCR R0
+	MVO R0,V19
+	CALL Q33
+	CLRR R0
+	MVO R0,V16
+	CALL Q25
+T16:
+	;[150] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",150
+	;[151] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",151
+	CALL _wait
+	;[152] 	return
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",152
+	RETURN
+	;[153] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",153
+	ENDP
+	;[154] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",154
+	;[155] scene3: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",155
 	; SCENE3
 Q22:	PROC
 	BEGIN
-	;[146] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",146
-	;[147] 	MODE   SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",147
+	;[156] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",156
+	;[157] 	MODE   SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",157
 	MVII #20480,R0
 	MVO R0,_color
 	MVII #2,R0
 	MVO R0,_mode_select
-	;[148] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",148
+	;[158] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",158
 	CALL _wait
-	;[149] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",149
-	;[150] 	print at SCREENPOS(2, 2) color CS_BLUE,"Made by: Josue"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",150
+	;[159] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",159
+	;[160] 	print at SCREENPOS(2, 2) color CS_BLUE,"Made by: Josue"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",160
 	MVII #554,R0
 	MVO R0,_screen
 	MVII #1,R0
@@ -3933,8 +3971,8 @@ Q22:	PROC
 	XORI #128,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[151] 	print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",151
+	;[161] 	print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",161
 	MVII #574,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3975,15 +4013,19 @@ Q22:	PROC
 	XORI #680,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[152] 	print at SCREENPOS(2, 4) color CS_WHITE,"Play Again"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",152
+	;[162] 	print at SCREENPOS(2, 4) color CS_WHITE,"> Play Again"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",162
 	MVII #594,R0
 	MVO R0,_screen
 	MVII #7,R0
 	MVO R0,_color
 	MVI _screen,R4
-	MVII #384,R0
+	MVII #240,R0
 	XOR _color,R0
+	MVO@ R0,R4
+	XORI #240,R0
+	MVO@ R0,R4
+	XORI #384,R0
 	MVO@ R0,R4
 	XORI #992,R0
 	MVO@ R0,R4
@@ -4004,8 +4046,8 @@ Q22:	PROC
 	XORI #56,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[153] 	print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",153
+	;[163] 	print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",163
 	MVII #614,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4044,54 +4086,48 @@ Q22:	PROC
 	XORI #680,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[154] 	print at SCREENPOS(2, 6) color CS_WHITE,"To end it"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",154
+	;[164] 	print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",164
 	MVII #634,R0
 	MVO R0,_screen
 	MVII #7,R0
 	MVO R0,_color
 	MVI _screen,R4
-	MVII #416,R0
+	MVII #240,R0
 	XOR _color,R0
 	MVO@ R0,R4
-	XORI #984,R0
+	XORI #240,R0
 	MVO@ R0,R4
-	XORI #632,R0
+	XORI #392,R0
 	MVO@ R0,R4
-	XORI #552,R0
+	XORI #800,R0
 	MVO@ R0,R4
-	XORI #88,R0
-	MVO@ R0,R4
-	XORI #80,R0
-	MVO@ R0,R4
-	XORI #544,R0
-	MVO@ R0,R4
-	XORI #584,R0
+	XORI #224,R0
 	MVO@ R0,R4
 	XORI #232,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[155] 	if #univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",155
-	MVI V16,R0
-T16:
+	;[165] 	if #univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",165
+	MVI V20,R0
+T18:
 	SUBI #15,R0
-	BC T16
+	BC T18
 	ADDI #15,R0
-	BNE T15
-	MVI V13,R0
+	BNE T17
+	MVI V17,R0
 	INCR R0
 	ANDI #1,R0
-	MVO R0,V13
-	MVI V5,R0
-	ADD V3,R0
-	MVO R0,V5
-	MVI V5,R0
+	MVO R0,V17
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
 	CMPI #4,R0
 	MVII #-1,R0
 	BGE $+3
 	INCR R0
-	MVI V5,R1
+	MVI V6,R1
 	CMPI #0,R1
 	MVII #-1,R1
 	BLE $+3
@@ -4100,44 +4136,44 @@ T16:
 	ANDR R1,R0
 	COMR R1
 	XORR R1,R0
-	BEQ T17
-	MVI V3,R0
+	BEQ T19
+	MVI V4,R0
 	MVII #65535,R5
 	CLRR R4
 	CLRC
 	RRC R0,1
-	BEQ T19
-T18:
+	BEQ T21
+T20:
 	BNC $+3
 	ADDR R5,R4
 	ADDR R5,R5
 	SARC R0,1
-	BNE T18
-T19:
+	BNE T20
+T21:
 	BNC $+3
 	ADDR R5,R4
 	MOVR R4,R0
-	MVO R0,V3
+	MVO R0,V4
+T19:
 T17:
-T15:
-	;[156] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",156
-	;[157] 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",157
+	;[166] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",166
+	;[167] 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",167
 	MVII #1616,R0
 	MVO R0,_mobs
 	MVII #832,R0
 	MVO R0,_mobs+8
-	MVI V5,R0
+	MVI V6,R0
 	SLL R0,2
 	ADDR R0,R0
 	ADDI #2466,R0
 	MVO R0,_mobs+16
-	;[158] 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",158
-	MVI V13,R0
+	;[168] 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",168
+	MVI V17,R0
 	TSTR R0
-	BEQ T20
+	BEQ T22
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4147,8 +4183,8 @@ T15:
 	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	B T21
-T20:
+	B T23
+T22:
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4156,12 +4192,12 @@ T20:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-T21:
-	;[159] 	if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",159
-	MVI V13,R0
+T23:
+	;[169] 	if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",169
+	MVI V17,R0
 	TSTR R0
-	BEQ T22
+	BEQ T24
 	MVII #732,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4171,8 +4207,8 @@ T21:
 	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	B T23
-T22:
+	B T25
+T24:
 	MVII #732,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4180,82 +4216,242 @@ T22:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-T23:
-	;[160] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",160
-	;[161] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",161
-	CALL _wait
-	;[162] 	if cont1.right then scene = 0: gosub clearAll : #score = 0 : lives = 3 : level = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",162
+T25:
+	;[170] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",170
+	;[171] 	if cont1.right then gosub clearAll : #score = 0 : lives = 3 : scene = 0 : level = 1 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",171
 	MVI 511,R0
 	COMR R0
 	ANDI #2,R0
-	BEQ T24
+	BEQ T26
+	CALL Q32
 	CLRR R0
-	MVO R0,V10
-	CALL Q31
-	CLRR R0
-	MVO R0,V12
+	MVO R0,V16
 	MVII #3,R0
+	MVO R0,V18
+	CLRR R0
 	MVO R0,V14
 	MVII #1,R0
-	MVO R0,V15
-T24:
-	;[163] 	if cont1.left then gosub clearAll :goto end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",163
+	MVO R0,V19
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+T26:
+	;[172] 	if cont1.left then gosub clearAll :goto end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",172
 	MVI 511,R0
 	COMR R0
 	ANDI #8,R0
-	BEQ T25
-	CALL Q31
-	B Q33
-T25:
-	;[164] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",164
-	;[165] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",165
+	BEQ T27
+	CALL Q32
+	B Q35
+T27:
+	;[173] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",173
+	;[174] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",174
 	RETURN
 	ENDP
-	;[166] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",166
-	;[167] levelupAnimation: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",167
-	; LEVELUPANIMATION
-Q24:	PROC
+	;[175] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",175
+	;[176] scene4: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",176
+	; SCENE4
+Q23:	PROC
 	BEGIN
-	;[168] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",168
+	;[177] 	MODE   SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",177
+	MVII #20480,R0
+	MVO R0,_color
+	MVII #2,R0
+	MVO R0,_mode_select
+	;[178] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",178
 	CALL _wait
-	;[169] 	gosub clearAll
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",169
-	CALL Q31
-	;[170] 	for a = 0 to 75
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",170
-	CLRR R0
-	MVO R0,V1
-T26:
-	;[171] 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",171
-	MVI V1,R0
-T28:
-	SUBI #3,R0
-	BC T28
-	ADDI #3,R0
-	BNE T27
-	MVI V13,R0
+	;[179] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",179
+	;[180] 	print at SCREENPOS(4, 2) color CS_RED,"PAUSED"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",180
+	MVII #556,R0
+	MVO R0,_screen
+	MVII #2,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #384,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	XORI #136,R0
+	MVO@ R0,R4
+	XORI #160,R0
+	MVO@ R0,R4
+	XORI #48,R0
+	MVO@ R0,R4
+	XORI #176,R0
+	MVO@ R0,R4
+	XORI #8,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[181] 	print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",181
+	MVII #574,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #384,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	XORI #784,R0
+	MVO@ R0,R4
+	XORI #184,R0
+	MVO@ R0,R4
+	XORI #176,R0
+	MVO@ R0,R4
+	MVO@ R0,R4
+	XORI #664,R0
+	MVO@ R0,R4
+	XORI #56,R0
+	MVO@ R0,R4
+	XORI #424,R0
+	MVO@ R0,R4
+	XORI #984,R0
+	MVO@ R0,R4
+	XORI #112,R0
+	MVO@ R0,R4
+	XORI #120,R0
+	MVO@ R0,R4
+	XORI #224,R0
+	MVO@ R0,R4
+	XORI #664,R0
+	MVO@ R0,R4
+	XORI #56,R0
+	MVO@ R0,R4
+	XORI #416,R0
+	MVO@ R0,R4
+	XORI #984,R0
+	MVO@ R0,R4
+	XORI #680,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[182] 	print at SCREENPOS(2, 4) color CS_WHITE,"> Continue"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",182
+	MVII #594,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #240,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	XORI #240,R0
+	MVO@ R0,R4
+	XORI #280,R0
+	MVO@ R0,R4
+	XORI #864,R0
+	MVO@ R0,R4
+	XORI #8,R0
+	MVO@ R0,R4
+	XORI #208,R0
+	MVO@ R0,R4
+	XORI #232,R0
+	MVO@ R0,R4
+	XORI #56,R0
+	MVO@ R0,R4
+	XORI #216,R0
+	MVO@ R0,R4
+	XORI #128,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[183] 	print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",183
+	MVII #614,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #384,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	XORI #784,R0
+	MVO@ R0,R4
+	XORI #184,R0
+	MVO@ R0,R4
+	XORI #176,R0
+	MVO@ R0,R4
+	MVO@ R0,R4
+	XORI #664,R0
+	MVO@ R0,R4
+	XORI #56,R0
+	MVO@ R0,R4
+	XORI #344,R0
+	MVO@ R0,R4
+	XORI #840,R0
+	MVO@ R0,R4
+	XORI #24,R0
+	MVO@ R0,R4
+	XORI #144,R0
+	MVO@ R0,R4
+	XORI #664,R0
+	MVO@ R0,R4
+	XORI #56,R0
+	MVO@ R0,R4
+	XORI #416,R0
+	MVO@ R0,R4
+	XORI #984,R0
+	MVO@ R0,R4
+	XORI #680,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[184] 	print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",184
+	MVII #634,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #240,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	XORI #240,R0
+	MVO@ R0,R4
+	XORI #392,R0
+	MVO@ R0,R4
+	XORI #800,R0
+	MVO@ R0,R4
+	XORI #224,R0
+	MVO@ R0,R4
+	XORI #232,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[185] 	if #univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",185
+	MVI V20,R0
+T29:
+	SUBI #15,R0
+	BC T29
+	ADDI #15,R0
+	BNE T28
+	MVI V17,R0
 	INCR R0
 	ANDI #1,R0
-	MVO R0,V13
-	MVI V5,R0
-	ADD V3,R0
-	MVO R0,V5
-	MVI V5,R0
+	MVO R0,V17
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
 	CMPI #4,R0
 	MVII #-1,R0
 	BGE $+3
 	INCR R0
-	MVI V5,R1
+	MVI V6,R1
 	CMPI #0,R1
 	MVII #-1,R1
 	BLE $+3
@@ -4264,137 +4460,169 @@ T28:
 	ANDR R1,R0
 	COMR R1
 	XORR R1,R0
-	BEQ T29
-	MVI V3,R0
+	BEQ T30
+	MVI V4,R0
 	MVII #65535,R5
 	CLRR R4
 	CLRC
 	RRC R0,1
-	BEQ T31
-T30:
+	BEQ T32
+T31:
 	BNC $+3
 	ADDR R5,R4
 	ADDR R5,R5
 	SARC R0,1
-	BNE T30
-T31:
+	BNE T31
+T32:
 	BNC $+3
 	ADDR R5,R4
 	MOVR R4,R0
-	MVO R0,V3
-T29:
-T27:
-	;[172] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",172
-	;[173] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(3, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",173
+	MVO R0,V4
+T30:
+T28:
+	;[186] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",186
+	;[187] 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",187
 	MVII #1616,R0
 	MVO R0,_mobs
-	MVII #800,R0
+	MVII #832,R0
 	MVO R0,_mobs+8
-	MVI V5,R0
+	MVI V6,R0
 	SLL R0,2
 	ADDR R0,R0
 	ADDI #2466,R0
 	MVO R0,_mobs+16
-	;[174] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",174
-	;[175] 		print at (SCREENPOS(7, 5)) color CS_RED, (level%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",175
-	MVII #619,R0
+	;[188] 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",188
+	MVI V17,R0
+	TSTR R0
+	BEQ T33
+	MVII #751,R0
 	MVO R0,_screen
-	MVII #2,R0
+	MVII #7,R0
 	MVO R0,_color
-	MVI V15,R0
-T32:
-	SUBI #10,R0
-	BC T32
-	ADDI #26,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #6,R0
 	MVI _screen,R4
+	MVII #240,R0
+	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[176] 		print at (SCREENPOS(12, 5)) color CS_RED, (level%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",176
-	MVII #624,R0
-	MVO R0,_screen
-	MVII #2,R0
-	MVO R0,_color
-	MVI V15,R0
+	B T34
 T33:
-	SUBI #10,R0
-	BC T33
-	ADDI #26,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #6,R0
+	MVII #751,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[177] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",177
+T34:
+	;[189] 	if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",189
+	MVI V17,R0
+	TSTR R0
+	BEQ T35
+	MVII #732,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #224,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	B T36
+T35:
+	MVII #732,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVO@ R0,R4
+	MVO R4,_screen
+T36:
+	;[190] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",190
+	;[191] 	if cont1.left then gosub clearAll : #score = 0 : lives = 3 : scene = 0 : level = 1 : #univclock = 0 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",191
+	MVI 511,R0
+	COMR R0
+	ANDI #8,R0
+	BEQ T37
+	CALL Q32
+	CLRR R0
+	MVO R0,V16
+	MVII #3,R0
+	MVO R0,V18
+	CLRR R0
+	MVO R0,V14
+	MVII #1,R0
+	MVO R0,V19
+	CLRR R0
+	MVO R0,V20
 	CALL _wait
-	;[178] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",178
 	CALL _wait
-	;[179] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",179
 	CALL _wait
-	;[180] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",180
-	MVI V1,R0
-	INCR R0
-	MVO R0,V1
-	CMPI #75,R0
-	BLE T26
-	;[181] 	gosub clearAll
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",181
-	CALL Q31
-	;[182] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",182
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+T37:
+	;[192] 	if cont1.right then scene = 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",192
+	MVI 511,R0
+	COMR R0
+	ANDI #2,R0
+	BEQ T38
+	MVII #1,R0
+	MVO R0,V14
+T38:
+	;[193] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",193
 	RETURN
 	ENDP
-	;[183] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",183
-	;[184] powerupAnimation: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",184
-	; POWERUPANIMATION
-Q35:	PROC
+	;[194] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",194
+	;[195] levelupAnimation: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",195
+	; LEVELUPANIMATION
+Q25:	PROC
 	BEGIN
-	;[185] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",185
+	;[196] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",196
 	CALL _wait
-	;[186] 	gosub clearAll
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",186
-	CALL Q31
-	;[187] 	for a = 0 to 75
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",187
+	;[197] 	gosub clearAll
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",197
+	CALL Q32
+	;[198] 	for a = 0 to 75
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",198
 	CLRR R0
 	MVO R0,V1
-T34:
-	;[188] 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",188
+T39:
+	;[199] 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",199
 	MVI V1,R0
-T36:
+T41:
 	SUBI #3,R0
-	BC T36
+	BC T41
 	ADDI #3,R0
-	BNE T35
-	MVI V13,R0
+	BNE T40
+	MVI V17,R0
 	INCR R0
 	ANDI #1,R0
-	MVO R0,V13
-	MVI V5,R0
-	ADD V3,R0
-	MVO R0,V5
-	MVI V5,R0
+	MVO R0,V17
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
 	CMPI #4,R0
 	MVII #-1,R0
 	BGE $+3
 	INCR R0
-	MVI V5,R1
+	MVI V6,R1
 	CMPI #0,R1
 	MVII #-1,R1
 	BLE $+3
@@ -4403,168 +4631,48 @@ T36:
 	ANDR R1,R0
 	COMR R1
 	XORR R1,R0
-	BEQ T37
-	MVI V3,R0
+	BEQ T42
+	MVI V4,R0
 	MVII #65535,R5
 	CLRR R4
 	CLRC
 	RRC R0,1
-	BEQ T39
-T38:
+	BEQ T44
+T43:
 	BNC $+3
 	ADDR R5,R4
 	ADDR R5,R5
 	SARC R0,1
-	BNE T38
-T39:
+	BNE T43
+T44:
 	BNC $+3
 	ADDR R5,R4
 	MOVR R4,R0
-	MVO R0,V3
-T37:
-T35:
-	;[189] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",189
-	;[190] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(3, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_BLUE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",190
+	MVO R0,V4
+T42:
+T40:
+	;[200] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",200
+	;[201] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(3, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",201
 	MVII #1616,R0
 	MVO R0,_mobs
 	MVII #800,R0
 	MVO R0,_mobs+8
-	MVI V5,R0
+	MVI V6,R0
 	SLL R0,2
 	ADDR R0,R0
-	ADDI #2465,R0
+	ADDI #2466,R0
 	MVO R0,_mobs+16
-	;[191] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",191
-	;[192] 		if power = 4 then print at (SCREENPOS(7, 5)) color CS_BLUE, "\319" : print at (SCREENPOS(12, 5)) color CS_BLUE, "\319"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",192
-	MVI V18,R0
-	CMPI #4,R0
-	BNE T40
-	MVII #619,R0
-	MVO R0,_screen
-	MVII #1,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2552,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-	MVII #624,R0
-	MVO R0,_screen
-	MVII #1,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2552,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-T40:
-	;[193] 		if power = 5 then print at (SCREENPOS(7, 5)) color CS_WHITE, "\320" : print at (SCREENPOS(12, 5)) color CS_WHITE, "\320"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",193
-	MVI V18,R0
-	CMPI #5,R0
-	BNE T41
-	MVII #619,R0
-	MVO R0,_screen
-	MVII #7,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2560,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-	MVII #624,R0
-	MVO R0,_screen
-	MVII #7,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2560,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-T41:
-	;[194] 		if power = 5 then print at (SCREENPOS(7, 5)) color CS_GREEN, "\321" : print at (SCREENPOS(12, 5)) color CS_GREEN, "\321"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",194
-	MVI V18,R0
-	CMPI #5,R0
-	BNE T42
-	MVII #619,R0
-	MVO R0,_screen
-	MVII #5,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2568,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-	MVII #624,R0
-	MVO R0,_screen
-	MVII #5,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2568,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-T42:
-	;[195] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",195
-	;[196] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",196
-	CALL _wait
-	;[197] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",197
-	CALL _wait
-	;[198] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",198
-	CALL _wait
-	;[199] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",199
-	MVI V1,R0
-	INCR R0
-	MVO R0,V1
-	CMPI #75,R0
-	BLE T34
-	;[200] 	gosub clearAll
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",200
-	CALL Q31
-	;[201] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",201
-	RETURN
-	ENDP
-	;[202] 
+	;[202] 		
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",202
-	;[203] writescore: procedure
+	;[203] 		print at (SCREENPOS(7, 5)) color CS_RED, (level%10+16)*8+6
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",203
-	; WRITESCORE
-Q36:	PROC
-	BEGIN
-	;[204] 	if #score < 0 then #score = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",204
-	MVI V12,R0
-	CMPI #0,R0
-	BGE T43
-	CLRR R0
-	MVO R0,V12
-T43:
-	;[205] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",205
-	;[206] 	print at (SCREENPOS(16, 2)) color CS_RED, (#score/100%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",206
-	MVII #568,R0
+	MVII #619,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
-	MVI V12,R0
-	MVII #-1,R4
-T44:
-	INCR R4
-	SUBI #100,R0
-	BC T44
-	MOVR R4,R0
+	MVI V19,R0
 T45:
 	SUBI #10,R0
 	BC T45
@@ -4575,22 +4683,297 @@ T45:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[207] 	print at (SCREENPOS(17, 2)) color CS_RED,(#score/10%10+16)*8+6
+	;[204] 		print at (SCREENPOS(12, 5)) color CS_RED, (level%10+16)*8+6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",204
+	MVII #624,R0
+	MVO R0,_screen
+	MVII #2,R0
+	MVO R0,_color
+	MVI V19,R0
+T46:
+	SUBI #10,R0
+	BC T46
+	ADDI #26,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #6,R0
+	MVI _screen,R4
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[205] 		wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",205
+	CALL _wait
+	;[206] 		wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",206
+	CALL _wait
+	;[207] 		wait
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",207
+	CALL _wait
+	;[208] 	next a
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",208
+	MVI V1,R0
+	INCR R0
+	MVO R0,V1
+	CMPI #75,R0
+	BLE T39
+	;[209] 	gosub clearAll
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",209
+	CALL Q32
+	;[210] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",210
+	RETURN
+	ENDP
+	;[211] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",211
+	;[212] powerupAnimation: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",212
+	; POWERUPANIMATION
+Q38:	PROC
+	BEGIN
+	;[213] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",213
+	CALL _wait
+	;[214] 	gosub clearAll
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",214
+	CALL Q32
+	;[215] 	MODE SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",215
+	MVII #20480,R0
+	MVO R0,_color
+	MVII #2,R0
+	MVO R0,_mode_select
+	;[216] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",216
+	CALL _wait
+	;[217] 	for a = 0 to 75
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",217
+	CLRR R0
+	MVO R0,V1
+T47:
+	;[218] 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",218
+	MVI V1,R0
+T49:
+	SUBI #3,R0
+	BC T49
+	ADDI #3,R0
+	BNE T48
+	MVI V17,R0
+	INCR R0
+	ANDI #1,R0
+	MVO R0,V17
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
+	CMPI #4,R0
+	MVII #-1,R0
+	BGE $+3
+	INCR R0
+	MVI V6,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BLE $+3
+	INCR R1
+	COMR R1
+	ANDR R1,R0
+	COMR R1
+	XORR R1,R0
+	BEQ T50
+	MVI V4,R0
+	MVII #65535,R5
+	CLRR R4
+	CLRC
+	RRC R0,1
+	BEQ T52
+T51:
+	BNC $+3
+	ADDR R5,R4
+	ADDR R5,R5
+	SARC R0,1
+	BNE T51
+T52:
+	BNC $+3
+	ADDR R5,R4
+	MOVR R4,R0
+	MVO R0,V4
+T50:
+T48:
+	;[219] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",219
+	;[220] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(3, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_BLUE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",220
+	MVII #1616,R0
+	MVO R0,_mobs
+	MVII #800,R0
+	MVO R0,_mobs+8
+	MVI V6,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #2465,R0
+	MVO R0,_mobs+16
+	;[221] 		
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",221
+	;[222] 		if power = 4 then print at (SCREENPOS(7, 5)) color CS_BLUE, "\319" : print at (SCREENPOS(12, 5)) color CS_BLUE, "\319"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",222
+	MVI V22,R0
+	CMPI #4,R0
+	BNE T53
+	MVII #619,R0
+	MVO R0,_screen
+	MVII #1,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2552,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	MVII #624,R0
+	MVO R0,_screen
+	MVII #1,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2552,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+T53:
+	;[223] 		if power = 5 then print at (SCREENPOS(7, 5)) color CS_WHITE, "\320" : print at (SCREENPOS(12, 5)) color CS_WHITE, "\320"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",223
+	MVI V22,R0
+	CMPI #5,R0
+	BNE T54
+	MVII #619,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2560,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	MVII #624,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2560,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+T54:
+	;[224] 		if power = 6 then print at (SCREENPOS(7, 5)) color CS_GREEN, "\321" : print at (SCREENPOS(12, 5)) color CS_GREEN, "\321"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",224
+	MVI V22,R0
+	CMPI #6,R0
+	BNE T55
+	MVII #619,R0
+	MVO R0,_screen
+	MVII #5,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2568,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	MVII #624,R0
+	MVO R0,_screen
+	MVII #5,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2568,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+T55:
+	;[225] 		
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",225
+	;[226] 		wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",226
+	CALL _wait
+	;[227] 		wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",227
+	CALL _wait
+	;[228] 		wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",228
+	CALL _wait
+	;[229] 	next a
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",229
+	MVI V1,R0
+	INCR R0
+	MVO R0,V1
+	CMPI #75,R0
+	BLE T47
+	;[230] 	gosub clearAll
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",230
+	CALL Q32
+	;[231] 	mode 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",231
+	MVII #3,R0
+	MVO R0,_mode_select
+	;[232] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",232
+	CALL _wait
+	;[233] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",233
+	RETURN
+	ENDP
+	;[234] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",234
+	;[235] writescore: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",235
+	; WRITESCORE
+Q39:	PROC
+	BEGIN
+	;[236] 	if #score < 0 then #score = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",236
+	MVI V16,R0
+	CMPI #0,R0
+	BGE T56
+	CLRR R0
+	MVO R0,V16
+T56:
+	;[237] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",237
+	;[238] 	print at (SCREENPOS(16, 2)) color CS_RED, (#score/100%10+16)*8+6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",238
+	MVII #568,R0
+	MVO R0,_screen
+	MVII #2,R0
+	MVO R0,_color
+	MVI V16,R0
+	MVII #-1,R4
+T57:
+	INCR R4
+	SUBI #100,R0
+	BC T57
+	MOVR R4,R0
+T58:
+	SUBI #10,R0
+	BC T58
+	ADDI #26,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #6,R0
+	MVI _screen,R4
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[239] 	print at (SCREENPOS(17, 2)) color CS_RED,(#score/10%10+16)*8+6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",239
 	MVII #569,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
-	MVI V12,R0
+	MVI V16,R0
 	MVII #-1,R4
-T46:
+T59:
 	INCR R4
 	SUBI #10,R0
-	BC T46
+	BC T59
 	MOVR R4,R0
-T47:
+T60:
 	SUBI #10,R0
-	BC T47
+	BC T60
 	ADDI #26,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -4598,16 +4981,16 @@ T47:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[208] 	print at (SCREENPOS(18, 2)) color CS_RED,(#score%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",208
+	;[240] 	print at (SCREENPOS(18, 2)) color CS_RED,(#score%10+16)*8+6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",240
 	MVII #570,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
-	MVI V12,R0
-T48:
+	MVI V16,R0
+T61:
 	SUBI #10,R0
-	BC T48
+	BC T61
 	ADDI #26,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -4615,23 +4998,23 @@ T48:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[209] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",209
-	;[210] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",210
+	;[241] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",241
+	;[242] 	return
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",242
 	RETURN
-	;[211] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",211
+	;[243] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",243
 	ENDP
-	;[212] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",212
-	;[213] chooseObject: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",213
+	;[244] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",244
+	;[245] chooseObject: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",245
 	; CHOOSEOBJECT
-Q37:	PROC
+Q40:	PROC
 	BEGIN
-	;[214] 	chance = RAND % (percentage(0) + percentage(1) + percentage(2) + percentage(3) + percentage(4))
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",214
+	;[246] 	chance = RAND % (percentage(0) + percentage(1) + percentage(2) + percentage(3) + percentage(4))
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",246
 	MVI Q7,R0
 	MVI Q7+1,R1
 	ADDR R1,R0
@@ -4643,58 +5026,58 @@ Q37:	PROC
 	ADDR R1,R0
 	MVI _rand,R1
 	TSTR R0
-	BEQ T49
-T50:
+	BEQ T62
+T63:
 	SUBR R0,R1
-	BC T50
+	BC T63
 	ADDR R0,R1
-T49:
+T62:
 	MOVR R1,R0
-	MVO R0,V7
-	;[215] 	if chance < percentage(0) then 'nothing chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",215
-	MVI V7,R0
+	MVO R0,V10
+	;[247] 	if chance < percentage(0) then 'nothing chances
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",247
+	MVI V10,R0
 	MVI Q7,R1
 	CMPR R1,R0
-	BGE T51
-	;[216] 		chance = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",216
+	BGE T64
+	;[248] 		chance = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",248
 	CLRR R0
-	MVO R0,V7
-	;[217] 	elseif chance < percentage(0) + percentage(1) then 'rock chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",217
-	B T52
-T51:
+	MVO R0,V10
+	;[249] 	elseif chance < percentage(0) + percentage(1) then 'rock chances
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",249
+	B T65
+T64:
 	MVI Q7,R0
 	MVI Q7+1,R1
 	ADDR R1,R0
-	MVI V7,R1
+	MVI V10,R1
 	CMPR R1,R0
-	BLE T53
-	;[218] 		chance = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",218
+	BLE T66
+	;[250] 		chance = 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",250
 	MVII #1,R0
-	MVO R0,V7
-	;[219] 	elseif chance < percentage(0) + percentage(1) + percentage(2) then 'coin chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",219
-	B T52
-T53:
+	MVO R0,V10
+	;[251] 	elseif chance < percentage(0) + percentage(1) + percentage(2) then 'coin chances
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",251
+	B T65
+T66:
 	MVI Q7,R0
 	MVI Q7+1,R1
 	ADDR R1,R0
 	MVI Q7+2,R1
 	ADDR R1,R0
-	MVI V7,R1
+	MVI V10,R1
 	CMPR R1,R0
-	BLE T54
-	;[220] 		chance = 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",220
+	BLE T67
+	;[252] 		chance = 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",252
 	MVII #2,R0
-	MVO R0,V7
-	;[221] 	elseif chance < percentage(0) + percentage(1) + percentage(2) + percentage(3) then 'apple chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",221
-	B T52
-T54:
+	MVO R0,V10
+	;[253] 	elseif chance < percentage(0) + percentage(1) + percentage(2) + percentage(3) then 'apple chances
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",253
+	B T65
+T67:
 	MVI Q7,R0
 	MVI Q7+1,R1
 	ADDR R1,R0
@@ -4702,17 +5085,17 @@ T54:
 	ADDR R1,R0
 	MVI Q7+3,R1
 	ADDR R1,R0
-	MVI V7,R1
+	MVI V10,R1
 	CMPR R1,R0
-	BLE T55
-	;[222] 		chance = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",222
+	BLE T68
+	;[254] 		chance = 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",254
 	MVII #3,R0
-	MVO R0,V7
-	;[223] 	elseif chance < percentage(0) + percentage(1) + percentage(2) + percentage(3) + percentage(4) then 'apple chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",223
-	B T52
-T55:
+	MVO R0,V10
+	;[255] 	elseif chance < percentage(0) + percentage(1) + percentage(2) + percentage(3) + percentage(4) then 'apple chances
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",255
+	B T65
+T68:
 	MVI Q7,R0
 	MVI Q7+1,R1
 	ADDR R1,R0
@@ -4722,125 +5105,144 @@ T55:
 	ADDR R1,R0
 	MVI Q7+4,R1
 	ADDR R1,R0
-	MVI V7,R1
+	MVI V10,R1
 	CMPR R1,R0
-	BLE T56
-	;[224] 		chance = RAND%3 + 4 'Powerup
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",224
+	BLE T69
+	;[256] 		chance = RAND%3 + 4 'Powerup
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",256
 	MVI _rand,R0
-T57:
+T70:
 	SUBI #3,R0
-	BC T57
+	BC T70
 	ADDI #7,R0
-	MVO R0,V7
-	;[225] 	else
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",225
-	B T52
-T56:
-	;[226] 		chance = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",226
+	MVO R0,V10
+	;[257] 	else
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",257
+	B T65
+T69:
+	;[258] 		chance = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",258
 	CLRR R0
-	MVO R0,V7
-	;[227] 	end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",227
-T52:
-	;[228] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",228
-	;[229] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",229
+	MVO R0,V10
+	;[259] 	end if
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",259
+T65:
+	;[260] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",260
+	;[261] 	if invisible > 0 AND a = 1 then chance = 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",261
+	MVI V7,R0
+	CMPI #0,R0
+	MVII #-1,R0
+	BGT $+3
+	INCR R0
+	MVI V1,R1
+	CMPI #1,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T71
+	MVII #2,R0
+	MVO R0,V10
+T71:
+	;[262] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",262
+	;[263] 	return
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",263
 	RETURN
-	;[230] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",230
+	;[264] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",264
 	ENDP
-	;[231] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",231
-	;[232] drawObjects: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",232
+	;[265] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",265
+	;[266] drawObjects: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",266
 	; DRAWOBJECTS
-Q29:	PROC
+Q30:	PROC
 	BEGIN
-	;[233] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",233
-	;[234] 	for a = 0 to 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",234
+	;[267] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",267
+	;[268] 	for a = 0 to 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",268
 	CLRR R0
 	MVO R0,V1
-T58:
-	;[235] 		if (#univclock % (7-dificulty)) = 0 then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",235
-	MVI V16,R0
-	MVII #7,R1
-	SUB V8,R1
-	BEQ T60
-T61:
+T72:
+	;[269] 		if (#univclock % (highestDifficulty-dificulty)) = 0 then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",269
+	MVI V20,R0
+	MVI V13,R1
+	SUB V11,R1
+	BEQ T74
+T75:
 	SUBR R1,R0
-	BC T61
+	BC T75
 	ADDR R1,R0
-T60:
+T74:
 	TSTR R0
-	BNE T59
-	;[236] 			objectY(a) = (objectY(a) + 1) % 8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",236
+	BNE T73
+	;[270] 			objectY(a) = (objectY(a) + 1) % 8
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",270
 	MVII #Q4,R3
 	ADD V1,R3
 	MVI@ R3,R0
 	INCR R0
 	ANDI #7,R0
 	MVO@ R0,R3
-	;[237] 			if objectY(a) = 0 then gosub chooseObject : object(a) = chance
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",237
+	;[271] 			if objectY(a) = 0 then gosub chooseObject : object(a) = chance
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",271
 	MVI@ R3,R0
 	TSTR R0
-	BNE T62
-	CALL Q37
-	MVI V7,R0
+	BNE T76
+	CALL Q40
+	MVI V10,R0
 	MVII #Q5,R3
 	ADD V1,R3
 	MVO@ R0,R3
-T62:
-	;[238] 		end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",238
-T59:
-	;[239] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",239
-	;[240] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",240
+T76:
+	;[272] 		end if
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",272
+T73:
+	;[273] 		
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",273
+	;[274] 	next a
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",274
 	MVI V1,R0
 	INCR R0
 	MVO R0,V1
 	CMPI #2,R0
-	BLE T58
-	;[241] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",241
-	;[242] 	objectX(0) = 4 - objectY(0)/2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",242
+	BLE T72
+	;[275] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",275
+	;[276] 	objectX(0) = 4 - objectY(0)/2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",276
 	MVII #4,R0
 	MVI Q4,R1
 	SLR R1,1
 	SUBR R1,R0
 	MVO R0,Q3
-	;[243] 	objectX(2) = 9 + objectY(2)/2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",243
+	;[277] 	objectX(2) = 9 + objectY(2)/2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",277
 	MVI Q4+2,R0
 	SLR R0,1
 	ADDI #9,R0
 	MVO R0,Q3+2
-	;[244] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",244
-	;[245] 	for a = 1 to 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",245
+	;[278] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",278
+	;[279] 	for a = 1 to 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",279
 	MVII #1,R0
 	MVO R0,V1
-T63:
-	;[246] 		if object(a - 1) >= 4 then
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",246
+T77:
+	;[280] 		if object(a - 1) >= 4 then
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",280
 	MVII #Q5-1,R3
 	ADD V1,R3
 	MVI@ R3,R0
 	CMPI #4,R0
-	BLT T64
-	;[247] 			SPRITE a, SpritePosX(objectX(a - 1), 0) + VISIBLE, SpritePosY(4 + objectY(a - 1), 0) + ZOOMY2, SPR62 + (object(a - 1) - 3)* 8 + #objectColor(object(a - 1))
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",247
+	BLT T78
+	;[281] 			SPRITE a, SpritePosX(objectX(a - 1), 0) + VISIBLE, SpritePosY(4 + objectY(a - 1), 0) + ZOOMY2, SPR62 + (object(a - 1) - 3)* 8 + #objectColor(object(a - 1))
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",281
 	MVII #Q1,R0
 	ADD V1,R0
 	MOVR R0,R4
@@ -4870,18 +5272,18 @@ T63:
 	ADD@ R1,R0
 	ADDI #7,R4
 	MVO@ R0,R4
-	;[248] 			'if object(a - 1) = 4 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\319"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",248
-	;[249] 			'if object(a - 1) = 5 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\320"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",249
-	;[250] 			'if object(a - 1) = 6 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\321"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",250
-	;[251] 		else
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",251
-	B T65
-T64:
-	;[252] 			SPRITE a, SpritePosX(objectX(a - 1), 0) + VISIBLE, SpritePosY(4 + objectY(a - 1), 0) + ZOOMY2, SPR62 + object(a - 1) * 8 + #objectColor(object(a - 1))
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",252
+	;[282] 			'if object(a - 1) = 4 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\319"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",282
+	;[283] 			'if object(a - 1) = 5 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\320"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",283
+	;[284] 			'if object(a - 1) = 6 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\321"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",284
+	;[285] 		else
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",285
+	B T79
+T78:
+	;[286] 			SPRITE a, SpritePosX(objectX(a - 1), 0) + VISIBLE, SpritePosY(4 + objectY(a - 1), 0) + ZOOMY2, SPR62 + object(a - 1) * 8 + #objectColor(object(a - 1))
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",286
 	MVII #Q1,R0
 	ADD V1,R0
 	MOVR R0,R4
@@ -4911,204 +5313,280 @@ T64:
 	ADD@ R1,R0
 	ADDI #7,R4
 	MVO@ R0,R4
-	;[253] 		end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",253
-T65:
-	;[254] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",254
+	;[287] 		end if
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",287
+T79:
+	;[288] 	next a
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",288
 	MVI V1,R0
 	INCR R0
 	MVO R0,V1
 	CMPI #3,R0
-	BLE T63
-	;[255] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",255
-	;[256] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",256
+	BLE T77
+	;[289] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",289
+	;[290] 	return
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",290
 	RETURN
-	;[257] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",257
+	;[291] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",291
 	ENDP
-	;[258] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",258
-	;[259] drawPlayer: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",259
+	;[292] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",292
+	;[293] drawPlayer: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",293
 	; DRAWPLAYER
-Q30:	PROC
+Q31:	PROC
 	BEGIN
-	;[260] 	if cont1.left AND #univclock%3 = 0 then playerX = playerX - 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",260
+	;[294] 	if cont1.left AND #univclock%3 = 0 then playerX = playerX - 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",294
 	MVI 511,R0
 	COMR R0
 	ANDI #8,R0
-	MVI V16,R1
-T67:
+	MVI V20,R1
+T81:
 	SUBI #3,R1
-	BC T67
+	BC T81
 	ADDI #3,R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T66
+	BEQ T80
 	MVI V2,R0
 	DECR R0
 	MVO R0,V2
-T66:
-	;[261] 	if cont1.right AND #univclock%3 = 0 then playerX = playerX + 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",261
+T80:
+	;[295] 	if cont1.right AND #univclock%3 = 0 then playerX = playerX + 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",295
 	MVI 511,R0
 	COMR R0
 	ANDI #2,R0
-	MVI V16,R1
-T69:
+	MVI V20,R1
+T83:
 	SUBI #3,R1
-	BC T69
+	BC T83
 	ADDI #3,R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T68
+	BEQ T82
 	MVI V2,R0
 	INCR R0
 	MVO R0,V2
-T68:
-	;[262] 	if cont1.up AND #univclock%3 = 0 AND playerY = 10 then jump = 5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",262
+T82:
+	;[296] 	if cont1.up AND #univclock%3 = 0 AND playerY = 10 then jump = 5
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",296
 	MVI 511,R0
 	COMR R0
 	ANDI #4,R0
-	MVI V16,R1
-T71:
+	MVI V20,R1
+T85:
 	SUBI #3,R1
-	BC T71
+	BC T85
 	ADDI #3,R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	MVI V4,R1
+	MVI V5,R1
 	CMPI #10,R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T70
+	BEQ T84
 	MVII #5,R0
-	MVO R0,V11
-T70:
-	;[263] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",263
-	;[264] 	playerX = playerX % 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",264
+	MVO R0,V15
+T84:
+	;[297] 	if cont1.B0 AND #univclock%3 = 0 then scene = 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",297
+	MVI 511,R0
+	COMR R0
+	ANDI #224,R0
+	CMPI #160,R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V20,R1
+T87:
+	SUBI #3,R1
+	BC T87
+	ADDI #3,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T86
+	MVII #3,R0
+	MVO R0,V14
+T86:
+	;[298] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",298
+	;[299] 	playerX = playerX % 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",299
 	MVI V2,R0
-T72:
+T88:
 	SUBI #3,R0
-	BC T72
+	BC T88
 	ADDI #3,R0
 	MVO R0,V2
-	;[265] 	if #univclock%(7-dificulty) = 0 AND jump > 0 then playerY = 10 - jump + 2: jump = jump - 1 : playerF = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",265
-	MVI V16,R0
-	MVII #7,R1
-	SUB V8,R1
-	BEQ T74
-T75:
+	;[300] 	if #univclock%(highestDifficulty-dificulty) = 0 AND jump > 0 then playerY = 10 - jump + 2: jump = jump - 1 : playerF = 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",300
+	MVI V20,R0
+	MVI V13,R1
+	SUB V11,R1
+	BEQ T90
+T91:
 	SUBR R1,R0
-	BC T75
+	BC T91
 	ADDR R1,R0
-T74:
+T90:
 	TSTR R0
 	MVII #-1,R0
 	BEQ $+3
 	INCR R0
-	MVI V11,R1
+	MVI V15,R1
 	CMPI #0,R1
 	MVII #-1,R1
 	BGT $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T73
+	BEQ T89
 	MVII #10,R0
-	SUB V11,R0
+	SUB V15,R0
 	ADDI #2,R0
-	MVO R0,V4
-	MVI V11,R0
-	DECR R0
-	MVO R0,V11
-	MVII #3,R0
 	MVO R0,V5
-T73:
-	;[266] 	if #univclock%(7-dificulty) = 0 AND invisible > 0 then playerY = 8: invisible = invisible - 1 : playerF = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",266
-	MVI V16,R0
-	MVII #7,R1
-	SUB V8,R1
-	BEQ T77
-T78:
+	MVI V15,R0
+	DECR R0
+	MVO R0,V15
+	MVII #3,R0
+	MVO R0,V6
+T89:
+	;[301] 	if #univclock%(highestDifficulty-dificulty) = 0 AND invisible > 0 then playerY = 8: invisible = invisible - 1 : playerF = 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",301
+	MVI V20,R0
+	MVI V13,R1
+	SUB V11,R1
+	BEQ T93
+T94:
 	SUBR R1,R0
-	BC T78
+	BC T94
 	ADDR R1,R0
-T77:
+T93:
 	TSTR R0
 	MVII #-1,R0
 	BEQ $+3
 	INCR R0
-	MVI V6,R1
+	MVI V7,R1
 	CMPI #0,R1
 	MVII #-1,R1
 	BGT $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T76
+	BEQ T92
 	MVII #8,R0
-	MVO R0,V4
-	MVI V6,R0
-	DECR R0
-	MVO R0,V6
-	MVII #3,R0
 	MVO R0,V5
-T76:
-	;[267] 	if #univclock%(7-dificulty) = 0 AND jump = 0 AND invisible = 0 then playerY = 10: playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",267
-	MVI V16,R0
-	MVII #7,R1
-	SUB V8,R1
-	BEQ T80
-T81:
+	MVI V7,R0
+	DECR R0
+	MVO R0,V7
+	MVII #3,R0
+	MVO R0,V6
+T92:
+	;[302] 	if #univclock%(highestDifficulty-dificulty) = 0 AND bonus_lives > 0 then gosub add_lives : bonus_lives = bonus_lives - 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",302
+	MVI V20,R0
+	MVI V13,R1
+	SUB V11,R1
+	BEQ T96
+T97:
 	SUBR R1,R0
-	BC T81
+	BC T97
 	ADDR R1,R0
-T80:
+T96:
 	TSTR R0
 	MVII #-1,R0
 	BEQ $+3
 	INCR R0
-	MVI V11,R1
+	MVI V9,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BGT $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T95
+	CALL Q43
+	MVI V9,R0
+	DECR R0
+	MVO R0,V9
+T95:
+	;[303] 	if #univclock%(highestDifficulty-dificulty) = 0 AND bonus_exp > 0 then gosub add_points : bonus_exp = bonus_exp - 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",303
+	MVI V20,R0
+	MVI V13,R1
+	SUB V11,R1
+	BEQ T99
+T100:
+	SUBR R1,R0
+	BC T100
+	ADDR R1,R0
+T99:
+	TSTR R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V8,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BGT $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T98
+	CALL Q44
+	MVI V8,R0
+	DECR R0
+	MVO R0,V8
+T98:
+	;[304] 	if #univclock%(highestDifficulty-dificulty) = 0 AND jump = 0 AND invisible = 0 then playerY = 10: playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",304
+	MVI V20,R0
+	MVI V13,R1
+	SUB V11,R1
+	BEQ T102
+T103:
+	SUBR R1,R0
+	BC T103
+	ADDR R1,R0
+T102:
+	TSTR R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V15,R1
 	TSTR R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	MVI V6,R1
+	MVI V7,R1
 	TSTR R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T79
+	BEQ T101
 	MVII #10,R0
-	MVO R0,V4
-	MVI V5,R0
-	ADD V3,R0
 	MVO R0,V5
-	MVI V5,R0
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
 	CMPI #4,R0
 	MVII #-1,R0
 	BGE $+3
 	INCR R0
-	MVI V5,R1
+	MVI V6,R1
 	CMPI #0,R1
 	MVII #-1,R1
 	BLE $+3
@@ -5117,35 +5595,74 @@ T80:
 	ANDR R1,R0
 	COMR R1
 	XORR R1,R0
-	BEQ T82
-	MVI V3,R0
+	BEQ T104
+	MVI V4,R0
 	MVII #65535,R5
 	CLRR R4
 	CLRC
 	RRC R0,1
-	BEQ T84
-T83:
+	BEQ T106
+T105:
 	BNC $+3
 	ADDR R5,R4
 	ADDR R5,R5
 	SARC R0,1
-	BNE T83
-T84:
+	BNE T105
+T106:
 	BNC $+3
 	ADDR R5,R4
 	MOVR R4,R0
-	MVO R0,V3
-T82:
-T79:
-	;[268] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",268
-	;[269] 	if invisible > 0 then
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",269
-	MVI V6,R0
+	MVO R0,V4
+T104:
+T101:
+	;[305] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",305
+	;[306] 	if invisible > 0 then
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",306
+	MVI V7,R0
 	CMPI #0,R0
-	BLE T85
-	;[270] 		SPRITE 0, SpritePosX(2 + 4 * playerX, 0) + VISIBLE + ZOOMX2, SpritePosY(playerY, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_BLUE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",270
+	BLE T107
+	;[307] 		#playerColor = SPR_BLUE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",307
+	MVII #1,R0
+	MVO R0,V3
+	;[308] 	elseif bonus_lives > 0 then
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",308
+	B T108
+T107:
+	MVI V9,R0
+	CMPI #0,R0
+	BLE T109
+	;[309] 		#playerColor = SPR_GREEN
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",309
+	MVII #5,R0
+	MVO R0,V3
+	;[310] 	elseif bonus_exp > 0 then
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",310
+	B T108
+T109:
+	MVI V8,R0
+	CMPI #0,R0
+	BLE T110
+	;[311] 		#playerColor = SPR_BLACK
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",311
+	CLRR R0
+	MVO R0,V3
+	;[312] 	else 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",312
+	B T108
+T110:
+	;[313] 		#playerColor = SPR_RED
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",313
+	MVII #2,R0
+	MVO R0,V3
+	;[314] 	end if
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",314
+T108:
+	;[315] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",315
+	;[316] 	SPRITE 0, SpritePosX(2 + 4 * playerX, 0) + VISIBLE + ZOOMX2, SpritePosY(playerY, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + #playerColor
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",316
 	MVI V2,R0
 	SLL R0,2
 	ADDI #3,R0
@@ -5153,62 +5670,36 @@ T79:
 	ADDR R0,R0
 	ADDI #1536,R0
 	MVO R0,_mobs
-	MVI V4,R0
+	MVI V5,R0
 	INCR R0
 	SLL R0,2
 	ADDR R0,R0
 	ADDI #768,R0
 	MVO R0,_mobs+8
-	MVI V5,R0
+	MVI V6,R0
 	SLL R0,2
 	ADDR R0,R0
-	ADDI #2465,R0
+	ADDI #2464,R0
+	ADD V3,R0
 	MVO R0,_mobs+16
-	;[271] 	else
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",271
-	B T86
-T85:
-	;[272] 		SPRITE 0, SpritePosX(2 + 4 * playerX, 0) + VISIBLE + ZOOMX2, SpritePosY(playerY, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",272
-	MVI V2,R0
-	SLL R0,2
-	ADDI #3,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #1536,R0
-	MVO R0,_mobs
-	MVI V4,R0
-	INCR R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #768,R0
-	MVO R0,_mobs+8
-	MVI V5,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #2466,R0
-	MVO R0,_mobs+16
-	;[273] 	end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",273
-T86:
-	;[274] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",274
-	;[275] 	for a = 0 to 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",275
+	;[317] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",317
+	;[318] 	for a = 0 to 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",318
 	CLRR R0
 	MVO R0,V1
-T87:
-	;[276] 		if (#univclock%(7-dificulty) = 0 AND 4 + objectY(a) = playerY AND objectX(playerX) = objectX(a) AND jump = 0)then
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",276
-	MVI V16,R0
-	MVII #7,R1
-	SUB V8,R1
-	BEQ T89
-T90:
+T111:
+	;[319] 		if (#univclock%(highestDifficulty-dificulty) = 0 AND 4 + objectY(a) = playerY AND objectX(playerX) = objectX(a) AND jump = 0)then
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",319
+	MVI V20,R0
+	MVI V13,R1
+	SUB V11,R1
+	BEQ T113
+T114:
 	SUBR R1,R0
-	BC T90
+	BC T114
 	ADDR R1,R0
-T89:
+T113:
 	TSTR R0
 	MVII #-1,R0
 	BEQ $+3
@@ -5217,7 +5708,7 @@ T89:
 	ADD V1,R3
 	MVI@ R3,R1
 	ADDI #4,R1
-	CMP V4,R1
+	CMP V5,R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
@@ -5232,177 +5723,175 @@ T89:
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	MVI V11,R1
+	MVI V15,R1
 	TSTR R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T88
-	;[277] 			if object(a) = 1 AND invisible = 0 then lives = lives - 1 : gosub lose_points 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",277
+	BEQ T112
+	;[320] 			if object(a) = 1 AND invisible = 0 then lives = lives - 1 : gosub lose_points 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",320
 	ADDI #(Q5-Q3) AND $FFFF,R3
 	MVI@ R3,R0
 	CMPI #1,R0
 	MVII #-1,R0
 	BEQ $+3
 	INCR R0
-	MVI V6,R1
+	MVI V7,R1
 	TSTR R1
 	MVII #-1,R1
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T91
-	MVI V14,R0
+	BEQ T115
+	MVI V18,R0
 	DECR R0
-	MVO R0,V14
-	CALL Q40
-T91:
-	;[278] 			if object(a) = 2 then gosub add_points : gosub writescore
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",278
+	MVO R0,V18
+	CALL Q45
+T115:
+	;[321] 			if object(a) = 2 then gosub add_points : gosub writescore
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",321
 	MVII #Q5,R3
 	ADD V1,R3
 	MVI@ R3,R0
 	CMPI #2,R0
-	BNE T92
-	CALL Q41
-	CALL Q36
-T92:
-	;[279] 			if object(a) = 3 then gosub add_points : lives = lives + 1 : gosub writescore : gosub drawhearts
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",279
+	BNE T116
+	CALL Q44
+	CALL Q39
+T116:
+	;[322] 			if object(a) = 3 then gosub add_points : #score = #score + 1 : lives = lives + 1 : gosub writescore : gosub drawhearts
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",322
 	MVII #Q5,R3
 	ADD V1,R3
 	MVI@ R3,R0
 	CMPI #3,R0
-	BNE T93
-	CALL Q41
-	MVI V14,R0
+	BNE T117
+	CALL Q44
+	MVI V16,R0
 	INCR R0
-	MVO R0,V14
-	CALL Q36
-	CALL Q42
-T93:
-	;[280] 			if object(a) = 4 then invisible = 20 : power = 4 : gosub powerupAnimation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",280
+	MVO R0,V16
+	MVI V18,R0
+	INCR R0
+	MVO R0,V18
+	CALL Q39
+	CALL Q46
+T117:
+	;[323] 			if object(a) = 4 then invisible = 35 : power = 4 : gosub powerupAnimation
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",323
 	MVII #Q5,R3
 	ADD V1,R3
 	MVI@ R3,R0
 	CMPI #4,R0
-	BNE T94
-	MVII #20,R0
-	MVO R0,V6
+	BNE T118
+	MVII #35,R0
+	MVO R0,V7
 	MVII #4,R0
-	MVO R0,V18
-	CALL Q35
-T94:
-	;[281] 			if object(a) = 5 then gosub add_points : #score = #score + 50 : gosub writescore : power = 5 : gosub powerupAnimation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",281
+	MVO R0,V22
+	CALL Q38
+T118:
+	;[324] 			if object(a) = 5 then bonus_exp = 5 : power = 5 : gosub powerupAnimation
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",324
 	MVII #Q5,R3
 	ADD V1,R3
 	MVI@ R3,R0
 	CMPI #5,R0
-	BNE T95
-	CALL Q41
-	MVI V12,R0
-	ADDI #50,R0
-	MVO R0,V12
-	CALL Q36
+	BNE T119
 	MVII #5,R0
-	MVO R0,V18
-	CALL Q35
-T95:
-	;[282] 			if object(a) = 6 then gosub add_points : lives = lives + 5 : gosub writescore : gosub drawhearts : power = 6 : gosub powerupAnimation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",282
+	MVO R0,V8
+	MVO R0,V22
+	CALL Q38
+T119:
+	;[325] 			if object(a) = 6 then gosub add_points : bonus_lives = 5 : power = 6 : gosub powerupAnimation
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",325
 	MVII #Q5,R3
 	ADD V1,R3
 	MVI@ R3,R0
 	CMPI #6,R0
-	BNE T96
-	CALL Q41
-	MVI V14,R0
-	ADDI #5,R0
-	MVO R0,V14
-	CALL Q36
-	CALL Q42
+	BNE T120
+	CALL Q44
+	MVII #5,R0
+	MVO R0,V9
 	MVII #6,R0
-	MVO R0,V18
-	CALL Q35
-T96:
-	;[283] 		end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",283
-T88:
-	;[284] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",284
-	;[285] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",285
+	MVO R0,V22
+	CALL Q38
+T120:
+	;[326] 		end if
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",326
+T112:
+	;[327] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",327
+	;[328] 	next a
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",328
 	MVI V1,R0
 	INCR R0
 	MVO R0,V1
 	CMPI #2,R0
-	BLE T87
-	;[286] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",286
+	BLE T111
+	;[329] 	return
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",329
 	RETURN
-	;[287] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",287
+	;[330] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",330
 	ENDP
-	;[288] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",288
-	;[289] drawhearts: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",289
+	;[331] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",331
+	;[332] drawhearts: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",332
 	; DRAWHEARTS
-Q42:	PROC
+Q46:	PROC
 	BEGIN
-	;[290] 	if #univclock%10 = 0 then heartrate = (heartrate + 1) % 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",290
-	MVI V16,R0
-T98:
-	SUBI #10,R0
-	BC T98
-	ADDI #10,R0
-	BNE T97
-	MVI V13,R0
+	;[333] 	if #univclock%7 = 0 then heartrate = (heartrate + 1) % 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",333
+	MVI V20,R0
+T122:
+	SUBI #7,R0
+	BC T122
+	ADDI #7,R0
+	BNE T121
+	MVI V17,R0
 	INCR R0
 	ANDI #1,R0
-	MVO R0,V13
-T97:
-	;[291] 	if heartrate then SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR57 + SPR_RED else SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR58 + SPR_RED
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",291
-	MVI V13,R0
+	MVO R0,V17
+T121:
+	;[334] 	if heartrate then SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR57 + #playerColor else SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR58 + #playerColor
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",334
+	MVI V17,R0
 	TSTR R0
-	BEQ T99
+	BEQ T123
 	MVII #648,R0
 	MVO R0,_mobs+4
 	MVII #304,R0
 	MVO R0,_mobs+12
-	MVII #2506,R0
+	MVII #2504,R0
+	ADD V3,R0
 	MVO R0,_mobs+20
-	B T100
-T99:
+	B T124
+T123:
 	MVII #648,R0
 	MVO R0,_mobs+4
 	MVII #304,R0
 	MVO R0,_mobs+12
-	MVII #2514,R0
+	MVII #2512,R0
+	ADD V3,R0
 	MVO R0,_mobs+20
-T100:
-	;[292] 	print at (SCREENPOS(17, 5)) color CS_RED,(lives/10%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",292
+T124:
+	;[335] 	print at (SCREENPOS(17, 5)) color CS_RED,(lives/10%10+16)*8+6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",335
 	MVII #629,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
-	MVI V14,R0
+	MVI V18,R0
 	MVII #-1,R4
-T101:
+T125:
 	INCR R4
 	SUBI #10,R0
-	BC T101
+	BC T125
 	MOVR R4,R0
-T102:
+T126:
 	SUBI #10,R0
-	BC T102
+	BC T126
 	ADDI #26,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -5410,16 +5899,16 @@ T102:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[293] 	print at (SCREENPOS(18, 5)) color CS_RED,(lives%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",293
+	;[336] 	print at (SCREENPOS(18, 5)) color CS_RED,(lives%10+16)*8+6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",336
 	MVII #630,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
-	MVI V14,R0
-T103:
+	MVI V18,R0
+T127:
 	SUBI #10,R0
-	BC T103
+	BC T127
 	ADDI #26,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -5427,31 +5916,31 @@ T103:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[294] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",294
+	;[337] 	return
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",337
 	RETURN
-	;[295] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",295
+	;[338] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",338
 	ENDP
-	;[296] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",296
-	;[297] writelevel: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",297
+	;[339] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",339
+	;[340] writelevel: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",340
 	; WRITELEVEL
-Q44:	PROC
+Q48:	PROC
 	BEGIN
-	;[298] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",298
-	;[299] 	print at (SCREENPOS(17, 8)) color CS_RED, (level%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",299
+	;[341] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",341
+	;[342] 	print at (SCREENPOS(17, 8)) color CS_RED, (level%10+16)*8+6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",342
 	MVII #689,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
-	MVI V15,R0
-T104:
+	MVI V19,R0
+T128:
 	SUBI #10,R0
-	BC T104
+	BC T128
 	ADDI #26,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -5459,383 +5948,383 @@ T104:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[300] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",300
-	;[301] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",301
-	RETURN
-	;[302] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",302
-	ENDP
-	;[303] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",303
-	;[304] determinelevel: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",304
-	; DETERMINELEVEL
-Q27:	PROC
-	BEGIN
-	;[305] 	if(level = 1) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",305
-	MVI V15,R0
-	CMPI #1,R0
-	BNE T105
-	;[306] 		dificulty=2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",306
-	MVII #2,R0
-	MVO R0,V8
-	;[307] 		#maximunScore = 100
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",307
-	MVII #100,R0
-	MVO R0,V9
-	;[308] 		percentage(0) = 20
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",308
-	MVII #20,R0
-	MVO R0,Q7
-	;[309] 		percentage(1) = 20
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",309
-	MVO R0,Q7+1
-	;[310] 		percentage(2) = 48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",310
-	MVII #48,R0
-	MVO R0,Q7+2
-	;[311] 		percentage(3) = 10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",311
-	MVII #10,R0
-	MVO R0,Q7+3
-	;[312] 		percentage(4) = 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",312
-	MVII #2,R0
-	MVO R0,Q7+4
-	;[313] 	elseif(level = 2) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",313
-	B T106
-T105:
-	MVI V15,R0
-	CMPI #2,R0
-	BNE T107
-	;[314] 		dificulty=2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",314
-	MVII #2,R0
-	MVO R0,V8
-	;[315] 		#maximunScore = 110
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",315
-	MVII #110,R0
-	MVO R0,V9
-	;[316] 		percentage(0) = 25
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",316
-	MVII #25,R0
-	MVO R0,Q7
-	;[317] 		percentage(1) = 25
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",317
-	MVO R0,Q7+1
-	;[318] 		percentage(2) = 38
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",318
-	MVII #38,R0
-	MVO R0,Q7+2
-	;[319] 		percentage(3) = 10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",319
-	MVII #10,R0
-	MVO R0,Q7+3
-	;[320] 		percentage(4) = 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",320
-	MVII #2,R0
-	MVO R0,Q7+4
-	;[321] 	elseif(level = 3) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",321
-	B T106
-T107:
-	MVI V15,R0
-	CMPI #3,R0
-	BNE T108
-	;[322] 		dificulty=2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",322
-	MVII #2,R0
-	MVO R0,V8
-	;[323] 		#maximunScore = 130
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",323
-	MVII #130,R0
-	MVO R0,V9
-	;[324] 		percentage(0) = 38
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",324
-	MVII #38,R0
-	MVO R0,Q7
-	;[325] 		percentage(1) = 23
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",325
-	MVII #23,R0
-	MVO R0,Q7+1
-	;[326] 		percentage(2) = 23
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",326
-	MVO R0,Q7+2
-	;[327] 		percentage(3) = 10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",327
-	MVII #10,R0
-	MVO R0,Q7+3
-	;[328] 		percentage(4) = 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",328
-	MVII #2,R0
-	MVO R0,Q7+4
-	;[329] 	elseif(level = 4) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",329
-	B T106
-T108:
-	MVI V15,R0
-	CMPI #4,R0
-	BNE T109
-	;[330] 		dificulty=2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",330
-	MVII #2,R0
-	MVO R0,V8
-	;[331] 		#maximunScore = 150
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",331
-	MVII #150,R0
-	MVO R0,V9
-	;[332] 		percentage(0) = 47
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",332
-	MVII #47,R0
-	MVO R0,Q7
-	;[333] 		percentage(1) = 23
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",333
-	MVII #23,R0
-	MVO R0,Q7+1
-	;[334] 		percentage(2) = 23
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",334
-	MVO R0,Q7+2
-	;[335] 		percentage(3) = 7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",335
-	MVII #7,R0
-	MVO R0,Q7+3
-	;[336] 		percentage(4) = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",336
-	MVII #3,R0
-	MVO R0,Q7+4
-	;[337] 	elseif(level = 5) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",337
-	B T106
-T109:
-	MVI V15,R0
-	CMPI #5,R0
-	BNE T110
-	;[338] 		dificulty=2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",338
-	MVII #2,R0
-	MVO R0,V8
-	;[339] 		#maximunScore = 250
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",339
-	MVII #250,R0
-	MVO R0,V9
-	;[340] 		percentage(0) = 47
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",340
-	MVII #47,R0
-	MVO R0,Q7
-	;[341] 		percentage(1) = 26
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",341
-	MVII #26,R0
-	MVO R0,Q7+1
-	;[342] 		percentage(2) = 20
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",342
-	MVII #20,R0
-	MVO R0,Q7+2
-	;[343] 		percentage(3) = 7
+	;[343] 
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",343
-	MVII #7,R0
-	MVO R0,Q7+3
-	;[344] 		percentage(4) = 3
+	;[344] 	return
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",344
-	MVII #3,R0
-	MVO R0,Q7+4
-	;[345] 	elseif(level = 6) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",345
-	B T106
-T110:
-	MVI V15,R0
-	CMPI #6,R0
-	BNE T111
-	;[346] 		dificulty=2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",346
-	MVII #2,R0
-	MVO R0,V8
-	;[347] 		#maximunScore = 500
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",347
-	MVII #500,R0
-	MVO R0,V9
-	;[348] 		percentage(0) = 50
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",348
-	MVII #50,R0
-	MVO R0,Q7
-	;[349] 		percentage(1) = 30
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",349
-	MVII #30,R0
-	MVO R0,Q7+1
-	;[350] 		percentage(2) = 20
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",350
-	MVII #20,R0
-	MVO R0,Q7+2
-	;[351] 		percentage(3) = 7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",351
-	MVII #7,R0
-	MVO R0,Q7+3
-	;[352] 		percentage(4) = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",352
-	MVII #3,R0
-	MVO R0,Q7+4
-	;[353] 	elseif(level = 7) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",353
-	B T106
-T111:
-	MVI V15,R0
-	CMPI #7,R0
-	BNE T112
-	;[354] 		dificulty=3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",354
-	MVII #3,R0
-	MVO R0,V8
-	;[355] 		#maximunScore = 650
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",355
-	MVII #650,R0
-	MVO R0,V9
-	;[356] 		percentage(0) = 46
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",356
-	MVII #46,R0
-	MVO R0,Q7
-	;[357] 		percentage(1) = 23
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",357
-	MVII #23,R0
-	MVO R0,Q7+1
-	;[358] 		percentage(2) = 23
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",358
-	MVO R0,Q7+2
-	;[359] 		percentage(3) = 5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",359
-	MVII #5,R0
-	MVO R0,Q7+3
-	;[360] 		percentage(4) = 4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",360
-	MVII #4,R0
-	MVO R0,Q7+4
-	;[361] 	elseif(level = 8) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",361
-	B T106
-T112:
-	MVI V15,R0
-	CMPI #8,R0
-	BNE T113
-	;[362] 		dificulty=3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",362
-	MVII #3,R0
-	MVO R0,V8
-	;[363] 		#maximunScore = 750
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",363
-	MVII #750,R0
-	MVO R0,V9
-	;[364] 		percentage(0) = 31
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",364
-	MVII #31,R0
-	MVO R0,Q7
-	;[365] 		percentage(1) = 31
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",365
-	MVO R0,Q7+1
-	;[366] 		percentage(2) = 31
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",366
-	NOP
-	MVO R0,Q7+2
-	;[367] 		percentage(3) = 5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",367
-	MVII #5,R0
-	MVO R0,Q7+3
-	;[368] 		percentage(4) = 4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",368
-	MVII #4,R0
-	MVO R0,Q7+4
-	;[369] 	elseif(level = 9) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",369
-	B T106
-T113:
-	MVI V15,R0
-	CMPI #9,R0
-	BNE T114
-	;[370] 		dificulty=3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",370
-	MVII #3,R0
-	MVO R0,V8
-	;[371] 		#maximunScore = 1000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",371
-	MVII #1000,R0
-	MVO R0,V9
-	;[372] 		percentage(0) = 32
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",372
-	MVII #32,R0
-	MVO R0,Q7
-	;[373] 		percentage(1) = 33
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",373
-	MVII #33,R0
-	MVO R0,Q7+1
-	;[374] 		percentage(2) = 25
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",374
-	MVII #25,R0
-	MVO R0,Q7+2
-	;[375] 		percentage(3) = 4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",375
-	MVII #4,R0
-	MVO R0,Q7+3
-	;[376] 		percentage(4) = 4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",376
-	MVO R0,Q7+4
-	;[377] 		lives = 10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",377
-	MVII #10,R0
-	MVO R0,V14
-	;[378] 	else
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",378
-	B T106
-T114:
-	;[379] 		level = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",379
-	MVII #1,R0
-	MVO R0,V15
-	;[380] 		gosub determinelevel
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",380
-	CALL Q27
-	;[381] 	end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",381
-T106:
-	;[382] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",382
 	RETURN
+	;[345] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",345
 	ENDP
-	;[383] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",383
-	;[384] background: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",384
-	; BACKGROUND
+	;[346] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",346
+	;[347] determinelevel: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",347
+	; DETERMINELEVEL
 Q28:	PROC
 	BEGIN
-	;[385] 	IF (#univclock % 4) = 0 then street_lineY = (street_lineY + 1) % 7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",385
-	MVI V16,R0
-	ANDI #3,R0
-	BNE T115
-	MVI V17,R0
-	INCR R0
-T116:
-	SUBI #7,R0
-	BC T116
-	ADDI #7,R0
-	MVO R0,V17
-T115:
-	;[386] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",386
-	;[387] 	'print at (SCREENPOS(4 - street_lineY(a)/2, 5 + street_lineY(a))) color CS_GREY, "\315"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",387
-	;[388] 	'print at (SCREENPOS(7, 5 + street_lineY(a))) color CS_GREY, "\316"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",388
-	;[389] 	'print at (SCREENPOS(9 + street_lineY(a)/2, 5 + street_lineY(a))) color CS_GREY, "\317"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",389
-	;[390] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",390
-	;[391] 	SPRITE 5, SpritePosX(4 - street_lineY/2, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR59 + SPR_GREY
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",391
+	;[348] 	if(level = 1) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",348
+	MVI V19,R0
+	CMPI #1,R0
+	BNE T129
+	;[349] 		dificulty=4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",349
 	MVII #4,R0
-	MVI V17,R1
+	MVO R0,V11
+	;[350] 		#maximunScore = 100
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",350
+	MVII #100,R0
+	MVO R0,V12
+	;[351] 		percentage(0) = 20
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",351
+	MVII #20,R0
+	MVO R0,Q7
+	;[352] 		percentage(1) = 20
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",352
+	MVO R0,Q7+1
+	;[353] 		percentage(2) = 48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",353
+	MVII #48,R0
+	MVO R0,Q7+2
+	;[354] 		percentage(3) = 10
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",354
+	MVII #10,R0
+	MVO R0,Q7+3
+	;[355] 		percentage(4) = 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",355
+	MVII #2,R0
+	MVO R0,Q7+4
+	;[356] 	elseif(level = 2) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",356
+	B T130
+T129:
+	MVI V19,R0
+	CMPI #2,R0
+	BNE T131
+	;[357] 		dificulty=4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",357
+	MVII #4,R0
+	MVO R0,V11
+	;[358] 		#maximunScore = 110
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",358
+	MVII #110,R0
+	MVO R0,V12
+	;[359] 		percentage(0) = 25
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",359
+	MVII #25,R0
+	MVO R0,Q7
+	;[360] 		percentage(1) = 25
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",360
+	MVO R0,Q7+1
+	;[361] 		percentage(2) = 38
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",361
+	MVII #38,R0
+	MVO R0,Q7+2
+	;[362] 		percentage(3) = 10
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",362
+	MVII #10,R0
+	MVO R0,Q7+3
+	;[363] 		percentage(4) = 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",363
+	MVII #2,R0
+	MVO R0,Q7+4
+	;[364] 	elseif(level = 3) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",364
+	B T130
+T131:
+	MVI V19,R0
+	CMPI #3,R0
+	BNE T132
+	;[365] 		dificulty=4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",365
+	MVII #4,R0
+	MVO R0,V11
+	;[366] 		#maximunScore = 130
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",366
+	MVII #130,R0
+	MVO R0,V12
+	;[367] 		percentage(0) = 38
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",367
+	MVII #38,R0
+	MVO R0,Q7
+	;[368] 		percentage(1) = 23
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",368
+	MVII #23,R0
+	MVO R0,Q7+1
+	;[369] 		percentage(2) = 23
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",369
+	MVO R0,Q7+2
+	;[370] 		percentage(3) = 10
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",370
+	MVII #10,R0
+	MVO R0,Q7+3
+	;[371] 		percentage(4) = 2
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",371
+	MVII #2,R0
+	MVO R0,Q7+4
+	;[372] 	elseif(level = 4) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",372
+	B T130
+T132:
+	MVI V19,R0
+	CMPI #4,R0
+	BNE T133
+	;[373] 		dificulty=5
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",373
+	MVII #5,R0
+	MVO R0,V11
+	;[374] 		#maximunScore = 150
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",374
+	MVII #150,R0
+	MVO R0,V12
+	;[375] 		percentage(0) = 47
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",375
+	MVII #47,R0
+	MVO R0,Q7
+	;[376] 		percentage(1) = 23
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",376
+	MVII #23,R0
+	MVO R0,Q7+1
+	;[377] 		percentage(2) = 23
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",377
+	MVO R0,Q7+2
+	;[378] 		percentage(3) = 7
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",378
+	MVII #7,R0
+	MVO R0,Q7+3
+	;[379] 		percentage(4) = 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",379
+	MVII #3,R0
+	MVO R0,Q7+4
+	;[380] 	elseif(level = 5) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",380
+	B T130
+T133:
+	MVI V19,R0
+	CMPI #5,R0
+	BNE T134
+	;[381] 		dificulty=5
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",381
+	MVII #5,R0
+	MVO R0,V11
+	;[382] 		#maximunScore = 250
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",382
+	MVII #250,R0
+	MVO R0,V12
+	;[383] 		percentage(0) = 47
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",383
+	MVII #47,R0
+	MVO R0,Q7
+	;[384] 		percentage(1) = 26
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",384
+	MVII #26,R0
+	MVO R0,Q7+1
+	;[385] 		percentage(2) = 20
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",385
+	MVII #20,R0
+	MVO R0,Q7+2
+	;[386] 		percentage(3) = 7
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",386
+	MVII #7,R0
+	MVO R0,Q7+3
+	;[387] 		percentage(4) = 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",387
+	MVII #3,R0
+	MVO R0,Q7+4
+	;[388] 	elseif(level = 6) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",388
+	B T130
+T134:
+	MVI V19,R0
+	CMPI #6,R0
+	BNE T135
+	;[389] 		dificulty=5
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",389
+	MVII #5,R0
+	MVO R0,V11
+	;[390] 		#maximunScore = 500
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",390
+	MVII #500,R0
+	MVO R0,V12
+	;[391] 		percentage(0) = 50
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",391
+	MVII #50,R0
+	MVO R0,Q7
+	;[392] 		percentage(1) = 30
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",392
+	MVII #30,R0
+	MVO R0,Q7+1
+	;[393] 		percentage(2) = 20
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",393
+	MVII #20,R0
+	MVO R0,Q7+2
+	;[394] 		percentage(3) = 7
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",394
+	MVII #7,R0
+	MVO R0,Q7+3
+	;[395] 		percentage(4) = 3
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",395
+	MVII #3,R0
+	MVO R0,Q7+4
+	;[396] 	elseif(level = 7) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",396
+	B T130
+T135:
+	MVI V19,R0
+	CMPI #7,R0
+	BNE T136
+	;[397] 		dificulty=6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",397
+	MVII #6,R0
+	MVO R0,V11
+	;[398] 		#maximunScore = 650
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",398
+	MVII #650,R0
+	MVO R0,V12
+	;[399] 		percentage(0) = 46
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",399
+	MVII #46,R0
+	MVO R0,Q7
+	;[400] 		percentage(1) = 23
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",400
+	MVII #23,R0
+	MVO R0,Q7+1
+	;[401] 		percentage(2) = 23
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",401
+	MVO R0,Q7+2
+	;[402] 		percentage(3) = 5
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",402
+	MVII #5,R0
+	MVO R0,Q7+3
+	;[403] 		percentage(4) = 4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",403
+	MVII #4,R0
+	MVO R0,Q7+4
+	;[404] 	elseif(level = 8) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",404
+	B T130
+T136:
+	MVI V19,R0
+	CMPI #8,R0
+	BNE T137
+	;[405] 		dificulty=6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",405
+	MVII #6,R0
+	MVO R0,V11
+	;[406] 		#maximunScore = 750
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",406
+	MVII #750,R0
+	MVO R0,V12
+	;[407] 		percentage(0) = 31
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",407
+	MVII #31,R0
+	MVO R0,Q7
+	;[408] 		percentage(1) = 31
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",408
+	MVO R0,Q7+1
+	;[409] 		percentage(2) = 31
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",409
+	NOP
+	MVO R0,Q7+2
+	;[410] 		percentage(3) = 5
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",410
+	MVII #5,R0
+	MVO R0,Q7+3
+	;[411] 		percentage(4) = 4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",411
+	MVII #4,R0
+	MVO R0,Q7+4
+	;[412] 	elseif(level = 9) then 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",412
+	B T130
+T137:
+	MVI V19,R0
+	CMPI #9,R0
+	BNE T138
+	;[413] 		dificulty=6
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",413
+	MVII #6,R0
+	MVO R0,V11
+	;[414] 		#maximunScore = 1000
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",414
+	MVII #1000,R0
+	MVO R0,V12
+	;[415] 		percentage(0) = 32
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",415
+	MVII #32,R0
+	MVO R0,Q7
+	;[416] 		percentage(1) = 33
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",416
+	MVII #33,R0
+	MVO R0,Q7+1
+	;[417] 		percentage(2) = 25
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",417
+	MVII #25,R0
+	MVO R0,Q7+2
+	;[418] 		percentage(3) = 4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",418
+	MVII #4,R0
+	MVO R0,Q7+3
+	;[419] 		percentage(4) = 4
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",419
+	MVO R0,Q7+4
+	;[420] 		lives = 10
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",420
+	MVII #10,R0
+	MVO R0,V18
+	;[421] 	else
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",421
+	B T130
+T138:
+	;[422] 		level = 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",422
+	MVII #1,R0
+	MVO R0,V19
+	;[423] 		gosub determinelevel
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",423
+	CALL Q28
+	;[424] 	end if
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",424
+T130:
+	;[425] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",425
+	RETURN
+	ENDP
+	;[426] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",426
+	;[427] background: procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",427
+	; BACKGROUND
+Q29:	PROC
+	BEGIN
+	;[428] 	IF (#univclock % 4) = 0 then street_lineY = (street_lineY + 1) % 7
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",428
+	MVI V20,R0
+	ANDI #3,R0
+	BNE T139
+	MVI V21,R0
+	INCR R0
+T140:
+	SUBI #7,R0
+	BC T140
+	ADDI #7,R0
+	MVO R0,V21
+T139:
+	;[429] 		
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",429
+	;[430] 	'print at (SCREENPOS(4 - street_lineY(a)/2, 5 + street_lineY(a))) color CS_GREY, "\315"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",430
+	;[431] 	'print at (SCREENPOS(7, 5 + street_lineY(a))) color CS_GREY, "\316"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",431
+	;[432] 	'print at (SCREENPOS(9 + street_lineY(a)/2, 5 + street_lineY(a))) color CS_GREY, "\317"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",432
+	;[433] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",433
+	;[434] 	SPRITE 5, SpritePosX(4 - street_lineY/2, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR59 + SPR_GREY
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",434
+	MVII #4,R0
+	MVI V21,R1
 	SLR R1,1
 	SUBR R1,R0
 	INCR R0
@@ -5843,7 +6332,7 @@ T115:
 	ADDR R0,R0
 	ADDI #512,R0
 	MVO R0,_mobs+5
-	MVI V17,R0
+	MVI V21,R0
 	ADDI #6,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -5851,11 +6340,11 @@ T115:
 	MVO R0,_mobs+13
 	MVII #6616,R0
 	MVO R0,_mobs+21
-	;[392] 	SPRITE 6, SpritePosX(7, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR60 + SPR_GREY
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",392
+	;[435] 	SPRITE 6, SpritePosX(7, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR60 + SPR_GREY
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",435
 	MVII #576,R0
 	MVO R0,_mobs+6
-	MVI V17,R0
+	MVI V21,R0
 	ADDI #6,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -5863,16 +6352,16 @@ T115:
 	MVO R0,_mobs+14
 	MVII #6624,R0
 	MVO R0,_mobs+22
-	;[393] 	SPRITE 7, SpritePosX(9 + street_lineY/2, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR61 + SPR_GREY
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",393
-	MVI V17,R0
+	;[436] 	SPRITE 7, SpritePosX(9 + street_lineY/2, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR61 + SPR_GREY
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",436
+	MVI V21,R0
 	SLR R0,1
 	ADDI #10,R0
 	SLL R0,2
 	ADDR R0,R0
 	ADDI #512,R0
 	MVO R0,_mobs+7
-	MVI V17,R0
+	MVI V21,R0
 	ADDI #6,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -5880,207 +6369,307 @@ T115:
 	MVO R0,_mobs+15
 	MVII #6632,R0
 	MVO R0,_mobs+23
-	;[394] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",394
-	;[395] 	gosub writescore
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",395
-	CALL Q36
-	;[396] 	gosub drawhearts
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",396
-	CALL Q42
-	;[397] 	gosub writelevel
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",397
-	CALL Q44
-	;[398] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",398
-	;[399] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",399
+	;[437] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",437
+	;[438] 	gosub writescore
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",438
+	CALL Q39
+	;[439] 	gosub drawhearts
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",439
+	CALL Q46
+	;[440] 	gosub writelevel
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",440
+	CALL Q48
+	;[441] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",441
+	;[442] 	return
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",442
 	RETURN
-	;[400] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",400
+	;[443] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",443
 	ENDP
-	;[401] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",401
-	;[402] clearAll:procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",402
+	;[444] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",444
+	;[445] clearAll:procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",445
 	; CLEARALL
-Q31:	PROC
+Q32:	PROC
 	BEGIN
-	;[403] 	cls 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",403
+	;[446] 	cls
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",446
 	CALL CLRSCR
-	;[404] 	ResetSprite(0)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",404
+	;[447] 	ResetSprite(0)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",447
 	CLRR R0
 	MVO R0,_mobs
 	MVO R0,_mobs+8
 	NOP
 	MVO R0,_mobs+16
-	;[405] 	ResetSprite(1)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",405
+	;[448] 	ResetSprite(1)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",448
 	MVO R0,_mobs+1
 	NOP
 	MVO R0,_mobs+9
 	MVO R0,_mobs+17
-	;[406] 	ResetSprite(2)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",406
+	;[449] 	ResetSprite(2)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",449
 	NOP
 	MVO R0,_mobs+2
 	MVO R0,_mobs+10
 	NOP
 	MVO R0,_mobs+18
-	;[407] 	ResetSprite(3)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",407
+	;[450] 	ResetSprite(3)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",450
 	MVO R0,_mobs+3
 	NOP
 	MVO R0,_mobs+11
 	MVO R0,_mobs+19
-	;[408] 	ResetSprite(4)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",408
+	;[451] 	ResetSprite(4)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",451
 	NOP
 	MVO R0,_mobs+4
 	MVO R0,_mobs+12
 	NOP
 	MVO R0,_mobs+20
-	;[409] 	ResetSprite(5)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",409
+	;[452] 	ResetSprite(5)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",452
 	MVO R0,_mobs+5
 	NOP
 	MVO R0,_mobs+13
 	MVO R0,_mobs+21
-	;[410] 	ResetSprite(6)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",410
+	;[453] 	ResetSprite(6)
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",453
 	NOP
 	MVO R0,_mobs+6
 	MVO R0,_mobs+14
 	NOP
 	MVO R0,_mobs+22
-	;[411] 	ResetSprite(7) 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",411
+	;[454] 	ResetSprite(7) 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",454
 	MVO R0,_mobs+7
 	NOP
 	MVO R0,_mobs+15
 	MVO R0,_mobs+23
-	;[412] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",412
+	;[455] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",455
 	RETURN
 	ENDP
-	;[413] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",413
-	;[414] add_points:	PROCEDURE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",414
-	; ADD_POINTS
-Q41:	PROC
+	;[456] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",456
+	;[457] clearPower:procedure
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",457
+	; CLEARPOWER
+Q33:	PROC
 	BEGIN
-	;[415] 	#score = #score + 5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",415
-	MVI V12,R0
+	;[458] 	invisible = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",458
+	CLRR R0
+	MVO R0,V7
+	;[459] 	jump = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",459
+	MVO R0,V15
+	;[460] 	bonus_exp = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",460
+	NOP
+	MVO R0,V8
+	;[461] 	bonus_lives = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",461
+	MVO R0,V9
+	;[462] 	object(0) = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",462
+	NOP
+	MVO R0,Q5
+	;[463] 	object(1) = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",463
+	MVO R0,Q5+1
+	;[464] 	object(2) = 0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",464
+	NOP
+	MVO R0,Q5+2
+	;[465] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",465
+	RETURN
+	ENDP
+	;[466] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",466
+	;[467] add_points:	PROCEDURE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",467
+	; ADD_POINTS
+Q44:	PROC
+	BEGIN
+	;[468] 	#score = #score + 5
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",468
+	MVI V16,R0
 	ADDI #5,R0
-	MVO R0,V12
-	;[416] 	SOUND 1,400,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",416
+	MVO R0,V16
+	;[469] 	SOUND 1,400,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",469
 	MVII #400,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[417] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",417
+	;[470] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",470
 	CALL _wait
-	;[418] 	SOUND 1,300,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",418
+	;[471] 	SOUND 1,300,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",471
 	MVII #300,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[419] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",419
+	;[472] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",472
 	CALL _wait
-	;[420] 	SOUND 1,500,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",420
+	;[473] 	SOUND 1,500,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",473
 	MVII #500,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[421] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",421
+	;[474] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",474
 	CALL _wait
-	;[422] 	SOUND 1,,0 ' Turn volume to zero
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",422
+	;[475] 	SOUND 1,,0 ' Turn volume to zero
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",475
 	CLRR R0
 	MVO R0,508
-	;[423] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",423
+	;[476] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",476
 	RETURN
 	ENDP
-	;[424] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",424
-	;[425] lose_points:	PROCEDURE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",425
+	;[477] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",477
+	;[478] lose_points:	PROCEDURE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",478
 	; LOSE_POINTS
-Q40:	PROC
+Q45:	PROC
 	BEGIN
-	;[426] 	#score = #score - 10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",426
-	MVI V12,R0
+	;[479] 	#score = #score - 10
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",479
+	MVI V16,R0
 	SUBI #10,R0
-	MVO R0,V12
-	;[427] 	SOUND 1,100,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",427
+	MVO R0,V16
+	;[480] 	SOUND 1,100,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",480
 	MVII #100,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[428] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",428
+	;[481] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",481
 	CALL _wait
-	;[429] 	SOUND 1,500,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",429
+	;[482] 	SOUND 1,500,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",482
 	MVII #500,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[430] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",430
+	;[483] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",483
 	CALL _wait
-	;[431] 	SOUND 1,300,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",431
+	;[484] 	SOUND 1,300,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",484
 	MVII #300,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[432] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",432
+	;[485] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",485
 	CALL _wait
-	;[433] 	SOUND 1,,0 ' Turn volume to zero
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",433
+	;[486] 	SOUND 1,,0 ' Turn volume to zero
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",486
 	CLRR R0
 	MVO R0,508
-	;[434] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",434
+	;[487] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",487
 	RETURN
 	ENDP
-	;[435] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",435
-	;[436] end:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",436
-	; END
-Q33:	;[437] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",437
+	;[488] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",488
+	;[489] add_lives:	PROCEDURE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",489
+	; ADD_LIVES
+Q43:	PROC
+	BEGIN
+	;[490] 	lives = lives + 1
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",490
+	MVI V18,R0
+	INCR R0
+	MVO R0,V18
+	;[491] 	SOUND 1,200,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",491
+	MVII #200,R0
+	MVO R0,497
+	SWAP R0
+	MVO R0,501
+	MVII #14,R0
+	MVO R0,508
+	;[492] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",492
 	CALL _wait
-	;[438] 	print at SCREENPOS(6, 5) color CS_RED, "Good Bye!"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",438
+	;[493] 	SOUND 1,300,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",493
+	MVII #300,R0
+	MVO R0,497
+	SWAP R0
+	MVO R0,501
+	MVII #14,R0
+	MVO R0,508
+	;[494] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",494
+	CALL _wait
+	;[495] 	SOUND 1,400,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",495
+	MVII #400,R0
+	MVO R0,497
+	SWAP R0
+	MVO R0,501
+	MVII #14,R0
+	MVO R0,508
+	;[496] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",496
+	CALL _wait
+	;[497] 	SOUND 1,500,14
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",497
+	MVII #500,R0
+	MVO R0,497
+	SWAP R0
+	MVO R0,501
+	MVII #14,R0
+	MVO R0,508
+	;[498] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",498
+	CALL _wait
+	;[499] 	SOUND 1,,0 ' Turn volume to zero
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",499
+	CLRR R0
+	MVO R0,508
+	;[500] end
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",500
+	RETURN
+	ENDP
+	;[501] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",501
+	;[502] end:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",502
+	; END
+Q35:	;[503] 	wait
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",503
+	CALL _wait
+	;[504] 	print at SCREENPOS(6, 5) color CS_RED, "Good Bye!"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",504
 	MVII #618,R0
 	MVO R0,_screen
 	MVII #2,R0
@@ -6105,661 +6694,661 @@ Q33:	;[437] 	wait
 	XORI #544,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[439] 	goto end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",439
-	B Q33
-	;[440] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",440
-	;[441] player:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",441
-	; PLAYER
-Q12:	;[442] 	'frame 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",442
-	;[443] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",443
-	;[444] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",444
-	DECLE 48188
-	;[445] 	BITMAP "#.######"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",445
-	;[446] 	BITMAP "######.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",446
-	DECLE 64959
-	;[447] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",447
-	;[448] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",448
-	DECLE 15677
-	;[449] 	BITMAP "..#....."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",449
-	;[450] 	BITMAP "..#....."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",450
-	DECLE 8224
-	;[451] 	'frame 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",451
-	;[452] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",452
-	;[453] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",453
-	DECLE 15420
-	;[454] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",454
-	;[455] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",455
-	DECLE 65468
-	;[456] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",456
-	;[457] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",457
-	DECLE 15421
-	;[458] 	BITMAP "..#..#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",458
-	;[459] 	BITMAP "..#....."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",459
-	DECLE 8228
-	;[460] 	'frame 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",460
-	;[461] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",461
-	;[462] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",462
-	DECLE 15420
-	;[463] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",463
-	;[464] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",464
-	DECLE 65340
-	;[465] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",465
-	;[466] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",466
-	DECLE 15420
-	;[467] 	BITMAP "..#..#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",467
-	;[468] 	BITMAP "..#..#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",468
-	DECLE 9252
-	;[469] 	'frame 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",469
-	;[470] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",470
-	;[471] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",471
-	DECLE 15420
-	;[472] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",472
-	;[473] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",473
-	DECLE 65341
-	;[474] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",474
-	;[475] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",475
-	DECLE 15548
-	;[476] 	BITMAP "..#..#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",476
-	;[477] 	BITMAP ".....#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",477
-	DECLE 1060
-	;[478] 	'frame 4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",478
-	;[479] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",479
-	;[480] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",480
-	DECLE 15676
-	;[481] 	BITMAP "######.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",481
-	;[482] 	BITMAP "#.######"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",482
-	DECLE 49149
-	;[483] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",483
-	;[484] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",484
-	DECLE 48316
-	;[485] 	BITMAP ".....#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",485
-	;[486] 	BITMAP ".....#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",486
-	DECLE 1028
-	;[487] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",487
-	;[488] tiles:	'heart icon
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",488
-	; TILES
-Q13:	;[489] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",489
-	;[490] 	BITMAP ".##.##.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",490
-	DECLE 27648
-	;[491] 	BITMAP "#.##.##."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",491
-	;[492] 	BITMAP "#######."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",492
-	DECLE 65206
-	;[493] 	BITMAP ".#####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",493
-	;[494] 	BITMAP "..###..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",494
-	DECLE 14460
-	;[495] 	BITMAP "...#...."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",495
-	;[496] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",496
-	DECLE 16
-	;[497] 	'empty heart icon
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",497
-	;[498] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",498
-	;[499] 	BITMAP ".##.##.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",499
-	DECLE 27648
-	;[500] 	BITMAP "##.##.#."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",500
-	;[501] 	BITMAP "#.....#."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",501
-	DECLE 33498
-	;[502] 	BITMAP ".#...#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",502
-	;[503] 	BITMAP "..#.#..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",503
-	DECLE 10308
-	;[504] 	BITMAP "...#...."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",504
-	;[505] 	BITMAP "........"
+	;[505] 	goto end
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",505
-	DECLE 16
-	;[506] 	
+	B Q35
+	;[506] 
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",506
-	;[507] street:
+	;[507] player:
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",507
-	; STREET
-Q14:	;[508] 	'left
+	; PLAYER
+Q12:	;[508] 	'frame 0
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",508
-	;[509] 	BITMAP "....##.."
+	;[509] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",509
-	;[510] 	BITMAP "....##.."
+	;[510] 	BITMAP "#.####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",510
-	DECLE 3084
-	;[511] 	BITMAP "....##.."
+	DECLE 48188
+	;[511] 	BITMAP "#.######"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",511
-	;[512] 	BITMAP "...###.."
+	;[512] 	BITMAP "######.#"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",512
-	DECLE 7180
-	;[513] 	BITMAP "...##..."
+	DECLE 64959
+	;[513] 	BITMAP "..####.#"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",513
-	;[514] 	BITMAP "...##..."
+	;[514] 	BITMAP "..####.#"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",514
-	DECLE 6168
-	;[515] 	BITMAP "...##..."
+	DECLE 15677
+	;[515] 	BITMAP "..#....."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",515
-	;[516] 	BITMAP "...##..."
+	;[516] 	BITMAP "..#....."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",516
-	DECLE 6168
-	;[517] 	'center
+	DECLE 8224
+	;[517] 	'frame 1
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",517
-	;[518] 	BITMAP "##......"
+	;[518] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",518
-	;[519] 	BITMAP "##......"
+	;[519] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",519
-	DECLE 49344
-	;[520] 	BITMAP "##......"
+	DECLE 15420
+	;[520] 	BITMAP "#.####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",520
-	;[521] 	BITMAP "##......"
+	;[521] 	BITMAP "########"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",521
-	DECLE 49344
-	;[522] 	BITMAP "##......"
+	DECLE 65468
+	;[522] 	BITMAP "..####.#"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",522
-	;[523] 	BITMAP "##......"
+	;[523] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",523
-	DECLE 49344
-	;[524] 	BITMAP "##......"
+	DECLE 15421
+	;[524] 	BITMAP "..#..#.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",524
-	;[525] 	BITMAP "##......"
+	;[525] 	BITMAP "..#....."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",525
-	DECLE 49344
-	;[526] 	'left
+	DECLE 8228
+	;[526] 	'frame 2
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",526
-	;[527] 	BITMAP "..##...."
+	;[527] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",527
-	;[528] 	BITMAP "..##...."
+	;[528] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",528
-	DECLE 12336
-	;[529] 	BITMAP "..##...."
+	DECLE 15420
+	;[529] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",529
-	;[530] 	BITMAP "..##...."
+	;[530] 	BITMAP "########"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",530
-	DECLE 12336
-	;[531] 	BITMAP "..###..."
+	DECLE 65340
+	;[531] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",531
-	;[532] 	BITMAP "...##..."
+	;[532] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",532
-	DECLE 6200
-	;[533] 	BITMAP "...##..."
+	DECLE 15420
+	;[533] 	BITMAP "..#..#.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",533
-	;[534] 	BITMAP "...##..."
+	;[534] 	BITMAP "..#..#.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",534
-	DECLE 6168
-	;[535] 	
+	DECLE 9252
+	;[535] 	'frame 3
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",535
-	;[536] apple:
+	;[536] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",536
-	; APPLE
-Q18:	;[537] 	BITMAP ".....#.."
+	;[537] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",537
-	;[538] 	BITMAP "....#..."
+	DECLE 15420
+	;[538] 	BITMAP "..####.#"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",538
-	DECLE 2052
-	;[539] 	BITMAP "..##.##."
+	;[539] 	BITMAP "########"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",539
-	;[540] 	BITMAP ".#######"
+	DECLE 65341
+	;[540] 	BITMAP "#.####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",540
-	DECLE 32566
-	;[541] 	BITMAP ".#######"
+	;[541] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",541
-	;[542] 	BITMAP ".#######"
+	DECLE 15548
+	;[542] 	BITMAP "..#..#.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",542
-	DECLE 32639
-	;[543] 	BITMAP "..#####."
+	;[543] 	BITMAP ".....#.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",543
-	;[544] 	BITMAP "..##.##."
+	DECLE 1060
+	;[544] 	'frame 4
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",544
-	DECLE 13886
-	;[545] 
+	;[545] 	BITMAP "..####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",545
-	;[546] nothing:
+	;[546] 	BITMAP "..####.#"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",546
-	; NOTHING
-Q15:	;[547] 	BITMAP "........"
+	DECLE 15676
+	;[547] 	BITMAP "######.#"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",547
-	;[548] 	BITMAP "........"
+	;[548] 	BITMAP "#.######"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",548
-	DECLE 0
-	;[549] 	BITMAP "........"
+	DECLE 49149
+	;[549] 	BITMAP "#.####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",549
-	;[550] 	BITMAP "........"
+	;[550] 	BITMAP "#.####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",550
-	DECLE 0
-	;[551] 	BITMAP "........"
+	DECLE 48316
+	;[551] 	BITMAP ".....#.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",551
-	;[552] 	BITMAP "........"
+	;[552] 	BITMAP ".....#.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",552
-	DECLE 0
-	;[553] 	BITMAP "........"
+	DECLE 1028
+	;[553] 
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",553
-	;[554] 	BITMAP "........"
+	;[554] tiles:	'heart icon
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",554
-	DECLE 0
-	;[555] 	
+	; TILES
+Q13:	;[555] 	BITMAP "........"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",555
-	;[556] rock:
+	;[556] 	BITMAP ".##.##.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",556
-	; ROCK
-Q16:	;[557] 	BITMAP "..#####."
+	DECLE 27648
+	;[557] 	BITMAP "#.##.##."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",557
-	;[558] 	BITMAP ".#.#####"
+	;[558] 	BITMAP "#######."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",558
-	DECLE 24382
-	;[559] 	BITMAP "####..##"
+	DECLE 65206
+	;[559] 	BITMAP ".#####.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",559
-	;[560] 	BITMAP "####.###"
+	;[560] 	BITMAP "..###..."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",560
-	DECLE 63475
-	;[561] 	BITMAP "########"
+	DECLE 14460
+	;[561] 	BITMAP "...#...."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",561
-	;[562] 	BITMAP "########"
+	;[562] 	BITMAP "........"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",562
-	DECLE 65535
-	;[563] 	BITMAP ".###.##."
+	DECLE 16
+	;[563] 	'empty heart icon
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",563
-	;[564] 	BITMAP "..####.."
+	;[564] 	BITMAP "........"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",564
-	DECLE 15478
-	;[565] 
+	;[565] 	BITMAP ".##.##.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",565
-	;[566] coin:
+	DECLE 27648
+	;[566] 	BITMAP "##.##.#."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",566
-	; COIN
-Q17:	;[567] 	BITMAP "..####.."
+	;[567] 	BITMAP "#.....#."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",567
-	;[568] 	BITMAP ".######."
+	DECLE 33498
+	;[568] 	BITMAP ".#...#.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",568
-	DECLE 32316
-	;[569] 	BITMAP "########"
+	;[569] 	BITMAP "..#.#..."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",569
-	;[570] 	BITMAP "###..###"
+	DECLE 10308
+	;[570] 	BITMAP "...#...."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",570
-	DECLE 59391
-	;[571] 	BITMAP "###..###"
+	;[571] 	BITMAP "........"
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",571
-	;[572] 	BITMAP "########"
+	DECLE 16
+	;[572] 	
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",572
-	DECLE 65511
-	;[573] 	BITMAP ".######."
+	;[573] street:
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",573
-	;[574] 	BITMAP "..####.."
+	; STREET
+Q14:	;[574] 	'left
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",574
-	DECLE 15486
-	;[575] 
+	;[575] 	BITMAP "....##.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",575
-	;[576] 	' 49 bitmaps
+	;[576] 	BITMAP "....##.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",576
-	;[577] screen_bitmaps_0:
+	DECLE 3084
+	;[577] 	BITMAP "....##.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",577
-	; SCREEN_BITMAPS_0
-Q8:	;[578] 	DATA $FFFF,$E0FF,$E0E0,$E0E0
+	;[578] 	BITMAP "...###.."
 	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",578
+	DECLE 7180
+	;[579] 	BITMAP "...##..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",579
+	;[580] 	BITMAP "...##..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",580
+	DECLE 6168
+	;[581] 	BITMAP "...##..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",581
+	;[582] 	BITMAP "...##..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",582
+	DECLE 6168
+	;[583] 	'center
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",583
+	;[584] 	BITMAP "##......"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",584
+	;[585] 	BITMAP "##......"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",585
+	DECLE 49344
+	;[586] 	BITMAP "##......"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",586
+	;[587] 	BITMAP "##......"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",587
+	DECLE 49344
+	;[588] 	BITMAP "##......"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",588
+	;[589] 	BITMAP "##......"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",589
+	DECLE 49344
+	;[590] 	BITMAP "##......"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",590
+	;[591] 	BITMAP "##......"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",591
+	DECLE 49344
+	;[592] 	'left
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",592
+	;[593] 	BITMAP "..##...."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",593
+	;[594] 	BITMAP "..##...."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",594
+	DECLE 12336
+	;[595] 	BITMAP "..##...."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",595
+	;[596] 	BITMAP "..##...."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",596
+	DECLE 12336
+	;[597] 	BITMAP "..###..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",597
+	;[598] 	BITMAP "...##..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",598
+	DECLE 6200
+	;[599] 	BITMAP "...##..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",599
+	;[600] 	BITMAP "...##..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",600
+	DECLE 6168
+	;[601] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",601
+	;[602] apple:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",602
+	; APPLE
+Q18:	;[603] 	BITMAP ".....#.."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",603
+	;[604] 	BITMAP "....#..."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",604
+	DECLE 2052
+	;[605] 	BITMAP "..##.##."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",605
+	;[606] 	BITMAP ".#######"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",606
+	DECLE 32566
+	;[607] 	BITMAP ".#######"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",607
+	;[608] 	BITMAP ".#######"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",608
+	DECLE 32639
+	;[609] 	BITMAP "..#####."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",609
+	;[610] 	BITMAP "..##.##."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",610
+	DECLE 13886
+	;[611] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",611
+	;[612] nothing:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",612
+	; NOTHING
+Q15:	;[613] 	BITMAP "........"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",613
+	;[614] 	BITMAP "........"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",614
+	DECLE 0
+	;[615] 	BITMAP "........"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",615
+	;[616] 	BITMAP "........"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",616
+	DECLE 0
+	;[617] 	BITMAP "........"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",617
+	;[618] 	BITMAP "........"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",618
+	DECLE 0
+	;[619] 	BITMAP "........"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",619
+	;[620] 	BITMAP "........"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",620
+	DECLE 0
+	;[621] 	
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",621
+	;[622] rock:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",622
+	; ROCK
+Q16:	;[623] 	BITMAP "..#####."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",623
+	;[624] 	BITMAP ".#.#####"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",624
+	DECLE 24382
+	;[625] 	BITMAP "####..##"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",625
+	;[626] 	BITMAP "####.###"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",626
+	DECLE 63475
+	;[627] 	BITMAP "########"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",627
+	;[628] 	BITMAP "########"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",628
+	DECLE 65535
+	;[629] 	BITMAP ".###.##."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",629
+	;[630] 	BITMAP "..####.."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",630
+	DECLE 15478
+	;[631] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",631
+	;[632] coin:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",632
+	; COIN
+Q17:	;[633] 	BITMAP "..####.."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",633
+	;[634] 	BITMAP ".######."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",634
+	DECLE 32316
+	;[635] 	BITMAP "########"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",635
+	;[636] 	BITMAP "###..###"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",636
+	DECLE 59391
+	;[637] 	BITMAP "###..###"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",637
+	;[638] 	BITMAP "########"
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",638
+	DECLE 65511
+	;[639] 	BITMAP ".######."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",639
+	;[640] 	BITMAP "..####.."
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",640
+	DECLE 15486
+	;[641] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",641
+	;[642] 	' 49 bitmaps
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",642
+	;[643] screen_bitmaps_0:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",643
+	; SCREEN_BITMAPS_0
+Q8:	;[644] 	DATA $FFFF,$E0FF,$E0E0,$E0E0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",644
 	DECLE 65535
 	DECLE 57599
 	DECLE 57568
 	DECLE 57568
-	;[579] 	DATA $FFFF,$00FF,$0000,$0000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",579
+	;[645] 	DATA $FFFF,$00FF,$0000,$0000
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",645
 	DECLE 65535
 	DECLE 255
 	DECLE 0
 	DECLE 0
-	;[580] 	DATA $FFFF,$07FF,$0707,$0707
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",580
+	;[646] 	DATA $FFFF,$07FF,$0707,$0707
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",646
 	DECLE 65535
 	DECLE 2047
 	DECLE 1799
 	DECLE 1799
-	;[581] 	DATA $0100,$0D07,$1F1F,$FF7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",581
+	;[647] 	DATA $0100,$0D07,$1F1F,$FF7F
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",647
 	DECLE 256
 	DECLE 3335
 	DECLE 7967
 	DECLE 65407
-	;[582] 	DATA $76E0,$BA6F,$F7CD,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",582
+	;[648] 	DATA $76E0,$BA6F,$F7CD,$FFFF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",648
 	DECLE 30432
 	DECLE 47727
 	DECLE 63437
 	DECLE 65535
-	;[583] 	DATA $E0E0,$E0E0,$E0E0,$E0E0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",583
+	;[649] 	DATA $E0E0,$E0E0,$E0E0,$E0E0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",649
 	DECLE 57568
 	DECLE 57568
 	DECLE 57568
 	DECLE 57568
-	;[584] 	DATA $6000,$C390,$1424,$6394
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",584
+	;[650] 	DATA $6000,$C390,$1424,$6394
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",650
 	DECLE 24576
 	DECLE 50064
 	DECLE 5156
 	DECLE 25492
-	;[585] 	DATA $0000,$3B00,$45C5,$3BC5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",585
+	;[651] 	DATA $0000,$3B00,$45C5,$3BC5
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",651
 	DECLE 0
 	DECLE 15104
 	DECLE 17861
 	DECLE 15301
-	;[586] 	DATA $0000,$D900,$3C24,$9D20
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",586
+	;[652] 	DATA $0000,$D900,$3C24,$9D20
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",652
 	DECLE 0
 	DECLE 55552
 	DECLE 15396
 	DECLE 40224
-	;[587] 	DATA $0707,$0707,$0707,$0707
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",587
+	;[653] 	DATA $0707,$0707,$0707,$0707
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",653
 	DECLE 1799
 	DECLE 1799
 	DECLE 1799
 	DECLE 1799
-	;[588] 	DATA $E000,$4542,$4242,$FF4A
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",588
+	;[654] 	DATA $E000,$4542,$4242,$FF4A
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",654
 	DECLE 57344
 	DECLE 17730
 	DECLE 16962
 	DECLE 65354
-	;[589] 	DATA $0000,$A600,$AFA9,$47C8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",589
+	;[655] 	DATA $0000,$A600,$AFA9,$47C8
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",655
 	DECLE 0
 	DECLE 42496
 	DECLE 44969
 	DECLE 18376
-	;[590] 	DATA $0000,$3C00,$3040,$7408
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",590
+	;[656] 	DATA $0000,$3C00,$3040,$7408
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",656
 	DECLE 0
 	DECLE 15360
 	DECLE 12352
 	DECLE 29704
-	;[591] 	DATA $FFFF,$FEFE,$FCFC,$F8F8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",591
+	;[657] 	DATA $FFFF,$FEFE,$FCFC,$F8F8
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",657
 	DECLE 65535
 	DECLE 65278
 	DECLE 64764
 	DECLE 63736
-	;[592] 	DATA $0F00,$1F1F,$3F3F,$7F7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",592
+	;[658] 	DATA $0F00,$1F1F,$3F3F,$7F7F
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",658
 	DECLE 3840
 	DECLE 7967
 	DECLE 16191
 	DECLE 32639
-	;[593] 	DATA $FF00,$FFFF,$FFFF,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",593
+	;[659] 	DATA $FF00,$FFFF,$FFFF,$FFFF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",659
 	DECLE 65280
 	DECLE 65535
 	DECLE 65535
 	DECLE 65535
-	;[594] screen_bitmaps_1:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",594
+	;[660] screen_bitmaps_1:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",660
 	; SCREEN_BITMAPS_1
-Q9:	;[595] 	DATA $FE00,$FEFE,$FEFE,$FEFE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",595
+Q9:	;[661] 	DATA $FE00,$FEFE,$FEFE,$FEFE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",661
 	DECLE 65024
 	DECLE 65278
 	DECLE 65278
 	DECLE 65278
-	;[596] 	DATA $7F00,$7F7F,$7F7F,$BF7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",596
+	;[662] 	DATA $7F00,$7F7F,$7F7F,$BF7F
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",662
 	DECLE 32512
 	DECLE 32639
 	DECLE 32639
 	DECLE 49023
-	;[597] 	DATA $F000,$F8F8,$FCFC,$FEFE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",597
+	;[663] 	DATA $F000,$F8F8,$FCFC,$FEFE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",663
 	DECLE 61440
 	DECLE 63736
 	DECLE 64764
 	DECLE 65278
-	;[598] 	DATA $0101,$0000,$0000,$0000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",598
+	;[664] 	DATA $0101,$0000,$0000,$0000
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",664
 	DECLE 257
 	DECLE 0
 	DECLE 0
 	DECLE 0
-	;[599] 	DATA $FFFF,$7FFF,$3F7F,$1F1F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",599
+	;[665] 	DATA $FFFF,$7FFF,$3F7F,$1F1F
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",665
 	DECLE 65535
 	DECLE 32767
 	DECLE 16255
 	DECLE 7967
-	;[600] 	DATA $F0F0,$C0E0,$80C0,$0080
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",600
+	;[666] 	DATA $F0F0,$C0E0,$80C0,$0080
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",666
 	DECLE 61680
 	DECLE 49376
 	DECLE 32960
 	DECLE 128
-	;[601] 	DATA $0000,$0101,$0303,$0707
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",601
+	;[667] 	DATA $0000,$0101,$0303,$0707
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",667
 	DECLE 0
 	DECLE 257
 	DECLE 771
 	DECLE 1799
-	;[602] 	DATA $FDFD,$FDFD,$FDFD,$FBFD
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",602
+	;[668] 	DATA $FDFD,$FDFD,$FDFD,$FBFD
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",668
 	DECLE 65021
 	DECLE 65021
 	DECLE 65021
 	DECLE 64509
-	;[603] 	DATA $BFBF,$BFBF,$BFBF,$DFDF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",603
+	;[669] 	DATA $BFBF,$BFBF,$BFBF,$DFDF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",669
 	DECLE 49087
 	DECLE 49087
 	DECLE 49087
 	DECLE 57311
-	;[604] 	DATA $0000,$8080,$C0C0,$E0E0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",604
+	;[670] 	DATA $0000,$8080,$C0C0,$E0E0
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",670
 	DECLE 0
 	DECLE 32896
 	DECLE 49344
 	DECLE 57568
-	;[605] 	DATA $070F,$0307,$0101,$0000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",605
+	;[671] 	DATA $070F,$0307,$0101,$0000
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",671
 	DECLE 1807
 	DECLE 775
 	DECLE 257
 	DECLE 0
-	;[606] 	DATA $FFFF,$FFFF,$FFFF,$7FFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",606
+	;[672] 	DATA $FFFF,$FFFF,$FFFF,$7FFF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",672
 	DECLE 65535
 	DECLE 65535
 	DECLE 65535
 	DECLE 32767
-	;[607] 	DATA $FEFF,$FCFE,$F8FC,$F0F8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",607
+	;[673] 	DATA $FEFF,$FCFE,$F8FC,$F0F8
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",673
 	DECLE 65279
 	DECLE 64766
 	DECLE 63740
 	DECLE 61688
-	;[608] 	DATA $0F0F,$1F1F,$3F3F,$7F7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",608
+	;[674] 	DATA $0F0F,$1F1F,$3F3F,$7F7F
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",674
 	DECLE 3855
 	DECLE 7967
 	DECLE 16191
 	DECLE 32639
-	;[609] 	DATA $FBFB,$FBFB,$FBFB,$F7F7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",609
+	;[675] 	DATA $FBFB,$FBFB,$FBFB,$F7F7
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",675
 	DECLE 64507
 	DECLE 64507
 	DECLE 64507
 	DECLE 63479
-	;[610] 	DATA $DFDF,$DFDF,$EFDF,$EFEF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",610
+	;[676] 	DATA $DFDF,$DFDF,$EFDF,$EFEF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",676
 	DECLE 57311
 	DECLE 57311
 	DECLE 61407
 	DECLE 61423
-	;[611] screen_bitmaps_2:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",611
+	;[677] screen_bitmaps_2:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",677
 	; SCREEN_BITMAPS_2
-Q10:	;[612] 	DATA $F0F0,$F8F8,$FCFC,$FEFE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",612
+Q10:	;[678] 	DATA $F0F0,$F8F8,$FCFC,$FEFE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",678
 	DECLE 61680
 	DECLE 63736
 	DECLE 64764
 	DECLE 65278
-	;[613] 	DATA $3F7F,$1F1F,$070F,$0307
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",613
+	;[679] 	DATA $3F7F,$1F1F,$070F,$0307
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",679
 	DECLE 16255
 	DECLE 7967
 	DECLE 1807
 	DECLE 775
-	;[614] 	DATA $E000,$4340,$4744,$FB4C
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",614
+	;[680] 	DATA $E000,$4340,$4744,$FB4C
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",680
 	DECLE 57344
 	DECLE 17216
 	DECLE 18244
 	DECLE 64332
-	;[615] 	DATA $0000,$3400,$9595,$8819
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",615
+	;[681] 	DATA $0000,$3400,$9595,$8819
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",681
 	DECLE 0
 	DECLE 13312
 	DECLE 38293
 	DECLE 34841
-	;[616] 	DATA $0C00,$C604,$E424,$EE04
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",616
+	;[682] 	DATA $0C00,$C604,$E424,$EE04
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",682
 	DECLE 3072
 	DECLE 50692
 	DECLE 58404
 	DECLE 60932
-	;[617] 	DATA $E0E0,$C0C0,$8080,$0000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",617
+	;[683] 	DATA $E0E0,$C0C0,$8080,$0000
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",683
 	DECLE 57568
 	DECLE 49344
 	DECLE 32896
 	DECLE 0
-	;[618] 	DATA $F7F7,$F7F7,$EFF7,$EFEF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",618
+	;[684] 	DATA $F7F7,$F7F7,$EFF7,$EFEF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",684
 	DECLE 63479
 	DECLE 63479
 	DECLE 61431
 	DECLE 61423
-	;[619] 	DATA $EFEF,$EFEF,$F7F7,$F7F7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",619
+	;[685] 	DATA $EFEF,$EFEF,$F7F7,$F7F7
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",685
 	DECLE 61423
 	DECLE 61423
 	DECLE 63479
 	DECLE 63479
-	;[620] 	DATA $EFEF,$EFEF,$DFDF,$DFDF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",620
+	;[686] 	DATA $EFEF,$EFEF,$DFDF,$DFDF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",686
 	DECLE 61423
 	DECLE 61423
 	DECLE 57311
 	DECLE 57311
-	;[621] 	DATA $F7F7,$FBF7,$FBFB,$FBFB
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",621
+	;[687] 	DATA $F7F7,$FBF7,$FBFB,$FBFB
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",687
 	DECLE 63479
 	DECLE 64503
 	DECLE 64507
 	DECLE 64507
-	;[622] 	DATA $DFDF,$BFDF,$BFBF,$BFBF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",622
+	;[688] 	DATA $DFDF,$BFDF,$BFBF,$BFBF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",688
 	DECLE 57311
 	DECLE 49119
 	DECLE 49087
 	DECLE 49087
-	;[623] 	DATA $FBFB,$FDFD,$FDFD,$FDFD
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",623
+	;[689] 	DATA $FBFB,$FDFD,$FDFD,$FDFD
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",689
 	DECLE 64507
 	DECLE 65021
 	DECLE 65021
 	DECLE 65021
-	;[624] 	DATA $BFBF,$7F7F,$7F7F,$7F7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",624
+	;[690] 	DATA $BFBF,$7F7F,$7F7F,$7F7F
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",690
 	DECLE 49087
 	DECLE 32639
 	DECLE 32639
 	DECLE 32639
-	;[625] 	DATA $FEFD,$FEFE,$FEFE,$FEFE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",625
+	;[691] 	DATA $FEFD,$FEFE,$FEFE,$FEFE
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",691
 	DECLE 65277
 	DECLE 65278
 	DECLE 65278
 	DECLE 65278
-	;[626] 	DATA $E0E0,$E0E0,$FFE0,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",626
+	;[692] 	DATA $E0E0,$E0E0,$FFE0,$FFFF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",692
 	DECLE 57568
 	DECLE 57568
 	DECLE 65504
 	DECLE 65535
-	;[627] 	DATA $0000,$0000,$FF00,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",627
+	;[693] 	DATA $0000,$0000,$FF00,$FFFF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",693
 	DECLE 0
 	DECLE 0
 	DECLE 65280
 	DECLE 65535
-	;[628] screen_bitmaps_3:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",628
+	;[694] screen_bitmaps_3:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",694
 	; SCREEN_BITMAPS_3
-Q11:	;[629] 	DATA $0707,$0707,$FF07,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",629
+Q11:	;[695] 	DATA $0707,$0707,$FF07,$FFFF
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",695
 	DECLE 1799
 	DECLE 1799
 	DECLE 65287
 	DECLE 65535
-	;[630] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",630
-	;[631] 	REM 20x12 cards
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",631
-	;[632] screen_cards:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",632
+	;[696] 
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",696
+	;[697] 	REM 20x12 cards
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",697
+	;[698] screen_cards:
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",698
 	; SCREEN_CARDS
-Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E00,$1E08,$1E08,$1E08,$1E10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",633
+Q27:	;[699] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E00,$1E08,$1E08,$1E08,$1E10
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",699
 	DECLE 4608
 	DECLE 4608
 	DECLE 4608
@@ -6780,8 +7369,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 7688
 	DECLE 7688
 	DECLE 7696
-	;[634] 	DATA $1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1E28,$1E37,$1E3F,$1E47,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",634
+	;[700] 	DATA $1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1E28,$1E37,$1E3F,$1E47,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",700
 	DECLE 4608
 	DECLE 6687
 	DECLE 6695
@@ -6802,8 +7391,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 7743
 	DECLE 7751
 	DECLE 7752
-	;[635] 	DATA $1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",635
+	;[701] 	DATA $1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",701
 	DECLE 4608
 	DECLE 4608
 	DECLE 4608
@@ -6824,8 +7413,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[636] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",636
+	;[702] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",702
 	DECLE 4608
 	DECLE 4608
 	DECLE 4608
@@ -6846,8 +7435,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[637] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1E57,$1E5F,$1E67,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",637
+	;[703] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1E57,$1E5F,$1E67,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",703
 	DECLE 4608
 	DECLE 4608
 	DECLE 4608
@@ -6868,8 +7457,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 7775
 	DECLE 7783
 	DECLE 7752
-	;[638] 	DATA $2400,$186E,$1000,$1874,$187C,$1884,$187C,$187C,$188C,$187C,$1894,$189E,$18A6,$2400,$2400,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",638
+	;[704] 	DATA $2400,$186E,$1000,$1874,$187C,$1884,$187C,$187C,$188C,$187C,$1894,$189E,$18A6,$2400,$2400,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",704
 	DECLE 9216
 	DECLE 6254
 	DECLE 4096
@@ -6890,8 +7479,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[639] 	DATA $2400,$18AE,$18B4,$2000,$2000,$18BC,$2000,$2000,$18C4,$2000,$2000,$18CC,$18D6,$18DE,$2400,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",639
+	;[705] 	DATA $2400,$18AE,$18B4,$2000,$2000,$18BC,$2000,$2000,$18C4,$2000,$2000,$18CC,$18D6,$18DE,$2400,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",705
 	DECLE 9216
 	DECLE 6318
 	DECLE 6324
@@ -6912,8 +7501,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[640] 	DATA $18E6,$1000,$18EC,$2000,$2000,$18F4,$2000,$2000,$18FC,$2000,$2000,$1904,$1000,$190E,$2400,$1E28,$1F17,$1F1F,$1F27,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",640
+	;[706] 	DATA $18E6,$1000,$18EC,$2000,$2000,$18F4,$2000,$2000,$18FC,$2000,$2000,$1904,$1000,$190E,$2400,$1E28,$1F17,$1F1F,$1F27,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",706
 	DECLE 6374
 	DECLE 4096
 	DECLE 6380
@@ -6934,8 +7523,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 7967
 	DECLE 7975
 	DECLE 7752
-	;[641] 	DATA $192E,$18B4,$2000,$2000,$2000,$1934,$2000,$2000,$193C,$2000,$2000,$2000,$18CC,$189E,$18A6,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",641
+	;[707] 	DATA $192E,$18B4,$2000,$2000,$2000,$1934,$2000,$2000,$193C,$2000,$2000,$2000,$18CC,$189E,$18A6,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",707
 	DECLE 6446
 	DECLE 6324
 	DECLE 8192
@@ -6956,8 +7545,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[642] 	DATA $1000,$18EC,$2000,$2000,$2000,$1944,$2000,$2000,$194C,$2000,$2000,$2000,$1904,$1000,$18D6,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",642
+	;[708] 	DATA $1000,$18EC,$2000,$2000,$2000,$1944,$2000,$2000,$194C,$2000,$2000,$2000,$1904,$1000,$18D6,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",708
 	DECLE 4096
 	DECLE 6380
 	DECLE 8192
@@ -6978,8 +7567,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[643] 	DATA $18B4,$2000,$2000,$2000,$2000,$1954,$2000,$2000,$195C,$2000,$2000,$2000,$2000,$18CC,$1000,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",643
+	;[709] 	DATA $18B4,$2000,$2000,$2000,$2000,$1954,$2000,$2000,$195C,$2000,$2000,$2000,$2000,$18CC,$1000,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",709
 	DECLE 6324
 	DECLE 8192
 	DECLE 8192
@@ -7000,8 +7589,8 @@ Q26:	;[633] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[644] 	DATA $18EC,$2000,$2000,$2000,$2000,$1964,$2000,$2000,$196C,$2000,$2000,$2000,$2000,$1904,$1000,$1F70,$1F78,$1F78,$1F78,$1F80
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",644
+	;[710] 	DATA $18EC,$2000,$2000,$2000,$2000,$1964,$2000,$2000,$196C,$2000,$2000,$2000,$2000,$1904,$1000,$1F70,$1F78,$1F78,$1F78,$1F80
+	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",710
 	DECLE 6380
 	DECLE 8192
 	DECLE 8192
@@ -10028,20 +10617,23 @@ IV.FLEN:   RMB 1    ; IV_xxx        8-bit           Length of FIFO data
 
 
 V1:	RMB 1	; A
-V7:	RMB 1	; CHANCE
-V8:	RMB 1	; DIFICULTY
-V13:	RMB 1	; HEARTRATE
-V6:	RMB 1	; INVISIBLE
-V11:	RMB 1	; JUMP
-V15:	RMB 1	; LEVEL
-V14:	RMB 1	; LIVES
-V3:	RMB 1	; PLAYERDX
-V5:	RMB 1	; PLAYERF
+V8:	RMB 1	; BONUS_EXP
+V9:	RMB 1	; BONUS_LIVES
+V10:	RMB 1	; CHANCE
+V11:	RMB 1	; DIFICULTY
+V17:	RMB 1	; HEARTRATE
+V13:	RMB 1	; HIGHESTDIFFICULTY
+V7:	RMB 1	; INVISIBLE
+V15:	RMB 1	; JUMP
+V19:	RMB 1	; LEVEL
+V18:	RMB 1	; LIVES
+V4:	RMB 1	; PLAYERDX
+V6:	RMB 1	; PLAYERF
 V2:	RMB 1	; PLAYERX
-V4:	RMB 1	; PLAYERY
-V18:	RMB 1	; POWER
-V10:	RMB 1	; SCENE
-V17:	RMB 1	; STREET_LINEY
+V5:	RMB 1	; PLAYERY
+V22:	RMB 1	; POWER
+V14:	RMB 1	; SCENE
+V21:	RMB 1	; STREET_LINEY
 Q5:	RMB 3	; OBJECT
 Q3:	RMB 3	; OBJECTX
 Q4:	RMB 3	; OBJECTY
@@ -10050,8 +10642,9 @@ _SCRATCH:	EQU $
 
 SYSTEM:	ORG $2F0, $2F0, "-RWBN"
 STACK:	RMB 24
-V9:	RMB 1	; #MAXIMUNSCORE
-V12:	RMB 1	; #SCORE
-V16:	RMB 1	; #UNIVCLOCK
+V12:	RMB 1	; #MAXIMUNSCORE
+V3:	RMB 1	; #PLAYERCOLOR
+V16:	RMB 1	; #SCORE
+V20:	RMB 1	; #UNIVCLOCK
 Q6:	RMB 4	; #OBJECTCOLOR
 _SYSTEM:	EQU $

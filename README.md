@@ -5,7 +5,7 @@ To test it in a computer, an emulator is required. Intybasic SDK can be found he
 
 Overview:
 
-  The game is a clasical mobile running game. The character can do things such as jumping and switching lanes. One of it lastest features, it is the ability to obtain power up. The game currently only has 3: short ghostly invisibility, bonus points, bonus life. In other to optain them, you need to find them in the game. They look like other object but have a different color. They are also rare to find. If you find one, a back screen will appear with your character and the power up you obtain.
+  The game is a clasical mobile running game. The character can do things such as jumping and switching lanes. One of it lastest features, it is the ability to obtain power up. The game currently only has 3: short ghostly invisibility, bonus points, bonus lives. In order to obtain them, you need to find them in the game. They look like other object but have a different color. They are also rare to find. If you find one, a back screen will appear with your character and the power up you obtain.
   
   The game also has different stages each stage will contain more challenges to face. You you pass to a new level an black screen will appear with the level you reach.
 

@@ -13,6 +13,7 @@
 ' 12/17/2017 - small improvement to animation, power ups and the pause option.
 ' 12/20/2017 - improvement to animation.
 ' 12/20/2017 - Version 1 released.
+' 1/11/2018  - Patch to the pause option: display animation instead of changing scene
 ' =========================================================================
 
 INCLUDE "constants.bas"
@@ -108,7 +109,6 @@ main:
 	IF scene = 0 THEN GOSUB scene1 'intro
 	IF scene = 1 THEN GOSUB scene2 'game
 	IF scene = 2 THEN GOSUB scene3 'end
-	IF scene = 3 THEN GOSUB scene4 'pause
 	
 	univclock = (univclock + 1) % 128 'used for animation and control over how offen something show up
 goto main
@@ -116,7 +116,7 @@ goto main
 scene1: procedure 'Introduction
 	wait
 	print at SCREENPOS(1, 0) color CS_WHITE,"- RunnerZ"
-	print at SCREENPOS(1, 1) color CS_WHITE,"- v1.0"
+	print at SCREENPOS(1, 1) color CS_WHITE,"- v1.1"
 	print at SCREENPOS(1, 2) color CS_WHITE,"- Made by: Josue"
 	print at SCREENPOS(1, 3) color CS_WHITE,"- Github: JosueCom"
 	print at SCREENPOS(0, 10) color CS_WHITE, "'Right' to continue"
@@ -180,27 +180,6 @@ scene3: procedure 'End scene
 	
 end
 
-scene4: procedure
-	MODE   SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK 'allows print at makes background black
-	wait
-
-	print at SCREENPOS(4, 2) color CS_RED,"PAUSED"
-	print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
-	print at SCREENPOS(2, 4) color CS_WHITE,"> Continue"
-	print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
-	print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
-	if univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	
-	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED 'player animation
-	
-	'right arrow animation
-	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
-	if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
-	
-	if cont1.left then gosub clearAll : #score = 0 : lives = 3 : scene = 0 : level = 1 : univclock = 0 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
-	if cont1.right then scene = 1
-end
-
 background: procedure 'draw and writes extra details to background such as score and lives 
 	if (univclock % 4) = 0 then street_lineY = (street_lineY + 1) % 7
 	
@@ -246,9 +225,9 @@ drawPlayer: procedure 'collision with the player and player's behavior
 	if cont1.left AND univclock%5 = 0 then playerX = playerX - 1 'various commands: move right, move left, jump, pause
 	if cont1.right AND univclock%5 = 0 then playerX = playerX + 1
 	if cont1.up AND univclock%5 = 0 AND playerY = 10 then jump = 5
-	if cont1.B0 AND univclock%5 = 0 then scene = 3
+	if cont1.B0 AND univclock%5 = 0 then gosub pauseScene
 	
-	playerX = playerX % 3 'keep player within the three lanes: 0 = lane 1, 1 = lane 2, 2 = lane 3
+	playerX = (playerX + 3) % 3 'keep player within the three lanes: 0 = lane 1, 1 = lane 2, 2 = lane 3
 	
 	if univclock%(highestDifficulty-dificulty) = 0 AND jump > 0 then playerY = 10 - jump + 2: jump = jump - 1 : playerF = 3 'check to see if condition for power ups and jump have been met
 	if univclock%(highestDifficulty-dificulty) = 0 AND invisible > 0 then playerY = 8: invisible = invisible - 1 : playerF = 3
@@ -317,6 +296,41 @@ powerupAnimation: procedure 'animation when there is a power up
 		wait
 		wait
 	next a
+	gosub clearAll
+	mode 1 'need for SCREEN command
+	wait
+end
+
+'Pause scene
+pauseScene: procedure 'animation for when the game is paused
+	wait
+	gosub clearAll
+	MODE SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK 'need in order to use print at
+	wait
+	wait
+	wait
+	wait
+	paused = 0
+	a = 0
+	while paused = 0
+		print at SCREENPOS(4, 2) color CS_RED,"PAUSED"
+		print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
+		print at SCREENPOS(2, 4) color CS_WHITE,"> Continue"
+		print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
+		print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
+		
+		if a%40 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1 'chance player frame
+		
+		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED 'player animation
+		
+		'arrows animation
+		if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
+		if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
+		
+		if cont1.left then scene = 1 : paused = 1 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
+		if cont1.right OR cont1.B0 then paused = 1
+		a = a + 1
+	wend
 	gosub clearAll
 	mode 1 'need for SCREEN command
 	wait
@@ -472,7 +486,7 @@ add_points:	PROCEDURE 'score gained sound effect
 end
 
 lose_points:	PROCEDURE 'score loss sound effect
-	#score = #score - 10
+	#score = #score - 15
 	SOUND 1,100,14
 	wait
 	SOUND 1,500,14

@@ -68,7 +68,7 @@ MEMSET:
         ;
 	; Note mark is for automatic replacement by IntyBASIC
 _TITLE:
-	BYTE 117,'runnerZ',0
+	BYTE 118,'runnerZ',0
         
         ;
         ; Main program
@@ -1621,1607 +1621,1609 @@ ENDM
 ;;  EOF: pm:mac:lang:mult                                                   ;;
 ;; ======================================================================== ;;
 
-	;FILE C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS
+	;FILE C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS
 	;[1] ' =========================================================================
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",1
 	;[2] ' IntyBASIC SDK Project: RunnerZ V.1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",2
 	;[3] ' -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",3
 	;[4] '     Programmer: Josue N Rivera
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",4
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",4
 	;[5] '     Created:    12/14/2017
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",5
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",5
 	;[6] '     Updated:    12/14/2017
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",6
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",6
 	;[7] '
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",7
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",7
 	;[8] ' -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",8
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",8
 	;[9] ' History:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",9
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",9
 	;[10] ' 12/14/2017 - runnerZ project created.
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",10
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",10
 	;[11] ' 12/15/2017 - power ups added and the ability to jump.
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",11
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",11
 	;[12] ' 12/16/2017 - animation for level ups and power ups.
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",12
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",12
 	;[13] ' 12/17/2017 - small improvement to animation, power ups and the pause option.
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",13
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",13
 	;[14] ' 12/20/2017 - improvement to animation.
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",14
 	;[15] ' 12/20/2017 - Version 1 released.
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",15
-	;[16] ' =========================================================================
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",16
-	;[17] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",17
-	;[18] INCLUDE "constants.bas"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",18
-	;FILE C:\IntyBASIC SDK\lib\constants.bas
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",15
+	;[16] ' 1/11/2018  - Patch to the pause option: display animation instead of changing scene
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",16
+	;[17] ' =========================================================================
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",17
+	;[18] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",18
+	;[19] INCLUDE "constants.bas"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",19
+	;FILE C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas
 	;[1] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",1
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",1
 	;[2] REM HEADER - CONSTANTS.BAS
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",2
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",2
 	;[3] REM
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",3
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",3
 	;[4] REM Started by Mark Ball, July 2015
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",4
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",4
 	;[5] REM
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",5
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",5
 	;[6] REM Constants for use in IntyBASIC
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",6
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",6
 	;[7] REM
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",7
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",7
 	;[8] REM HISTORY
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",8
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",8
 	;[9] REM -------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",9
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",9
 	;[10] REM 1.00F 05/07/15 - First version.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",10
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",10
 	;[11] REM 1.01F 07/07/15 - Added disc directions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",11
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",11
 	;[12] REM                - Added background modes.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",12
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",12
 	;[13] REM                - Minor comment changes.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",13
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",13
 	;[14] REM 1.02F 08/07/15 - Renamed constants.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",14
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",14
 	;[15] REM                - Added background access information.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",15
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",15
 	;[16] REM                - Adjustments to layout.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",16
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",16
 	;[17] REM 1.03F 08/07/15 - Fixed comment delimiter.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",17
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",17
 	;[18] REM 1.04F 11/07/15 - Added useful functions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",18
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",18
 	;[19] REM                - Added controller movement mask.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",19
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",19
 	;[20] REM 1.05F 11/07/15 - Added BACKGROUND constants.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",20
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",20
 	;[21] REM 1.06F 11/07/15 - Changed Y, X order to X, Y in DEF FN functions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",21
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",21
 	;[22] REM 1.07F 11/07/15 - Added colour stack advance.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",22
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",22
 	;[23] REM 1.08F 12/07/15 - Added functions for sprite position handling.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",23
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",23
 	;[24] REM 1.09F 12/07/15 - Added a function for resetting a sprite.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",24
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",24
 	;[25] REM 1.10F 13/07/15 - Added keypad constants.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",25
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",25
 	;[26] REM 1.11F 13/07/15 - Added side button constants.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",26
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",26
 	;[27] REM 1.12F 13/07/15 - Updated sprite functions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",27
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",27
 	;[28] REM 1.13F 19/07/15 - Added border masking constants.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",28
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",28
 	;[29] REM 1.14F 20/07/15 - Added a combined border masking constant.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",29
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",29
 	;[30] REM 1.15F 20/07/15 - Renamed border masking constants to BORDER_HIDE_xxxx.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",30
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",30
 	;[31] REM 1.16F 28/09/15 - Fixed disc direction typos.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",31
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",31
 	;[32] REM 1.17F 30/09/15 - Fixed DISC_SOUTH_WEST value.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",32
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",32
 	;[33] REM 1.18F 05/12/15 - Fixed BG_XXXX colours.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",33
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",33
 	;[34] REM 1.19F 01/01/16 - Changed name of BACKTAB constant to avoid confusion with #BACKTAB array.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",34
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",34
 	;[35] REM                - Added pause key constants.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",35
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",35
 	;[36] REM 1.20F 14/01/16 - Added coloured squares mode's pixel colours.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",36
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",36
 	;[37] REM 1.21F 15/01/16 - Added coloured squares mode's X and Y limits.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",37
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",37
 	;[38] REM 1.22F 23/01/16 - Added PSG constants.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",38
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",38
 	;[39] REM 1.23F 24/01/16 - Fixed typo in PSG comments.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",39
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",39
 	;[40] REM 1.24F 16/11/16 - Added toggle DEF FN's for sprite's BEHIND, HIT and VISIBLE.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",40
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",40
 	;[41] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",41
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",41
 	;[42] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",42
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",42
 	;[43] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",43
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",43
 	;[44] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",44
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",44
 	;[45] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",45
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",45
 	;[46] REM Background information.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",46
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",46
 	;[47] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",47
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",47
 	;[48] CONST BACKTAB_ADDR					= $0200		' Start of the BACKground TABle (BACKTAB) in RAM.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",48
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",48
 	;[49] CONST BACKGROUND_ROWS				= 12		' Height of the background in cards.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",49
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",49
 	;[50] CONST BACKGROUND_COLUMNS			= 20		' Width of the background in cards.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",50
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",50
 	;[51] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",51
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",51
 	;[52] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",52
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",52
 	;[53] REM Background GRAM cards.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",53
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",53
 	;[54] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",54
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",54
 	;[55] CONST BG00							= $0800
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",55
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",55
 	;[56] CONST BG01							= $0808
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",56
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",56
 	;[57] CONST BG02							= $0810
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",57
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",57
 	;[58] CONST BG03							= $0818
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",58
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",58
 	;[59] CONST BG04							= $0820
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",59
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",59
 	;[60] CONST BG05							= $0828
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",60
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",60
 	;[61] CONST BG06							= $0830
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",61
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",61
 	;[62] CONST BG07							= $0838
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",62
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",62
 	;[63] CONST BG08							= $0840
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",63
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",63
 	;[64] CONST BG09							= $0848
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",64
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",64
 	;[65] CONST BG10							= $0850
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",65
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",65
 	;[66] CONST BG11							= $0858
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",66
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",66
 	;[67] CONST BG12							= $0860
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",67
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",67
 	;[68] CONST BG13							= $0868
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",68
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",68
 	;[69] CONST BG14							= $0870
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",69
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",69
 	;[70] CONST BG15							= $0878
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",70
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",70
 	;[71] CONST BG16							= $0880
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",71
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",71
 	;[72] CONST BG17							= $0888
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",72
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",72
 	;[73] CONST BG18							= $0890
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",73
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",73
 	;[74] CONST BG19							= $0898
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",74
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",74
 	;[75] CONST BG20							= $08A0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",75
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",75
 	;[76] CONST BG21							= $08A8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",76
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",76
 	;[77] CONST BG22							= $08B0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",77
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",77
 	;[78] CONST BG23							= $08B8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",78
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",78
 	;[79] CONST BG24							= $08C0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",79
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",79
 	;[80] CONST BG25							= $08C8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",80
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",80
 	;[81] CONST BG26							= $08D0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",81
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",81
 	;[82] CONST BG27							= $08D8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",82
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",82
 	;[83] CONST BG28							= $08E0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",83
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",83
 	;[84] CONST BG29							= $08E8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",84
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",84
 	;[85] CONST BG30							= $08F0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",85
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",85
 	;[86] CONST BG31							= $08F8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",86
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",86
 	;[87] CONST BG32							= $0900
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",87
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",87
 	;[88] CONST BG33							= $0908
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",88
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",88
 	;[89] CONST BG34							= $0910
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",89
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",89
 	;[90] CONST BG35							= $0918
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",90
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",90
 	;[91] CONST BG36							= $0920
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",91
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",91
 	;[92] CONST BG37							= $0928
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",92
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",92
 	;[93] CONST BG38							= $0930
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",93
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",93
 	;[94] CONST BG39							= $0938
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",94
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",94
 	;[95] CONST BG40							= $0940
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",95
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",95
 	;[96] CONST BG41							= $0948
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",96
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",96
 	;[97] CONST BG42							= $0950
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",97
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",97
 	;[98] CONST BG43							= $0958
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",98
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",98
 	;[99] CONST BG44							= $0960
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",99
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",99
 	;[100] CONST BG45							= $0968
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",100
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",100
 	;[101] CONST BG46							= $0970
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",101
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",101
 	;[102] CONST BG47							= $0978
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",102
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",102
 	;[103] CONST BG48							= $0980
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",103
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",103
 	;[104] CONST BG49							= $0988
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",104
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",104
 	;[105] CONST BG50							= $0990
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",105
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",105
 	;[106] CONST BG51							= $0998
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",106
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",106
 	;[107] CONST BG52							= $09A0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",107
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",107
 	;[108] CONST BG53							= $09A8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",108
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",108
 	;[109] CONST BG54							= $09B0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",109
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",109
 	;[110] CONST BG55							= $09B8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",110
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",110
 	;[111] CONST BG56							= $09C0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",111
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",111
 	;[112] CONST BG57							= $09C8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",112
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",112
 	;[113] CONST BG58							= $09D0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",113
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",113
 	;[114] CONST BG59							= $09D8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",114
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",114
 	;[115] CONST BG60							= $09E0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",115
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",115
 	;[116] CONST BG61							= $09E8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",116
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",116
 	;[117] CONST BG62							= $09F0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",117
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",117
 	;[118] CONST BG63							= $09F8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",118
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",118
 	;[119] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",119
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",119
 	;[120] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",120
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",120
 	;[121] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",121
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",121
 	;[122] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",122
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",122
 	;[123] REM GRAM card index numbers.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",123
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",123
 	;[124] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",124
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",124
 	;[125] REM Note: For use with the "define" command.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",125
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",125
 	;[126] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",126
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",126
 	;[127] CONST DEF00							= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",127
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",127
 	;[128] CONST DEF01							= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",128
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",128
 	;[129] CONST DEF02							= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",129
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",129
 	;[130] CONST DEF03							= $0003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",130
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",130
 	;[131] CONST DEF04							= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",131
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",131
 	;[132] CONST DEF05							= $0005
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",132
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",132
 	;[133] CONST DEF06							= $0006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",133
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",133
 	;[134] CONST DEF07							= $0007
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",134
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",134
 	;[135] CONST DEF08							= $0008
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",135
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",135
 	;[136] CONST DEF09							= $0009
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",136
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",136
 	;[137] CONST DEF10							= $000A
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",137
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",137
 	;[138] CONST DEF11							= $000B
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",138
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",138
 	;[139] CONST DEF12							= $000C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",139
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",139
 	;[140] CONST DEF13							= $000D
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",140
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",140
 	;[141] CONST DEF14							= $000E
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",141
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",141
 	;[142] CONST DEF15							= $000F
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",142
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",142
 	;[143] CONST DEF16							= $0010
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",143
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",143
 	;[144] CONST DEF17							= $0011
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",144
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",144
 	;[145] CONST DEF18							= $0012
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",145
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",145
 	;[146] CONST DEF19							= $0013
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",146
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",146
 	;[147] CONST DEF20							= $0014
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",147
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",147
 	;[148] CONST DEF21							= $0015
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",148
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",148
 	;[149] CONST DEF22							= $0016
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",149
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",149
 	;[150] CONST DEF23							= $0017
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",150
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",150
 	;[151] CONST DEF24							= $0018
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",151
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",151
 	;[152] CONST DEF25							= $0019
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",152
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",152
 	;[153] CONST DEF26							= $001A
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",153
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",153
 	;[154] CONST DEF27							= $001B
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",154
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",154
 	;[155] CONST DEF28							= $001C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",155
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",155
 	;[156] CONST DEF29							= $001D
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",156
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",156
 	;[157] CONST DEF30							= $001E
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",157
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",157
 	;[158] CONST DEF31							= $001F
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",158
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",158
 	;[159] CONST DEF32							= $0020
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",159
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",159
 	;[160] CONST DEF33							= $0021
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",160
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",160
 	;[161] CONST DEF34							= $0022
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",161
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",161
 	;[162] CONST DEF35							= $0023
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",162
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",162
 	;[163] CONST DEF36							= $0024
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",163
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",163
 	;[164] CONST DEF37							= $0025
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",164
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",164
 	;[165] CONST DEF38							= $0026
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",165
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",165
 	;[166] CONST DEF39							= $0027
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",166
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",166
 	;[167] CONST DEF40							= $0028
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",167
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",167
 	;[168] CONST DEF41							= $0029
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",168
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",168
 	;[169] CONST DEF42							= $002A
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",169
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",169
 	;[170] CONST DEF43							= $002B
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",170
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",170
 	;[171] CONST DEF44							= $002C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",171
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",171
 	;[172] CONST DEF45							= $002D
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",172
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",172
 	;[173] CONST DEF46							= $002E
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",173
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",173
 	;[174] CONST DEF47							= $002F
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",174
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",174
 	;[175] CONST DEF48							= $0030
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",175
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",175
 	;[176] CONST DEF49							= $0031
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",176
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",176
 	;[177] CONST DEF50							= $0032
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",177
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",177
 	;[178] CONST DEF51							= $0033
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",178
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",178
 	;[179] CONST DEF52							= $0034
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",179
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",179
 	;[180] CONST DEF53							= $0035
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",180
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",180
 	;[181] CONST DEF54							= $0036
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",181
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",181
 	;[182] CONST DEF55							= $0037
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",182
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",182
 	;[183] CONST DEF56							= $0038
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",183
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",183
 	;[184] CONST DEF57							= $0039
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",184
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",184
 	;[185] CONST DEF58							= $003A
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",185
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",185
 	;[186] CONST DEF59							= $003B
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",186
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",186
 	;[187] CONST DEF60							= $003C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",187
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",187
 	;[188] CONST DEF61							= $003D
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",188
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",188
 	;[189] CONST DEF62							= $003E
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",189
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",189
 	;[190] CONST DEF63							= $003F
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",190
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",190
 	;[191] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",191
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",191
 	;[192] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",192
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",192
 	;[193] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",193
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",193
 	;[194] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",194
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",194
 	;[195] REM Screen modes.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",195
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",195
 	;[196] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",196
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",196
 	;[197] REM Note: For use with the "mode" command.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",197
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",197
 	;[198] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",198
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",198
 	;[199] CONST SCREEN_COLOR_STACK			= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",199
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",199
 	;[200] CONST SCREEN_FOREGROUND_BACKGROUND	= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",200
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",200
 	;[201] REM Abbreviated versions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",201
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",201
 	;[202] CONST SCREEN_FB						= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",202
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",202
 	;[203] CONST SCREEN_CS						= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",203
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",203
 	;[204] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",204
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",204
 	;[205] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",205
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",205
 	;[206] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",206
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",206
 	;[207] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",207
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",207
 	;[208] REM COLORS - Border.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",208
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",208
 	;[209] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",209
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",209
 	;[210] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",210
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",210
 	;[211] REM - For use with the commands "mode 0" and "mode 1".
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",211
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",211
 	;[212] REM - For use with the "border" command.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",212
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",212
 	;[213] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",213
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",213
 	;[214] CONST BORDER_BLACK					= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",214
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",214
 	;[215] CONST BORDER_BLUE					= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",215
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",215
 	;[216] CONST BORDER_RED					= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",216
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",216
 	;[217] CONST BORDER_TAN					= $0003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",217
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",217
 	;[218] CONST BORDER_DARKGREEN				= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",218
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",218
 	;[219] CONST BORDER_GREEN					= $0005
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",219
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",219
 	;[220] CONST BORDER_YELLOW					= $0006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",220
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",220
 	;[221] CONST BORDER_WHITE					= $0007
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",221
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",221
 	;[222] CONST BORDER_GREY					= $0008
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",222
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",222
 	;[223] CONST BORDER_CYAN					= $0009
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",223
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",223
 	;[224] CONST BORDER_ORANGE					= $000A
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",224
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",224
 	;[225] CONST BORDER_BROWN					= $000B
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",225
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",225
 	;[226] CONST BORDER_PINK					= $000C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",226
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",226
 	;[227] CONST BORDER_LIGHTBLUE				= $000D
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",227
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",227
 	;[228] CONST BORDER_YELLOWGREEN			= $000E
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",228
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",228
 	;[229] CONST BORDER_PURPLE					= $000F
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",229
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",229
 	;[230] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",230
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",230
 	;[231] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",231
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",231
 	;[232] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",232
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",232
 	;[233] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",233
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",233
 	;[234] REM BORDER - Edge masks.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",234
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",234
 	;[235] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",235
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",235
 	;[236] REM Note: For use with the "border color, edge" command.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",236
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",236
 	;[237] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",237
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",237
 	;[238] CONST BORDER_HIDE_LEFT_EDGE			= $0001		' Hide the leftmost column of the background.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",238
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",238
 	;[239] CONST BORDER_HIDE_TOP_EDGE			= $0002		' Hide the topmost row of the background.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",239
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",239
 	;[240] CONST BORDER_HIDE_TOP_LEFT_EDGE		= $0003		' Hide both the topmost row and leftmost column of the background.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",240
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",240
 	;[241] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",241
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",241
 	;[242] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",242
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",242
 	;[243] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",243
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",243
 	;[244] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",244
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",244
 	;[245] REM COLORS - Mode 0 (Color Stack).
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",245
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",245
 	;[246] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",246
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",246
 	;[247] REM Stack
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",247
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",247
 	;[248] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",248
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",248
 	;[249] REM Note: For use as the last 4 parameters used in the "mode 1" command.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",249
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",249
 	;[250] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",250
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",250
 	;[251] CONST STACK_BLACK					= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",251
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",251
 	;[252] CONST STACK_BLUE					= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",252
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",252
 	;[253] CONST STACK_RED						= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",253
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",253
 	;[254] CONST STACK_TAN						= $0003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",254
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",254
 	;[255] CONST STACK_DARKGREEN				= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",255
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",255
 	;[256] CONST STACK_GREEN					= $0005
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",256
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",256
 	;[257] CONST STACK_YELLOW					= $0006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",257
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",257
 	;[258] CONST STACK_WHITE					= $0007
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",258
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",258
 	;[259] CONST STACK_GREY					= $0008
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",259
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",259
 	;[260] CONST STACK_CYAN					= $0009
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",260
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",260
 	;[261] CONST STACK_ORANGE					= $000A
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",261
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",261
 	;[262] CONST STACK_BROWN					= $000B
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",262
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",262
 	;[263] CONST STACK_PINK					= $000C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",263
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",263
 	;[264] CONST STACK_LIGHTBLUE				= $000D
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",264
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",264
 	;[265] CONST STACK_YELLOWGREEN				= $000E
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",265
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",265
 	;[266] CONST STACK_PURPLE					= $000F
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",266
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",266
 	;[267] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",267
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",267
 	;[268] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",268
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",268
 	;[269] REM Foreground.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",269
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",269
 	;[270] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",270
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",270
 	;[271] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",271
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",271
 	;[272] REM - For use with "peek/poke" commands that access BACKTAB.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",272
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",272
 	;[273] REM - Only one foreground colour permitted per background card.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",273
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",273
 	;[274] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",274
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",274
 	;[275] CONST CS_BLACK						= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",275
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",275
 	;[276] CONST CS_BLUE						= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",276
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",276
 	;[277] CONST CS_RED						= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",277
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",277
 	;[278] CONST CS_TAN						= $0003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",278
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",278
 	;[279] CONST CS_DARKGREEN					= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",279
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",279
 	;[280] CONST CS_GREEN						= $0005
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",280
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",280
 	;[281] CONST CS_YELLOW						= $0006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",281
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",281
 	;[282] CONST CS_WHITE						= $0007
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",282
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",282
 	;[283] CONST CS_GREY						= $1000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",283
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",283
 	;[284] CONST CS_CYAN						= $1001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",284
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",284
 	;[285] CONST CS_ORANGE						= $1002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",285
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",285
 	;[286] CONST CS_BROWN						= $1003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",286
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",286
 	;[287] CONST CS_PINK						= $1004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",287
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",287
 	;[288] CONST CS_LIGHTBLUE					= $1005
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",288
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",288
 	;[289] CONST CS_YELLOWGREEN				= $1006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",289
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",289
 	;[290] CONST CS_PURPLE						= $1007
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",290
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",290
 	;[291] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",291
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",291
 	;[292] CONST CS_CARD_DATA_MASK				= $07F8		' Mask to get the background card's data.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",292
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",292
 	;[293] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",293
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",293
 	;[294] CONST CS_ADVANCE					= $2000		' Advance the colour stack by one position.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",294
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",294
 	;[295] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",295
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",295
 	;[296] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",296
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",296
 	;[297] REM Coloured squares mode.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",297
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",297
 	;[298] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",298
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",298
 	;[299] REM Notes :
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",299
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",299
 	;[300] REM - Only available in colour stack mode.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",300
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",300
 	;[301] REM - Pixels in each BACKTAB card are arranged in the following manner:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",301
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",301
 	;[302] REM +-------+-------+
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",302
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",302
 	;[303] REM | Pixel | Pixel |
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",303
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",303
 	;[304] REM |   0   |   1   !
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",304
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",304
 	;[305] REM +-------+-------+
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",305
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",305
 	;[306] REM | Pixel | Pixel |
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",306
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",306
 	;[307] REM |   2   |   3   !
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",307
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",307
 	;[308] REM +-------+-------+
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",308
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",308
 	;[309] REM
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",309
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",309
 	;[310] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",310
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",310
 	;[311] CONST CS_COLOUR_SQUARES_ENABLE		= $1000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",311
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",311
 	;[312] CONST CS_PIX0_BLACK					= 0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",312
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",312
 	;[313] CONST CS_PIX0_BLUE					= 1
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",313
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",313
 	;[314] CONST CS_PIX0_RED					= 2
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",314
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",314
 	;[315] CONST CS_PIX0_TAN					= 3
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",315
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",315
 	;[316] CONST CS_PIX0_DARKGREEN				= 4
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",316
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",316
 	;[317] CONST CS_PIX0_GREEN					= 5
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",317
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",317
 	;[318] CONST CS_PIX0_YELLOW				= 6
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",318
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",318
 	;[319] CONST CS_PIX0_BACKGROUND			= 7
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",319
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",319
 	;[320] CONST CS_PIX1_BLACK					= 0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",320
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",320
 	;[321] CONST CS_PIX1_BLUE					= 1*8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",321
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",321
 	;[322] CONST CS_PIX1_RED					= 2*8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",322
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",322
 	;[323] CONST CS_PIX1_TAN					= 3*8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",323
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",323
 	;[324] CONST CS_PIX1_DARKGREEN				= 4*8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",324
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",324
 	;[325] CONST CS_PIX1_GREEN					= 5*8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",325
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",325
 	;[326] CONST CS_PIX1_YELLOW				= 6*8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",326
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",326
 	;[327] CONST CS_PIX1_BACKGROUND			= 7*8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",327
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",327
 	;[328] CONST CS_PIX2_BLACK					= 0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",328
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",328
 	;[329] CONST CS_PIX2_BLUE					= 1*64
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",329
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",329
 	;[330] CONST CS_PIX2_RED					= 2*64
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",330
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",330
 	;[331] CONST CS_PIX2_TAN					= 3*64
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",331
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",331
 	;[332] CONST CS_PIX2_DARKGREEN				= 4*64
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",332
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",332
 	;[333] CONST CS_PIX2_GREEN					= 5*64
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",333
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",333
 	;[334] CONST CS_PIX2_YELLOW				= 6*64
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",334
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",334
 	;[335] CONST CS_PIX2_BACKGROUND			= 7*64
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",335
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",335
 	;[336] CONST CS_PIX3_BLACK					= 0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",336
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",336
 	;[337] CONST CS_PIX3_BLUE					= $0200
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",337
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",337
 	;[338] CONST CS_PIX3_RED					= $0400
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",338
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",338
 	;[339] CONST CS_PIX3_TAN					= $0600
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",339
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",339
 	;[340] CONST CS_PIX3_DARKGREEN				= $2000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",340
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",340
 	;[341] CONST CS_PIX3_GREEN					= $2200
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",341
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",341
 	;[342] CONST CS_PIX3_YELLOW				= $2400
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",342
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",342
 	;[343] CONST CS_PIX3_BACKGROUND			= $2600
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",343
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",343
 	;[344] CONST CS_PIX_MASK					= CS_COLOUR_SQUARES_ENABLE+CS_PIX0_BACKGROUND+CS_PIX1_BACKGROUND+CS_PIX2_BACKGROUND+CS_PIX3_BACKGROUND
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",344
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",344
 	;[345] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",345
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",345
 	;[346] CONST CS_PIX_X_MIN					= 0		' Minimum x coordinate.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",346
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",346
 	;[347] CONST CS_PIX_X_MAX					= 39	' Maximum x coordinate.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",347
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",347
 	;[348] CONST CS_PIX_Y_MIN					= 0		' Minimum Y coordinate.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",348
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",348
 	;[349] CONST CS_PIX_Y_MAX					= 23	' Maximum Y coordinate.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",349
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",349
 	;[350] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",350
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",350
 	;[351] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",351
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",351
 	;[352] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",352
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",352
 	;[353] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",353
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",353
 	;[354] REM COLORS - Mode 1 (Foreground Background)
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",354
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",354
 	;[355] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",355
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",355
 	;[356] REM Foreground.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",356
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",356
 	;[357] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",357
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",357
 	;[358] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",358
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",358
 	;[359] REM - For use with "peek/poke" commands that access BACKTAB.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",359
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",359
 	;[360] REM - Only one foreground colour permitted per background card.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",360
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",360
 	;[361] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",361
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",361
 	;[362] CONST FG_BLACK						= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",362
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",362
 	;[363] CONST FG_BLUE						= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",363
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",363
 	;[364] CONST FG_RED						= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",364
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",364
 	;[365] CONST FG_TAN						= $0003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",365
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",365
 	;[366] CONST FG_DARKGREEN					= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",366
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",366
 	;[367] CONST FG_GREEN						= $0005
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",367
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",367
 	;[368] CONST FG_YELLOW						= $0006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",368
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",368
 	;[369] CONST FG_WHITE						= $0007
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",369
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",369
 	;[370] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",370
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",370
 	;[371] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",371
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",371
 	;[372] REM Background.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",372
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",372
 	;[373] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",373
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",373
 	;[374] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",374
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",374
 	;[375] REM - For use with "peek/poke" commands that access BACKTAB.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",375
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",375
 	;[376] REM - Only one background colour permitted per background card.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",376
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",376
 	;[377] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",377
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",377
 	;[378] CONST BG_BLACK						= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",378
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",378
 	;[379] CONST BG_BLUE						= $0200
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",379
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",379
 	;[380] CONST BG_RED						= $0400
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",380
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",380
 	;[381] CONST BG_TAN						= $0600
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",381
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",381
 	;[382] CONST BG_DARKGREEN					= $2000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",382
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",382
 	;[383] CONST BG_GREEN						= $2200
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",383
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",383
 	;[384] CONST BG_YELLOW						= $2400
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",384
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",384
 	;[385] CONST BG_WHITE						= $2600
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",385
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",385
 	;[386] CONST BG_GREY						= $1000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",386
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",386
 	;[387] CONST BG_CYAN						= $1200
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",387
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",387
 	;[388] CONST BG_ORANGE						= $1400
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",388
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",388
 	;[389] CONST BG_BROWN						= $1600
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",389
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",389
 	;[390] CONST BG_PINK						= $3000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",390
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",390
 	;[391] CONST BG_LIGHTBLUE					= $3200
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",391
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",391
 	;[392] CONST BG_YELLOWGREEN				= $3400
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",392
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",392
 	;[393] CONST BG_PURPLE						= $3600
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",393
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",393
 	;[394] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",394
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",394
 	;[395] CONST FGBG_CARD_DATA_MASK			= $01F8		' Mask to get the background card's data.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",395
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",395
 	;[396] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",396
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",396
 	;[397] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",397
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",397
 	;[398] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",398
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",398
 	;[399] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",399
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",399
 	;[400] REM Sprites.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",400
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",400
 	;[401] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",401
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",401
 	;[402] REM Note: For use with "sprite" command.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",402
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",402
 	;[403] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",403
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",403
 	;[404] REM X
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",404
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",404
 	;[405] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",405
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",405
 	;[406] REM Note: Add these constants to the sprite command's X parameter.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",406
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",406
 	;[407] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",407
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",407
 	;[408] CONST HIT							= $0100		' Enable the sprite's collision detection.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",408
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",408
 	;[409] CONST VISIBLE						= $0200		' Make the sprite visible.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",409
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",409
 	;[410] CONST ZOOMX2						= $0400		' Make the sprite twice the width.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",410
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",410
 	;[411] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",411
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",411
 	;[412] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",412
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",412
 	;[413] REM Y
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",413
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",413
 	;[414] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",414
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",414
 	;[415] REM Note: Add these constants to the sprite command's Y parameter.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",415
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",415
 	;[416] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",416
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",416
 	;[417] CONST DOUBLEY						= $0080		' Make a double height sprite (with 2 GRAM cards).
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",417
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",417
 	;[418] CONST ZOOMY2						= $0100		' Make the sprite twice (x2) the normal height.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",418
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",418
 	;[419] CONST ZOOMY4						= $0200		' Make the sprite quadruple (x4) the normal height.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",419
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",419
 	;[420] CONST ZOOMY8						= $0300		' Make the sprite octuple (x8) the normal height.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",420
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",420
 	;[421] CONST FLIPX							= $0400		' Flip/mirror the sprite in X.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",421
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",421
 	;[422] CONST FLIPY							= $0800		' Flip/mirror the sprite in Y.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",422
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",422
 	;[423] CONST MIRROR						= $0C00		' Flip/mirror the sprite in both X and Y.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",423
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",423
 	;[424] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",424
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",424
 	;[425] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",425
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",425
 	;[426] REM A
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",426
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",426
 	;[427] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",427
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",427
 	;[428] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",428
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",428
 	;[429] REM - Combine to create the sprite command's A parameter.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",429
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",429
 	;[430] REM - Only one colour per sprite.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",430
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",430
 	;[431] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",431
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",431
 	;[432] CONST GRAM							= $0800		' Sprite's data is located in GRAM.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",432
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",432
 	;[433] CONST BEHIND						= $2000		' Sprite is behind the background.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",433
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",433
 	;[434] CONST SPR_BLACK						= $0000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",434
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",434
 	;[435] CONST SPR_BLUE						= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",435
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",435
 	;[436] CONST SPR_RED						= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",436
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",436
 	;[437] CONST SPR_TAN						= $0003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",437
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",437
 	;[438] CONST SPR_DARKGREEN					= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",438
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",438
 	;[439] CONST SPR_GREEN						= $0005
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",439
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",439
 	;[440] CONST SPR_YELLOW					= $0006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",440
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",440
 	;[441] CONST SPR_WHITE						= $0007
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",441
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",441
 	;[442] CONST SPR_GREY						= $1000
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",442
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",442
 	;[443] CONST SPR_CYAN						= $1001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",443
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",443
 	;[444] CONST SPR_ORANGE					= $1002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",444
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",444
 	;[445] CONST SPR_BROWN						= $1003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",445
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",445
 	;[446] CONST SPR_PINK						= $1004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",446
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",446
 	;[447] CONST SPR_LIGHTBLUE					= $1005
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",447
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",447
 	;[448] CONST SPR_YELLOWGREEN				= $1006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",448
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",448
 	;[449] CONST SPR_PURPLE					= $1007
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",449
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",449
 	;[450] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",450
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",450
 	;[451] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",451
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",451
 	;[452] REM GRAM numbers.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",452
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",452
 	;[453] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",453
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",453
 	;[454] REM Note: For use in the sprite command's parameter A.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",454
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",454
 	;[455] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",455
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",455
 	;[456] CONST SPR00							= $0800
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",456
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",456
 	;[457] CONST SPR01							= $0808
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",457
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",457
 	;[458] CONST SPR02							= $0810
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",458
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",458
 	;[459] CONST SPR03							= $0818
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",459
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",459
 	;[460] CONST SPR04							= $0820
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",460
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",460
 	;[461] CONST SPR05							= $0828
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",461
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",461
 	;[462] CONST SPR06							= $0830
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",462
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",462
 	;[463] CONST SPR07							= $0838
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",463
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",463
 	;[464] CONST SPR08							= $0840
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",464
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",464
 	;[465] CONST SPR09							= $0848
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",465
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",465
 	;[466] CONST SPR10							= $0850
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",466
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",466
 	;[467] CONST SPR11							= $0858
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",467
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",467
 	;[468] CONST SPR12							= $0860
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",468
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",468
 	;[469] CONST SPR13							= $0868
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",469
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",469
 	;[470] CONST SPR14							= $0870
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",470
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",470
 	;[471] CONST SPR15							= $0878
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",471
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",471
 	;[472] CONST SPR16							= $0880
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",472
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",472
 	;[473] CONST SPR17							= $0888
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",473
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",473
 	;[474] CONST SPR18							= $0890
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",474
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",474
 	;[475] CONST SPR19							= $0898
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",475
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",475
 	;[476] CONST SPR20							= $08A0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",476
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",476
 	;[477] CONST SPR21							= $08A8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",477
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",477
 	;[478] CONST SPR22							= $08B0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",478
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",478
 	;[479] CONST SPR23							= $08B8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",479
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",479
 	;[480] CONST SPR24							= $08C0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",480
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",480
 	;[481] CONST SPR25							= $08C8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",481
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",481
 	;[482] CONST SPR26							= $08D0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",482
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",482
 	;[483] CONST SPR27							= $08D8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",483
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",483
 	;[484] CONST SPR28							= $08E0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",484
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",484
 	;[485] CONST SPR29							= $08E8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",485
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",485
 	;[486] CONST SPR30							= $08F0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",486
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",486
 	;[487] CONST SPR31							= $08F8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",487
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",487
 	;[488] CONST SPR32							= $0900
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",488
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",488
 	;[489] CONST SPR33							= $0908
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",489
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",489
 	;[490] CONST SPR34							= $0910
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",490
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",490
 	;[491] CONST SPR35							= $0918
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",491
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",491
 	;[492] CONST SPR36							= $0920
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",492
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",492
 	;[493] CONST SPR37							= $0928
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",493
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",493
 	;[494] CONST SPR38							= $0930
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",494
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",494
 	;[495] CONST SPR39							= $0938
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",495
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",495
 	;[496] CONST SPR40							= $0940
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",496
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",496
 	;[497] CONST SPR41							= $0948
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",497
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",497
 	;[498] CONST SPR42							= $0950
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",498
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",498
 	;[499] CONST SPR43							= $0958
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",499
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",499
 	;[500] CONST SPR44							= $0960
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",500
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",500
 	;[501] CONST SPR45							= $0968
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",501
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",501
 	;[502] CONST SPR46							= $0970
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",502
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",502
 	;[503] CONST SPR47							= $0978
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",503
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",503
 	;[504] CONST SPR48							= $0980
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",504
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",504
 	;[505] CONST SPR49							= $0988
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",505
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",505
 	;[506] CONST SPR50							= $0990
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",506
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",506
 	;[507] CONST SPR51							= $0998
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",507
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",507
 	;[508] CONST SPR52							= $09A0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",508
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",508
 	;[509] CONST SPR53							= $09A8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",509
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",509
 	;[510] CONST SPR54							= $09B0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",510
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",510
 	;[511] CONST SPR55							= $09B8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",511
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",511
 	;[512] CONST SPR56							= $09C0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",512
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",512
 	;[513] CONST SPR57							= $09C8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",513
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",513
 	;[514] CONST SPR58							= $09D0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",514
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",514
 	;[515] CONST SPR59							= $09D8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",515
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",515
 	;[516] CONST SPR60							= $09E0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",516
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",516
 	;[517] CONST SPR61							= $09E8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",517
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",517
 	;[518] CONST SPR62							= $09F0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",518
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",518
 	;[519] CONST SPR63							= $09F8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",519
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",519
 	;[520] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",520
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",520
 	;[521] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",521
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",521
 	;[522] REM Sprite collision.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",522
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",522
 	;[523] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",523
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",523
 	;[524] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",524
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",524
 	;[525] REM - For use with variables COL0, COL1, COL2, COL3, COL4, COL5, COL6 and COL7.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",525
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",525
 	;[526] REM - More than one collision can occur simultaneously.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",526
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",526
 	;[527] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",527
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",527
 	;[528] CONST HIT_SPRITE0					= $0001		' Sprite collided with sprite 0.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",528
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",528
 	;[529] CONST HIT_SPRITE1					= $0002		' Sprite collided with sprite 1.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",529
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",529
 	;[530] CONST HIT_SPRITE2					= $0004		' Sprite collided with sprite 2.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",530
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",530
 	;[531] CONST HIT_SPRITE3					= $0008		' Sprite collided with sprite 3.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",531
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",531
 	;[532] CONST HIT_SPRITE4					= $0010		' Sprite collided with sprite 4.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",532
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",532
 	;[533] CONST HIT_SPRITE5					= $0020		' Sprite collided with sprite 5.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",533
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",533
 	;[534] CONST HIT_SPRITE6					= $0040		' Sprite collided with sprite 6.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",534
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",534
 	;[535] CONST HIT_SPRITE7					= $0080		' Sprite collided with sprite 7.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",535
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",535
 	;[536] CONST HIT_BACKGROUND				= $0100		' Sprite collided with a background pixel.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",536
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",536
 	;[537] CONST HIT_BORDER					= $0200		' Sprite collided with the top/bottom/left/right border.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",537
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",537
 	;[538] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",538
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",538
 	;[539] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",539
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",539
 	;[540] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",540
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",540
 	;[541] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",541
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",541
 	;[542] REM DISC - Compass.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",542
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",542
 	;[543] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",543
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",543
 	;[544] REM   NW         N         NE
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",544
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",544
 	;[545] REM     \   NNW  |  NNE   /
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",545
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",545
 	;[546] REM       \      |      /
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",546
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",546
 	;[547] REM         \    |    /
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",547
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",547
 	;[548] REM    WNW    \  |  /    ENE
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",548
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",548
 	;[549] REM             \|/
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",549
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",549
 	;[550] REM  W ----------+---------- E
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",550
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",550
 	;[552] REM             /|REM    WSW    /  |  \    ESE
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",552
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",552
 	;[556] REM         /    |    REM       /      |      REM     /   SSW  |  SSE   REM   SW         S         SE
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",556
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",556
 	;[557] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",557
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",557
 	;[558] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",558
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",558
 	;[559] REM - North points upwards on the hand controller.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",559
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",559
 	;[560] REM - Directions are listed in a clockwise manner.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",560
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",560
 	;[561] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",561
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",561
 	;[562] CONST DISC_NORTH					= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",562
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",562
 	;[563] CONST DISC_NORTH_NORTH_EAST 		= $0014
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",563
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",563
 	;[564] CONST DISC_NORTH_EAST				= $0016
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",564
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",564
 	;[565] CONST DISC_EAST_NORTH_EAST			= $0006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",565
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",565
 	;[566] CONST DISC_EAST						= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",566
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",566
 	;[567] CONST DISC_EAST_SOUTH_EAST			= $0012
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",567
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",567
 	;[568] CONST DISC_SOUTH_EAST				= $0013
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",568
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",568
 	;[569] CONST DISC_SOUTH_SOUTH_EAST			= $0003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",569
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",569
 	;[570] CONST DISC_SOUTH					= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",570
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",570
 	;[571] CONST DISC_SOUTH_SOUTH_WEST			= $0011
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",571
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",571
 	;[572] CONST DISC_SOUTH_WEST				= $0019
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",572
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",572
 	;[573] CONST DISC_WEST_SOUTH_WEST			= $0009
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",573
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",573
 	;[574] CONST DISC_WEST						= $0008
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",574
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",574
 	;[575] CONST DISC_WEST_NORTH_WEST			= $0018
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",575
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",575
 	;[576] CONST DISC_NORTH_WEST				= $001C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",576
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",576
 	;[577] CONST DISC_NORTH_NORTH_WEST			= $000C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",577
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",577
 	;[578] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",578
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",578
 	;[579] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",579
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",579
 	;[580] REM DISC - Compass abbreviated versions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",580
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",580
 	;[581] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",581
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",581
 	;[582] CONST DISC_N						= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",582
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",582
 	;[583] CONST DISC_NNE						= $0014
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",583
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",583
 	;[584] CONST DISC_NE						= $0016
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",584
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",584
 	;[585] CONST DISC_ENE						= $0006
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",585
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",585
 	;[586] CONST DISC_E						= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",586
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",586
 	;[587] CONST DISC_ESE						= $0012
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",587
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",587
 	;[588] CONST DISC_SE						= $0013
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",588
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",588
 	;[589] CONST DISC_SSE						= $0003
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",589
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",589
 	;[590] CONST DISC_S						= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",590
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",590
 	;[591] CONST DISC_SSW						= $0011
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",591
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",591
 	;[592] CONST DISC_SW						= $0019
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",592
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",592
 	;[593] CONST DISC_WSW						= $0009
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",593
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",593
 	;[594] CONST DISC_W						= $0008
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",594
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",594
 	;[595] CONST DISC_WNW						= $0018
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",595
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",595
 	;[596] CONST DISC_NW						= $001C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",596
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",596
 	;[597] CONST DISC_NNW						= $000C
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",597
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",597
 	;[598] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",598
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",598
 	;[599] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",599
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",599
 	;[600] REM DISC - Directions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",600
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",600
 	;[601] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",601
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",601
 	;[602] CONST DISC_UP						= $0004
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",602
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",602
 	;[603] CONST DISC_UP_RIGHT					= $0016		' Up and right diagonal.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",603
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",603
 	;[604] CONST DISC_RIGHT					= $0002
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",604
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",604
 	;[605] CONST DISC_DOWN_RIGHT				= $0013		' Down  and right diagonal.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",605
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",605
 	;[606] CONST DISC_DOWN						= $0001
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",606
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",606
 	;[607] CONST DISC_DOWN_LEFT				= $0019		' Down and left diagonal.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",607
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",607
 	;[608] CONST DISC_LEFT						= $0008
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",608
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",608
 	;[609] CONST DISC_UP_LEFT					= $001C		' Up and left diagonal.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",609
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",609
 	;[610] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",610
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",610
 	;[611] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",611
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",611
 	;[612] REM DISK - Mask.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",612
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",612
 	;[613] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",613
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",613
 	;[614] CONST DISK_MASK						= $001F
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",614
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",614
 	;[615] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",615
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",615
 	;[616] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",616
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",616
 	;[617] REM Controller - Keypad.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",617
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",617
 	;[618] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",618
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",618
 	;[619] CONST KEYPAD_0						= 72
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",619
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",619
 	;[620] CONST KEYPAD_1						= 129
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",620
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",620
 	;[621] CONST KEYPAD_2						= 65
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",621
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",621
 	;[622] CONST KEYPAD_3						= 33
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",622
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",622
 	;[623] CONST KEYPAD_4						= 130
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",623
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",623
 	;[624] CONST KEYPAD_5						= 66
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",624
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",624
 	;[625] CONST KEYPAD_6						= 34
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",625
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",625
 	;[626] CONST KEYPAD_7						= 132
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",626
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",626
 	;[627] CONST KEYPAD_8						= 68
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",627
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",627
 	;[628] CONST KEYPAD_9						= 36
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",628
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",628
 	;[629] CONST KEYPAD_CLEAR					= 136
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",629
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",629
 	;[630] CONST KEYPAD_ENTER					= 40
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",630
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",630
 	;[631] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",631
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",631
 	;[632] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",632
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",632
 	;[633] REM Controller - Pause buttons (1+9 or 3+7 held down simultaneously).
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",633
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",633
 	;[634] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",634
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",634
 	;[635] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",635
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",635
 	;[636] REM - Key codes for 3+7 and 1+9 are the same (165).
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",636
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",636
 	;[637] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",637
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",637
 	;[638] CONST KEYPAD_PAUSE					= (KEYPAD_1 XOR KEYPAD_9)
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",638
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",638
 	;[639] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",639
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",639
 	;[640] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",640
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",640
 	;[641] REM Controller - Side buttons.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",641
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",641
 	;[642] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",642
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",642
 	;[643] CONST BUTTON_TOP_LEFT				= $A0		' Top left and top right are the same button.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",643
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",643
 	;[644] CONST BUTTON_TOP_RIGHT				= $A0		' Note: Bit 6 is low.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",644
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",644
 	;[645] CONST BUTTON_BOTTOM_LEFT			= $60		' Note: Bit 7 is low.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",645
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",645
 	;[646] CONST BUTTON_BOTTOM_RIGHT			= $C0		' Note: Bit 5 is low
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",646
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",646
 	;[647] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",647
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",647
 	;[648] REM Abbreviated versions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",648
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",648
 	;[649] CONST BUTTON_1						= $A0		' Top left or top right.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",649
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",649
 	;[650] CONST BUTTON_2						= $60		' Bottom left.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",650
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",650
 	;[651] CONST BUTTON_3						= $C0		' Bottom right.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",651
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",651
 	;[652] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",652
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",652
 	;[653] REM Mask.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",653
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",653
 	;[654] CONST BUTTON_MASK					= $E0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",654
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",654
 	;[655] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",655
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",655
 	;[656] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",656
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",656
 	;[657] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",657
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",657
 	;[658] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",658
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",658
 	;[659] REM Programmable Sound Generator (PSG)
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",659
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",659
 	;[660] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",660
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",660
 	;[661] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",661
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",661
 	;[662] REM - For use with the SOUND command
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",662
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",662
 	;[663] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",663
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",663
 	;[664] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",664
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",664
 	;[665] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",665
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",665
 	;[666] REM Internal sound hardware.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",666
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",666
 	;[667] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",667
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",667
 	;[668] CONST PSG_CHANNELA					= 0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",668
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",668
 	;[669] CONST PSG_CHANNELB					= 1
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",669
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",669
 	;[670] CONST PSG_CHANNELC					= 2
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",670
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",670
 	;[671] CONST PSG_ENVELOPE					= 3
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",671
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",671
 	;[672] CONST PSG_MIXER						= 4
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",672
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",672
 	;[673] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",673
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",673
 	;[674] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",674
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",674
 	;[675] REM ECS sound hardware.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",675
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",675
 	;[676] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",676
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",676
 	;[677] CONST PSG_ECS_CHANNELA				= 5
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",677
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",677
 	;[678] CONST PSG_ECS_CHANNELB				= 6
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",678
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",678
 	;[679] CONST PSG_ECS_CHANNELC				= 7
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",679
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",679
 	;[680] CONST PSG_ECS_ENVELOPE				= 8
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",680
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",680
 	;[681] CONST PSG_ECS_MIXER					= 9
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",681
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",681
 	;[682] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",682
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",682
 	;[683] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",683
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",683
 	;[684] REM PSG - Volume control.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",684
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",684
 	;[685] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",685
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",685
 	;[686] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",686
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",686
 	;[687] REM - For use in the volume field of the SOUND command.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",687
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",687
 	;[688] REM - Internal channels: PSG_CHANNELA, PSG_CHANNELB, PSG_CHANNELC
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",688
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",688
 	;[689] REM - ECS channels: PSG_ECS_CHANNELA, PSG_ECS_CHANNELB, PSG_ECS_CHANNELC
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",689
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",689
 	;[690] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",690
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",690
 	;[691] CONST PSG_VOLUME_MAX				= 15	' Maximum channel volume.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",691
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",691
 	;[692] CONST PSG_ENVELOPE_ENABLE			= 48	' Channel volume is controlled by envelope generator.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",692
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",692
 	;[693] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",693
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",693
 	;[694] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",694
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",694
 	;[695] REM PSG - Mixer control.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",695
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",695
 	;[696] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",696
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",696
 	;[697] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",697
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",697
 	;[698] REM - Internal channel: PSG_MIXER
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",698
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",698
 	;[699] REM - ECS channel: PSG_ECS_MIXER
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",699
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",699
 	;[700] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",700
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",700
 	;[701] CONST PSG_TONE_CHANNELA_DISABLE		= $01	' Disable channel A tone.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",701
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",701
 	;[702] CONST PSG_TONE_CHANNELB_DISABLE		= $02	' Disable channel B tone.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",702
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",702
 	;[703] CONST PSG_TONE_CHANNELC_DISABLE		= $04	' Disable channel C tone.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",703
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",703
 	;[704] CONST PSG_NOISE_CHANNELA_DISABLE	= $08	' Disable channel A noise.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",704
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",704
 	;[705] CONST PSG_NOISE_CHANNELB_DISABLE	= $10	' Disable channel B noise.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",705
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",705
 	;[706] CONST PSG_NOISE_CHANNELC_DISABLE	= $20	' Disable channel C noise.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",706
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",706
 	;[707] CONST PSG_MIXER_DEFAULT				= $38 	' All notes enabled. all noise disabled.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",707
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",707
 	;[708] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",708
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",708
 	;[709] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",709
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",709
 	;[710] REM PSG - Envelope control.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",710
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",710
 	;[711] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",711
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",711
 	;[712] REM Notes:
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",712
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",712
 	;[713] REM - Internal channel: PSG_ENVELOPE
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",713
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",713
 	;[714] REM - ECS channel: PSG_ECS_ENVELOPE
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",714
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",714
 	;[715] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",715
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",715
 	;[716] CONST PSG_ENVELOPE_HOLD								= $01
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",716
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",716
 	;[717] CONST PSG_ENVELOPE_ALTERNATE						= $02
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",717
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",717
 	;[718] CONST PSG_ENVELOPE_ATTACK							= $04
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",718
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",718
 	;[719] CONST PSG_ENVELOPE_CONTINUE							= $08
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",719
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",719
 	;[720] CONST PSG_ENVELOPE_SINGLE_SHOT_RAMP_DOWN_AND_OFF	= $00 '\______
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",720
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",720
 	;[721] CONST PSG_ENVELOPE_SINGLE_SHOT_RAMP_UP_AND_OFF		= $04 '/______
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",721
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",721
 	;[724] CONST PSG_ENVELOPE_CYCLE_RAMP_DOWN_SAWTOOTH			= $08 '\\\\\\CONST PSG_ENVELOPE_CYCLE_RAMP_DOWN_TRIANGLE			= $0A '\/\/\/CONST PSG_ENVELOPE_SINGLE_SHOT_RAMP_DOWN_AND_MAX	= $0B '\^^^^^^
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",724
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",724
 	;[725] CONST PSG_ENVELOPE_CYCLE_RAMP_UP_SAWTOOTH			= $0C '///////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",725
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",725
 	;[726] CONST PSG_ENVELOPE_SINGLE_SHOT_RAMP_UP_AND_MAX		= $0D '/^^^^^^
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",726
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",726
 	;[727] CONST PSG_ENVELOPE_CYCLE_RAMP_UP_TRIANGLE			= $0E '/\/\/\/
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",727
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",727
 	;[728] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",728
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",728
 	;[729] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",729
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",729
 	;[730] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",730
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",730
 	;[731] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",731
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",731
 	;[732] REM Useful functions.
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",732
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",732
 	;[733] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",733
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",733
 	;[734] DEF FN screenpos(aColumn, aRow)				=               (((aRow)*BACKGROUND_COLUMNS)+(aColumn))
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",734
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",734
 	;[735] DEF FN screenaddr(aColumn, aRow)			= (BACKTAB_ADDR+(((aRow)*BACKGROUND_COLUMNS)+(aColumn)))
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",735
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",735
 	;[736] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",736
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",736
 	;[737] DEF FN setspritex(aSpriteNo,anXPosition)	= #mobshadow(aSpriteNo  )=(#mobshadow(aSpriteNo  ) and $ff00)+anXPosition
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",737
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",737
 	;[738] DEF FN setspritey(aSpriteNo,aYPosition)		= #mobshadow(aSpriteNo+8)=(#mobshadow(aSpriteNo+8) and $ff80)+aYPosition
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",738
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",738
 	;[739] DEF FN resetsprite(aSpriteNo)				= sprite aSpriteNo, 0, 0, 0
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",739
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",739
 	;[740] DEF FN togglespritevisible(aSpriteNo)		= #mobshadow(aSpriteNo   )=#mobshadow(aSpriteNo)    xor VISIBLE
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",740
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",740
 	;[741] DEF FN togglespritehit(aSpriteNo)			= #mobshadow(aSpriteNo   )=#mobshadow(aSpriteNo)    xor HIT
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",741
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",741
 	;[742] DEF FN togglespritebehind(aSpriteNo)		= #mobshadow(aSpriteNo+16)=#mobshadow(aSpriteNo+16) xor BEHIND
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",742
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",742
 	;[743] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",743
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",743
 	;[744] REM /////////////////////////////////////////////////////////////////////////
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",744
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",744
 	;[745] 
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",745
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",745
 	;[746] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",746
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",746
 	;[747] REM END
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",747
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",747
 	;[748] REM -------------------------------------------------------------------------
-	SRCFILE "C:\IntyBASIC SDK\lib\constants.bas",748
+	SRCFILE "C:\Users\Josue\OneDrive\Software\IntyBASIC SDK\lib\constants.bas",748
 	;ENDFILE
-	;FILE C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS
-	;[19] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",19
-	;[20] CONST CARD_WIDTH = 8		' Width of a background card, in pixels
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",20
-	;[21] CONST CARD_HEIGHT = 8		' Height of a background card, in pixels
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",21
-	;[22] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",22
-	;[23] dim objectX(3), objectY(3), object(3) 'objectX keeps track of which lanes the object is using the card location, objectY keeps track of the y position for animation, object keeps track of the object in each lane
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",23
-	;[24] dim #objectColor(4)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",24
-	;[25] ' 0 = nothing
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",25
-	;[26] ' 1 = rock
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",26
-	;[27] ' 2 = coin
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",27
-	;[28] ' 3 = apple (extra live)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",28
-	;[29] ' 4 - 6 = power up
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",29
-	;[30] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",30
-	;[31] #objectColor(0) = SPR_GREEN '^^^^ colors for object ^^^^
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",31
+	;FILE C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS
+	;[20] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",20
+	;[21] CONST CARD_WIDTH = 8		' Width of a background card, in pixels
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",21
+	;[22] CONST CARD_HEIGHT = 8		' Height of a background card, in pixels
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",22
+	;[23] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",23
+	;[24] dim objectX(3), objectY(3), object(3) 'objectX keeps track of which lanes the object is using the card location, objectY keeps track of the y position for animation, object keeps track of the object in each lane
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",24
+	;[25] dim #objectColor(4)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",25
+	;[26] ' 0 = nothing
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",26
+	;[27] ' 1 = rock
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",27
+	;[28] ' 2 = coin
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",28
+	;[29] ' 3 = apple (extra live)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",29
+	;[30] ' 4 - 6 = power up
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",30
+	;[31] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",31
+	;[32] #objectColor(0) = SPR_GREEN '^^^^ colors for object ^^^^
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",32
 	MVII #5,R0
 	MVO R0,Q6
-	;[32] #objectColor(1) = SPR_GREY
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",32
+	;[33] #objectColor(1) = SPR_GREY
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",33
 	MVII #4096,R0
 	MVO R0,Q6+1
-	;[33] #objectColor(2) = SPR_YELLOW
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",33
+	;[34] #objectColor(2) = SPR_YELLOW
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",34
 	MVII #6,R0
 	MVO R0,Q6+2
-	;[34] #objectColor(3) = SPR_RED
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",34
+	;[35] #objectColor(3) = SPR_RED
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",35
 	MVII #2,R0
 	MVO R0,Q6+3
-	;[35] #objectColor(4) = SPR_BLUE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",35
+	;[36] #objectColor(4) = SPR_BLUE
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",36
 	MVII #1,R0
 	MVO R0,Q6+4
-	;[36] #objectColor(5) = SPR_BLACK
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",36
+	;[37] #objectColor(5) = SPR_BLACK
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",37
 	CLRR R0
 	MVO R0,Q6+5
-	;[37] #objectColor(6) = SPR_GREEN
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",37
+	;[38] #objectColor(6) = SPR_GREEN
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",38
 	MVII #5,R0
 	MVO R0,Q6+6
-	;[38] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",38
 	;[39] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",39
-	;[40] objectX(0) = 4 'range 0 - 19
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",40
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",39
+	;[40] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",40
+	;[41] objectX(0) = 4 'range 0 - 19
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",41
 	MVII #4,R0
 	MVO R0,Q3
-	;[41] objectX(1) = 7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",41
+	;[42] objectX(1) = 7
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",42
 	MVII #7,R0
 	MVO R0,Q3+1
-	;[42] objectX(2) = 9
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",42
+	;[43] objectX(2) = 9
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",43
 	MVII #9,R0
 	MVO R0,Q3+2
-	;[43] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",43
-	;[44] for a = 0 to 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",44
+	;[44] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",44
+	;[45] for a = 0 to 2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",45
 	CLRR R0
 	MVO R0,V1
 T1:
-	;[45]     objectY(a) = random(3)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",45
+	;[46]     objectY(a) = random(3)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",46
 	MVII #3,R1
 	CALL _next_random
 	CALL qs_mpy8
@@ -3230,305 +3232,298 @@ T1:
 	MVII #Q4,R3
 	ADD V1,R3
 	MVO@ R0,R3
-	;[46] 	object(a) = 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",46
+	;[47] 	object(a) = 2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",47
 	MVII #2,R0
 	ADDI #(Q5-Q4) AND $FFFF,R3
 	MVO@ R0,R3
-	;[47] next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",47
+	;[48] next a
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",48
 	MVI V1,R0
 	INCR R0
 	MVO R0,V1
 	CMPI #2,R0
 	BLE T1
-	;[48] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",48
-	;[49] playerX = random(3)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",49
+	;[49] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",49
+	;[50] playerX = random(3)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",50
 	MVII #3,R1
 	CALL _next_random
 	CALL qs_mpy8
 	SWAP R0
 	ANDI #255,R0
 	MVO R0,V2
-	;[50] #playerColor = SPR_RED 'color of character
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",50
+	;[51] #playerColor = SPR_RED 'color of character
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",51
 	MVII #2,R0
 	MVO R0,V3
-	;[51] playerDX = 1 'rate of frame change
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",51
+	;[52] playerDX = 1 'rate of frame change
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",52
 	MVII #1,R0
 	MVO R0,V4
-	;[52] playerY = 10 'player y  position
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",52
+	;[53] playerY = 10 'player y  position
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",53
 	MVII #10,R0
 	MVO R0,V5
-	;[53] playerF = 2	'player first frame
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",53
+	;[54] playerF = 2	'player first frame
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",54
 	MVII #2,R0
 	MVO R0,V6
-	;[54] invisible = 0 'activation of power ups
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",54
+	;[55] invisible = 0 'activation of power ups
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",55
 	CLRR R0
 	MVO R0,V7
-	;[55] bonus_exp = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",55
+	;[56] bonus_exp = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",56
 	MVO R0,V8
-	;[56] bonus_lives = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",56
+	;[57] bonus_lives = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",57
 	NOP
 	MVO R0,V9
-	;[57] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",57
-	;[58] chance = 0 'used to determinate which object to show
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",58
+	;[58] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",58
+	;[59] chance = 0 'used to determinate which object to show
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",59
 	MVO R0,V10
-	;[59] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",59
-	;[60] 'Level ajustament
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",60
-	;[61] dificulty = 1 'level's dificulty
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",61
+	;[60] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",60
+	;[61] 'Level ajustament
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",61
+	;[62] dificulty = 1 'level's dificulty
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",62
 	MVII #1,R0
 	MVO R0,V11
-	;[62] #maximunScore = 100 'level's score to pass it
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",62
+	;[63] #maximunScore = 100 'level's score to pass it
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",63
 	MVII #100,R0
 	MVO R0,V12
-	;[63] dim percentage(4) 'keep track of the likelihood of an object appearing
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",63
-	;[64] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",64
-	;[65] const highestDifficulty = 7 'highest dificulty possible
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",65
-	;[66] scene = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",66
+	;[64] dim percentage(4) 'keep track of the likelihood of an object appearing
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",64
+	;[65] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",65
+	;[66] const highestDifficulty = 7 'highest dificulty possible
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",66
+	;[67] scene = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",67
 	CLRR R0
 	MVO R0,V13
-	;[67] jump = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",67
+	;[68] jump = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",68
 	MVO R0,V14
-	;[68] #score = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",68
+	;[69] #score = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",69
 	NOP
 	MVO R0,V15
-	;[69] heartrate = 0 'animation for heart
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",69
+	;[70] heartrate = 0 'animation for heart
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",70
 	MVO R0,V16
-	;[70] lives = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",70
+	;[71] lives = 3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",71
 	MVII #3,R0
 	MVO R0,V17
-	;[71] level = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",71
+	;[72] level = 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",72
 	MVII #1,R0
 	MVO R0,V18
-	;[72] univclock=0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",72
+	;[73] univclock=0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",73
 	CLRR R0
 	MVO R0,V19
-	;[73] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",73
-	;[74] street_lineY = 0 'road lines tracking
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",74
+	;[74] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",74
+	;[75] street_lineY = 0 'road lines tracking
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",75
 	MVO R0,V20
-	;[75] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",75
-	;[76] 'MODE   SCREEN_COLOR_STACK, STACK_GREEN, STACK_BLACK, STACK_GREEN, STACK_BLACK
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",76
-	;[77] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",77
-	;[78] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",78
+	;[76] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",76
+	;[77] 'MODE   SCREEN_COLOR_STACK, STACK_GREEN, STACK_BLACK, STACK_GREEN, STACK_BLACK
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",77
+	;[78] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",78
+	;[79] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",79
 	CALL _wait
-	;[79] DEFINE 0,16,screen_bitmaps_0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",79
+	;[80] DEFINE 0,16,screen_bitmaps_0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",80
 	CLRR R0
 	MVO R0,_gram_target
 	MVII #16,R0
 	MVO R0,_gram_total
 	MVII #Q8,R0
 	MVO R0,_gram_bitmap
-	;[80] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",80
+	;[81] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",81
 	CALL _wait
-	;[81] DEFINE 16,16,screen_bitmaps_1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",81
+	;[82] DEFINE 16,16,screen_bitmaps_1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",82
 	MVII #16,R0
 	MVO R0,_gram_target
 	MVO R0,_gram_total
 	MVII #Q9,R0
 	MVO R0,_gram_bitmap
-	;[82] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",82
+	;[83] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",83
 	CALL _wait
-	;[83] DEFINE 32,16,screen_bitmaps_2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",83
+	;[84] DEFINE 32,16,screen_bitmaps_2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",84
 	MVII #32,R0
 	MVO R0,_gram_target
 	MVII #16,R0
 	MVO R0,_gram_total
 	MVII #Q10,R0
 	MVO R0,_gram_bitmap
-	;[84] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",84
+	;[85] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",85
 	CALL _wait
-	;[85] DEFINE 48,4,screen_bitmaps_3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",85
+	;[86] DEFINE 48,4,screen_bitmaps_3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",86
 	MVII #48,R0
 	MVO R0,_gram_target
 	MVII #4,R0
 	MVO R0,_gram_total
 	MVII #Q11,R0
 	MVO R0,_gram_bitmap
-	;[86] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",86
+	;[87] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",87
 	CALL _wait
-	;[87] define 52,5, player
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",87
+	;[88] define 52,5, player
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",88
 	MVII #52,R0
 	MVO R0,_gram_target
 	MVII #5,R0
 	MVO R0,_gram_total
 	MVII #Q12,R0
 	MVO R0,_gram_bitmap
-	;[88] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",88
+	;[89] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",89
 	CALL _wait
-	;[89] define 57,2, tiles
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",89
+	;[90] define 57,2, tiles
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",90
 	MVII #57,R0
 	MVO R0,_gram_target
 	MVII #2,R0
 	MVO R0,_gram_total
 	MVII #Q13,R0
 	MVO R0,_gram_bitmap
-	;[90] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",90
+	;[91] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",91
 	CALL _wait
-	;[91] define 59,3, street
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",91
+	;[92] define 59,3, street
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",92
 	MVII #59,R0
 	MVO R0,_gram_target
 	MVII #3,R0
 	MVO R0,_gram_total
 	MVII #Q14,R0
 	MVO R0,_gram_bitmap
-	;[92] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",92
+	;[93] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",93
 	CALL _wait
-	;[93] define 62,1, nothing
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",93
+	;[94] define 62,1, nothing
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",94
 	MVII #62,R0
 	MVO R0,_gram_target
 	MVII #1,R0
 	MVO R0,_gram_total
 	MVII #Q15,R0
 	MVO R0,_gram_bitmap
-	;[94] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",94
+	;[95] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",95
 	CALL _wait
-	;[95] define 63,1, rock
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",95
+	;[96] define 63,1, rock
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",96
 	MVII #63,R0
 	MVO R0,_gram_target
 	MVII #1,R0
 	MVO R0,_gram_total
 	MVII #Q16,R0
 	MVO R0,_gram_bitmap
-	;[96] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",96
+	;[97] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",97
 	CALL _wait
-	;[97] define 64,1, coin
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",97
+	;[98] define 64,1, coin
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",98
 	MVII #64,R0
 	MVO R0,_gram_target
 	MVII #1,R0
 	MVO R0,_gram_total
 	MVII #Q17,R0
 	MVO R0,_gram_bitmap
-	;[98] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",98
+	;[99] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",99
 	CALL _wait
-	;[99] define 65,1, apple
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",99
+	;[100] define 65,1, apple
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",100
 	MVII #65,R0
 	MVO R0,_gram_target
 	MVII #1,R0
 	MVO R0,_gram_total
 	MVII #Q18,R0
 	MVO R0,_gram_bitmap
-	;[100] wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",100
+	;[101] wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",101
 	CALL _wait
-	;[101] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",101
-	;[102] DEF FN SpritePosX(aColumn, anOffset) = ((aColumn + 1) * CARD_WIDTH ) + anOffset 'allows for the sprite to be used in a similar way to print at
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",102
-	;[103] DEF FN SpritePosY(aRow, anOffset) = ((aRow    + 1) * CARD_HEIGHT) + anOffset
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",103
-	;[104] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",104
-	;[105] cls
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",105
+	;[102] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",102
+	;[103] DEF FN SpritePosX(aColumn, anOffset) = ((aColumn + 1) * CARD_WIDTH ) + anOffset 'allows for the sprite to be used in a similar way to print at
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",103
+	;[104] DEF FN SpritePosY(aRow, anOffset) = ((aRow    + 1) * CARD_HEIGHT) + anOffset
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",104
+	;[105] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",105
+	;[106] cls
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",106
 	CALL CLRSCR
-	;[106] main:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",106
+	;[107] main:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",107
 	; MAIN
-Q19:	;[107] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",107
-	;[108] 	IF scene = 0 THEN GOSUB scene1 'intro
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",108
+Q19:	;[108] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",108
+	;[109] 	IF scene = 0 THEN GOSUB scene1 'intro
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",109
 	MVI V13,R0
 	TSTR R0
 	BNE T2
 	CALL Q20
 T2:
-	;[109] 	IF scene = 1 THEN GOSUB scene2 'game
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",109
+	;[110] 	IF scene = 1 THEN GOSUB scene2 'game
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",110
 	MVI V13,R0
 	CMPI #1,R0
 	BNE T3
 	CALL Q21
 T3:
-	;[110] 	IF scene = 2 THEN GOSUB scene3 'end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",110
+	;[111] 	IF scene = 2 THEN GOSUB scene3 'end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",111
 	MVI V13,R0
 	CMPI #2,R0
 	BNE T4
 	CALL Q22
 T4:
-	;[111] 	IF scene = 3 THEN GOSUB scene4 'pause
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",111
-	MVI V13,R0
-	CMPI #3,R0
-	BNE T5
-	CALL Q23
-T5:
 	;[112] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",112
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",112
 	;[113] 	univclock = (univclock + 1) % 128 'used for animation and control over how offen something show up
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",113
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",113
 	MVI V19,R0
 	INCR R0
 	ANDI #127,R0
 	MVO R0,V19
 	;[114] goto main
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",114
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",114
 	B Q19
 	;[115] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",115
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",115
 	;[116] scene1: procedure 'Introduction
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",116
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",116
 	; SCENE1
 Q20:	PROC
 	BEGIN
 	;[117] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",117
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",117
 	CALL _wait
 	;[118] 	print at SCREENPOS(1, 0) color CS_WHITE,"- RunnerZ"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",118
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",118
 	MVII #513,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3553,8 +3548,8 @@ Q20:	PROC
 	XORI #832,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[119] 	print at SCREENPOS(1, 1) color CS_WHITE,"- v1.0"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",119
+	;[119] 	print at SCREENPOS(1, 1) color CS_WHITE,"- v1.1"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",119
 	MVII #533,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3571,11 +3566,11 @@ Q20:	PROC
 	MVO@ R0,R4
 	XORI #248,R0
 	MVO@ R0,R4
-	XORI #240,R0
+	XORI #248,R0
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[120] 	print at SCREENPOS(1, 2) color CS_WHITE,"- Made by: Josue"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",120
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",120
 	MVII #553,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3616,7 +3611,7 @@ Q20:	PROC
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[121] 	print at SCREENPOS(1, 3) color CS_WHITE,"- Github: JosueCom"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",121
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",121
 	MVII #573,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3661,7 +3656,7 @@ Q20:	PROC
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[122] 	print at SCREENPOS(0, 10) color CS_WHITE, "'Right' to continue"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",122
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",122
 	MVII #712,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3708,12 +3703,12 @@ Q20:	PROC
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[123] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",123
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",123
 	;[124] 	if univclock%8 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1 'frame to show during animation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",124
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",124
 	MVI V19,R0
 	ANDI #7,R0
-	BNE T6
+	BNE T5
 	MVI V16,R0
 	INCR R0
 	ANDI #1,R0
@@ -3735,30 +3730,30 @@ Q20:	PROC
 	ANDR R1,R0
 	COMR R1
 	XORR R1,R0
-	BEQ T7
+	BEQ T6
 	MVI V4,R0
 	MVII #65535,R5
 	CLRR R4
 	CLRC
 	RRC R0,1
-	BEQ T9
-T8:
+	BEQ T8
+T7:
 	BNC $+3
 	ADDR R5,R4
 	ADDR R5,R5
 	SARC R0,1
-	BNE T8
-T9:
+	BNE T7
+T8:
 	BNC $+3
 	ADDR R5,R4
 	MOVR R4,R0
 	MVO R0,V4
-T7:
 T6:
+T5:
 	;[125] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",125
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",125
 	;[126] 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(5, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED 'player animation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",126
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",126
 	MVII #1616,R0
 	MVO R0,_mobs
 	MVII #816,R0
@@ -3769,12 +3764,12 @@ T6:
 	ADDI #2466,R0
 	MVO R0,_mobs+16
 	;[127] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",127
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",127
 	;[128] 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," " ' right arrow animation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",128
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",128
 	MVI V16,R0
 	TSTR R0
-	BEQ T10
+	BEQ T9
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3784,8 +3779,8 @@ T6:
 	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	B T11
-T10:
+	B T10
+T9:
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3793,127 +3788,127 @@ T10:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-T11:
+T10:
 	;[129] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",129
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",129
 	;[130] 	IF cont1.right THEN scene = 1: mode 1 : gosub levelupAnimation 'go to game once pressed
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",130
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",130
 	MVI 511,R0
 	COMR R0
 	ANDI #2,R0
-	BEQ T12
+	BEQ T11
 	MVII #1,R0
 	MVO R0,V13
 	MVII #3,R0
 	MVO R0,_mode_select
-	CALL Q25
-T12:
+	CALL Q24
+T11:
 	;[131] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",131
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",131
 	RETURN
 	;[132] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",132
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",132
 	;[133] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",133
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",133
 	ENDP
 	;[134] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",134
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",134
 	;[135] scene2: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",135
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",135
 	; SCENE2
 Q21:	PROC
 	BEGIN
 	;[136] 	SCREEN screen_cards 'draw background
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",136
-	MVII #Q27,R3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",136
+	MVII #Q26,R3
 	MVII #512,R2
 	MVII #20,R1
 	MVII #12,R0
 	CALL CPYBLK
 	;[137] 	gosub determinelevel 'determinate properties of the current level
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",137
-	CALL Q28
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",137
+	CALL Q27
 	;[138] 	gosub background 'draw extra things in the background such as score and lives
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",138
-	CALL Q29
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",138
+	CALL Q28
 	;[139] 	gosub drawObjects 'draw object and determinate their properties and behavior
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",139
-	CALL Q30
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",139
+	CALL Q29
 	;[140] 	gosub drawPlayer  'draw player and determinate his behavior
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",140
-	CALL Q31
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",140
+	CALL Q30
 	;[141] 	'IF FRAME AND 1 THEN GOSUB move_player
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",141
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",141
 	;[142] 	'IF FRAME AND 1 THEN GOSUB enemy
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",142
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",142
 	;[143] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",143
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",143
 	;[144] 	if lives <= 0 then gosub clearAll : gosub clearPower : scene = 2 'if their is not more lives go to the end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",144
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",144
 	MVI V17,R0
 	CMPI #0,R0
-	BGT T13
+	BGT T12
+	CALL Q31
 	CALL Q32
-	CALL Q33
 	MVII #2,R0
 	MVO R0,V13
-T13:
+T12:
 	;[145] 	if lives > 99 then lives = 10 : invisible = 100 'if lives if greater than what the screen can show give it 10 lives and the power up invisible for a long period
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",145
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",145
 	MVI V17,R0
 	CMPI #99,R0
-	BLE T14
+	BLE T13
 	MVII #10,R0
 	MVO R0,V17
 	MVII #100,R0
 	MVO R0,V7
-T14:
+T13:
 	;[146] 	if #score >= #maximunScore then level = level + 1 : gosub clearPower : #score = 0 : gosub levelupAnimation 'if score obtained, move to the next level
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",146
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",146
 	MVI V15,R0
 	CMP V12,R0
-	BLT T15
+	BLT T14
 	MVI V18,R0
 	INCR R0
 	MVO R0,V18
-	CALL Q33
+	CALL Q32
 	CLRR R0
 	MVO R0,V15
-	CALL Q25
-T15:
+	CALL Q24
+T14:
 	;[147] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",147
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",147
 	;[148] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",148
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",148
 	CALL _wait
 	;[149] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",149
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",149
 	RETURN
 	;[150] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",150
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",150
 	ENDP
 	;[151] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",151
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",151
 	;[152] scene3: procedure 'End scene
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",152
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",152
 	; SCENE3
 Q22:	PROC
 	BEGIN
 	;[153] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",153
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",153
 	;[154] 	MODE   SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",154
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",154
 	MVII #20480,R0
 	MVO R0,_color
 	MVII #2,R0
 	MVO R0,_mode_select
 	;[155] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",155
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",155
 	CALL _wait
 	;[156] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",156
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",156
 	;[157] 	print at SCREENPOS(2, 2) color CS_BLUE,"Made by: Josue"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",157
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",157
 	MVII #554,R0
 	MVO R0,_screen
 	MVII #1,R0
@@ -3950,7 +3945,7 @@ Q22:	PROC
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[158] 	print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",158
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",158
 	MVII #574,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -3992,7 +3987,7 @@ Q22:	PROC
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[159] 	print at SCREENPOS(2, 4) color CS_WHITE,"> Play Again"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",159
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",159
 	MVII #594,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4025,7 +4020,7 @@ Q22:	PROC
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[160] 	print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",160
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",160
 	MVII #614,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4065,7 +4060,7 @@ Q22:	PROC
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[161] 	print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",161
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",161
 	MVII #634,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4086,13 +4081,13 @@ Q22:	PROC
 	MVO@ R0,R4
 	MVO R4,_screen
 	;[162] 	if univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",162
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",162
 	MVI V19,R0
-T17:
+T16:
 	SUBI #15,R0
-	BC T17
+	BC T16
 	ADDI #15,R0
-	BNE T16
+	BNE T15
 	MVI V16,R0
 	INCR R0
 	ANDI #1,R0
@@ -4114,30 +4109,30 @@ T17:
 	ANDR R1,R0
 	COMR R1
 	XORR R1,R0
-	BEQ T18
+	BEQ T17
 	MVI V4,R0
 	MVII #65535,R5
 	CLRR R4
 	CLRC
 	RRC R0,1
-	BEQ T20
-T19:
+	BEQ T19
+T18:
 	BNC $+3
 	ADDR R5,R4
 	ADDR R5,R5
 	SARC R0,1
-	BNE T19
-T20:
+	BNE T18
+T19:
 	BNC $+3
 	ADDR R5,R4
 	MOVR R4,R0
 	MVO R0,V4
-T18:
-T16:
+T17:
+T15:
 	;[163] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",163
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",163
 	;[164] 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED 'player animation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",164
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",164
 	MVII #1616,R0
 	MVO R0,_mobs
 	MVII #832,R0
@@ -4148,14 +4143,14 @@ T16:
 	ADDI #2466,R0
 	MVO R0,_mobs+16
 	;[165] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",165
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",165
 	;[166] 	'play again or end the game
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",166
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",166
 	;[167] 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",167
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",167
 	MVI V16,R0
 	TSTR R0
-	BEQ T21
+	BEQ T20
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4165,8 +4160,8 @@ T16:
 	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	B T22
-T21:
+	B T21
+T20:
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4174,12 +4169,12 @@ T21:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-T22:
+T21:
 	;[168] 	if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",168
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",168
 	MVI V16,R0
 	TSTR R0
-	BEQ T23
+	BEQ T22
 	MVII #732,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4189,8 +4184,8 @@ T22:
 	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	B T24
-T23:
+	B T23
+T22:
 	MVII #732,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4198,38 +4193,38 @@ T23:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-T24:
+T23:
 	;[169] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",169
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",169
 	;[170] 	wait 'allow for time for the player to not miss press the button
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",170
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",170
 	CALL _wait
 	;[171] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",171
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",171
 	CALL _wait
 	;[172] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",172
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",172
 	CALL _wait
 	;[173] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",173
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",173
 	CALL _wait
 	;[174] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",174
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",174
 	CALL _wait
 	;[175] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",175
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",175
 	CALL _wait
 	;[176] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",176
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",176
 	;[177] 	'reset everything with the right and game to the left
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",177
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",177
 	;[178] 	if cont1.right then gosub clearAll : #score = 0 : lives = 3 : scene = 0 : level = 1 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",178
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",178
 	MVI 511,R0
 	COMR R0
 	ANDI #2,R0
-	BEQ T25
-	CALL Q32
+	BEQ T24
+	CALL Q31
 	CLRR R0
 	MVO R0,V15
 	MVII #3,R0
@@ -4248,42 +4243,1175 @@ T24:
 	CALL _wait
 	CALL _wait
 	CALL _wait
-T25:
+T24:
 	;[179] 	if cont1.left then gosub clearAll :goto end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",179
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",179
 	MVI 511,R0
 	COMR R0
 	ANDI #8,R0
-	BEQ T26
-	CALL Q32
-	B Q35
-T26:
+	BEQ T25
+	CALL Q31
+	B Q34
+T25:
 	;[180] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",180
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",180
 	;[181] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",181
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",181
 	RETURN
 	ENDP
 	;[182] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",182
-	;[183] scene4: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",183
-	; SCENE4
-Q23:	PROC
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",182
+	;[183] background: procedure 'draw and writes extra details to background such as score and lives 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",183
+	; BACKGROUND
+Q28:	PROC
 	BEGIN
-	;[184] 	MODE   SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK 'allows print at makes background black
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",184
+	;[184] 	if (univclock % 4) = 0 then street_lineY = (street_lineY + 1) % 7
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",184
+	MVI V19,R0
+	ANDI #3,R0
+	BNE T26
+	MVI V20,R0
+	INCR R0
+T27:
+	SUBI #7,R0
+	BC T27
+	ADDI #7,R0
+	MVO R0,V20
+T26:
+	;[185] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",185
+	;[186] 	SPRITE 5, SpritePosX(4 - street_lineY/2, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR59 + SPR_GREY 'draw lines in lanes
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",186
+	MVII #4,R0
+	MVI V20,R1
+	SLR R1,1
+	SUBR R1,R0
+	INCR R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #512,R0
+	MVO R0,_mobs+5
+	MVI V20,R0
+	ADDI #6,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #256,R0
+	MVO R0,_mobs+13
+	MVII #6616,R0
+	MVO R0,_mobs+21
+	;[187] 	SPRITE 6, SpritePosX(7, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR60 + SPR_GREY
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",187
+	MVII #576,R0
+	MVO R0,_mobs+6
+	MVI V20,R0
+	ADDI #6,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #256,R0
+	MVO R0,_mobs+14
+	MVII #6624,R0
+	MVO R0,_mobs+22
+	;[188] 	SPRITE 7, SpritePosX(9 + street_lineY/2, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR61 + SPR_GREY
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",188
+	MVI V20,R0
+	SLR R0,1
+	ADDI #10,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #512,R0
+	MVO R0,_mobs+7
+	MVI V20,R0
+	ADDI #6,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #256,R0
+	MVO R0,_mobs+15
+	MVII #6632,R0
+	MVO R0,_mobs+23
+	;[189] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",189
+	;[190] 	gosub writescore 'write score
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",190
+	CALL Q36
+	;[191] 	gosub drawheart  'draw heart and nothing of lives
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",191
+	CALL Q37
+	;[192] 	gosub writelevel 'write the current level
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",192
+	CALL Q38
+	;[193] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",193
+	;[194] 	return
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",194
+	RETURN
+	;[195] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",195
+	ENDP
+	;[196] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",196
+	;[197] drawObjects: procedure
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",197
+	; DRAWOBJECTS
+Q29:	PROC
+	BEGIN
+	;[198] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",198
+	;[199] 	for a = 0 to 2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",199
+	CLRR R0
+	MVO R0,V1
+T28:
+	;[200] 		if (univclock % (highestDifficulty-dificulty)) = 0 then 'objects move at different rate depending on the dificulty
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",200
+	MVI V19,R0
+	MVII #7,R1
+	SUB V11,R1
+	BEQ T30
+T31:
+	SUBR R1,R0
+	BC T31
+	ADDR R1,R0
+T30:
+	TSTR R0
+	BNE T29
+	;[201] 			objectY(a) = (objectY(a) + 1) % 8
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",201
+	MVII #Q4,R3
+	ADD V1,R3
+	MVI@ R3,R0
+	INCR R0
+	ANDI #7,R0
+	MVO@ R0,R3
+	;[202] 			if objectY(a) = 0 then gosub chooseObject : object(a) = chance
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",202
+	MVI@ R3,R0
+	TSTR R0
+	BNE T32
+	CALL Q40
+	MVI V10,R0
+	MVII #Q5,R3
+	ADD V1,R3
+	MVO@ R0,R3
+T32:
+	;[203] 		end if
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",203
+T29:
+	;[204] 		
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",204
+	;[205] 	next a
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",205
+	MVI V1,R0
+	INCR R0
+	MVO R0,V1
+	CMPI #2,R0
+	BLE T28
+	;[206] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",206
+	;[207] 	objectX(0) = 4 - objectY(0)/2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",207
+	MVII #4,R0
+	MVI Q4,R1
+	SLR R1,1
+	SUBR R1,R0
+	MVO R0,Q3
+	;[208] 	objectX(2) = 9 + objectY(2)/2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",208
+	MVI Q4+2,R0
+	SLR R0,1
+	ADDI #9,R0
+	MVO R0,Q3+2
+	;[209] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",209
+	;[210] 	for a = 1 to 3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",210
+	MVII #1,R0
+	MVO R0,V1
+T33:
+	;[211] 		if object(a - 1) >= 4 then 'if statement to see if power up has appear; draw different color for power ups
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",211
+	MVII #Q5-1,R3
+	ADD V1,R3
+	MVI@ R3,R0
+	CMPI #4,R0
+	BLT T34
+	;[212] 			SPRITE a, SpritePosX(objectX(a - 1), 0) + VISIBLE, SpritePosY(4 + objectY(a - 1), 0) + ZOOMY2, SPR62 + (object(a - 1) - 3)* 8 + #objectColor(object(a - 1))
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",212
+	MVII #Q1,R0
+	ADD V1,R0
+	MOVR R0,R4
+	ADDI #(Q3-Q5) AND $FFFF,R3
+	MVI@ R3,R0
+	INCR R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #512,R0
+	MVO@ R0,R4
+	ADDI #(Q4-Q3) AND $FFFF,R3
+	MVI@ R3,R0
+	ADDI #5,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #256,R0
+	ADDI #7,R4
+	MVO@ R0,R4
+	ADDI #(Q5-Q4) AND $FFFF,R3
+	MVI@ R3,R0
+	SUBI #3,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #2544,R0
+	MVII #Q6,R1
+	ADD@ R3,R1
+	ADD@ R1,R0
+	ADDI #7,R4
+	MVO@ R0,R4
+	;[213] 			'if object(a - 1) = 4 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\319"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",213
+	;[214] 			'if object(a - 1) = 5 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\320"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",214
+	;[215] 			'if object(a - 1) = 6 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\321"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",215
+	;[216] 		else 'if there is not power ups
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",216
+	B T35
+T34:
+	;[217] 			SPRITE a, SpritePosX(objectX(a - 1), 0) + VISIBLE, SpritePosY(4 + objectY(a - 1), 0) + ZOOMY2, SPR62 + object(a - 1) * 8 + #objectColor(object(a - 1))
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",217
+	MVII #Q1,R0
+	ADD V1,R0
+	MOVR R0,R4
+	MVII #Q3-1,R3
+	ADD V1,R3
+	MVI@ R3,R0
+	INCR R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #512,R0
+	MVO@ R0,R4
+	ADDI #(Q4-Q3) AND $FFFF,R3
+	MVI@ R3,R0
+	ADDI #5,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #256,R0
+	ADDI #7,R4
+	MVO@ R0,R4
+	ADDI #(Q5-Q4) AND $FFFF,R3
+	MVI@ R3,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #2544,R0
+	MVII #Q6,R1
+	ADD@ R3,R1
+	ADD@ R1,R0
+	ADDI #7,R4
+	MVO@ R0,R4
+	;[218] 		end if
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",218
+T35:
+	;[219] 	next a
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",219
+	MVI V1,R0
+	INCR R0
+	MVO R0,V1
+	CMPI #3,R0
+	BLE T33
+	;[220] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",220
+	;[221] 	return
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",221
+	RETURN
+	;[222] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",222
+	ENDP
+	;[223] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",223
+	;[224] drawPlayer: procedure 'collision with the player and player's behavior
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",224
+	; DRAWPLAYER
+Q30:	PROC
+	BEGIN
+	;[225] 	if cont1.left AND univclock%5 = 0 then playerX = playerX - 1 'various commands: move right, move left, jump, pause
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",225
+	MVI 511,R0
+	COMR R0
+	ANDI #8,R0
+	MVI V19,R1
+T37:
+	SUBI #5,R1
+	BC T37
+	ADDI #5,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T36
+	MVI V2,R0
+	DECR R0
+	MVO R0,V2
+T36:
+	;[226] 	if cont1.right AND univclock%5 = 0 then playerX = playerX + 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",226
+	MVI 511,R0
+	COMR R0
+	ANDI #2,R0
+	MVI V19,R1
+T39:
+	SUBI #5,R1
+	BC T39
+	ADDI #5,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T38
+	MVI V2,R0
+	INCR R0
+	MVO R0,V2
+T38:
+	;[227] 	if cont1.up AND univclock%5 = 0 AND playerY = 10 then jump = 5
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",227
+	MVI 511,R0
+	COMR R0
+	ANDI #4,R0
+	MVI V19,R1
+T41:
+	SUBI #5,R1
+	BC T41
+	ADDI #5,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	MVI V5,R1
+	CMPI #10,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T40
+	MVII #5,R0
+	MVO R0,V14
+T40:
+	;[228] 	if cont1.B0 AND univclock%5 = 0 then gosub pauseScene
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",228
+	MVI 511,R0
+	COMR R0
+	ANDI #224,R0
+	CMPI #160,R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V19,R1
+T43:
+	SUBI #5,R1
+	BC T43
+	ADDI #5,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T42
+	CALL Q42
+T42:
+	;[229] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",229
+	;[230] 	playerX = (playerX + 3) % 3 'keep player within the three lanes: 0 = lane 1, 1 = lane 2, 2 = lane 3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",230
+	MVI V2,R0
+	ADDI #3,R0
+T44:
+	SUBI #3,R0
+	BC T44
+	ADDI #3,R0
+	MVO R0,V2
+	;[231] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",231
+	;[232] 	if univclock%(highestDifficulty-dificulty) = 0 AND jump > 0 then playerY = 10 - jump + 2: jump = jump - 1 : playerF = 3 'check to see if condition for power ups and jump have been met
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",232
+	MVI V19,R0
+	MVII #7,R1
+	SUB V11,R1
+	BEQ T46
+T47:
+	SUBR R1,R0
+	BC T47
+	ADDR R1,R0
+T46:
+	TSTR R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V14,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BGT $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T45
+	MVII #10,R0
+	SUB V14,R0
+	ADDI #2,R0
+	MVO R0,V5
+	MVI V14,R0
+	DECR R0
+	MVO R0,V14
+	MVII #3,R0
+	MVO R0,V6
+T45:
+	;[233] 	if univclock%(highestDifficulty-dificulty) = 0 AND invisible > 0 then playerY = 8: invisible = invisible - 1 : playerF = 3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",233
+	MVI V19,R0
+	MVII #7,R1
+	SUB V11,R1
+	BEQ T49
+T50:
+	SUBR R1,R0
+	BC T50
+	ADDR R1,R0
+T49:
+	TSTR R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V7,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BGT $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T48
+	MVII #8,R0
+	MVO R0,V5
+	MVI V7,R0
+	DECR R0
+	MVO R0,V7
+	MVII #3,R0
+	MVO R0,V6
+T48:
+	;[234] 	if univclock%(highestDifficulty-dificulty) = 0 AND bonus_lives > 0 then gosub add_lives : bonus_lives = bonus_lives - 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",234
+	MVI V19,R0
+	MVII #7,R1
+	SUB V11,R1
+	BEQ T52
+T53:
+	SUBR R1,R0
+	BC T53
+	ADDR R1,R0
+T52:
+	TSTR R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V9,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BGT $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T51
+	CALL Q43
+	MVI V9,R0
+	DECR R0
+	MVO R0,V9
+T51:
+	;[235] 	if univclock%(highestDifficulty-dificulty) = 0 AND bonus_exp > 0 then gosub add_points : bonus_exp = bonus_exp - 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",235
+	MVI V19,R0
+	MVII #7,R1
+	SUB V11,R1
+	BEQ T55
+T56:
+	SUBR R1,R0
+	BC T56
+	ADDR R1,R0
+T55:
+	TSTR R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V8,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BGT $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T54
+	CALL Q44
+	MVI V8,R0
+	DECR R0
+	MVO R0,V8
+T54:
+	;[236] 	if univclock%(highestDifficulty-dificulty) = 0 AND jump = 0 AND invisible = 0 then playerY = 10: playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",236
+	MVI V19,R0
+	MVII #7,R1
+	SUB V11,R1
+	BEQ T58
+T59:
+	SUBR R1,R0
+	BC T59
+	ADDR R1,R0
+T58:
+	TSTR R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V14,R1
+	TSTR R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	MVI V7,R1
+	TSTR R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T57
+	MVII #10,R0
+	MVO R0,V5
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
+	CMPI #4,R0
+	MVII #-1,R0
+	BGE $+3
+	INCR R0
+	MVI V6,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BLE $+3
+	INCR R1
+	COMR R1
+	ANDR R1,R0
+	COMR R1
+	XORR R1,R0
+	BEQ T60
+	MVI V4,R0
+	MVII #65535,R5
+	CLRR R4
+	CLRC
+	RRC R0,1
+	BEQ T62
+T61:
+	BNC $+3
+	ADDR R5,R4
+	ADDR R5,R5
+	SARC R0,1
+	BNE T61
+T62:
+	BNC $+3
+	ADDR R5,R4
+	MOVR R4,R0
+	MVO R0,V4
+T60:
+T57:
+	;[237] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",237
+	;[238] 	if invisible > 0 then 'different color based on the power up
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",238
+	MVI V7,R0
+	CMPI #0,R0
+	BLE T63
+	;[239] 		#playerColor = SPR_BLUE
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",239
+	MVII #1,R0
+	MVO R0,V3
+	;[240] 	elseif bonus_lives > 0 then
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",240
+	B T64
+T63:
+	MVI V9,R0
+	CMPI #0,R0
+	BLE T65
+	;[241] 		#playerColor = SPR_GREEN
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",241
+	MVII #5,R0
+	MVO R0,V3
+	;[242] 	elseif bonus_exp > 0 then
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",242
+	B T64
+T65:
+	MVI V8,R0
+	CMPI #0,R0
+	BLE T66
+	;[243] 		#playerColor = SPR_BLACK
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",243
+	CLRR R0
+	MVO R0,V3
+	;[244] 	else 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",244
+	B T64
+T66:
+	;[245] 		#playerColor = SPR_RED
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",245
+	MVII #2,R0
+	MVO R0,V3
+	;[246] 	end if
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",246
+T64:
+	;[247] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",247
+	;[248] 	SPRITE 0, SpritePosX(2 + 4 * playerX, 0) + VISIBLE + ZOOMX2, SpritePosY(playerY, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + #playerColor 'draw player
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",248
+	MVI V2,R0
+	SLL R0,2
+	ADDI #3,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #1536,R0
+	MVO R0,_mobs
+	MVI V5,R0
+	INCR R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #768,R0
+	MVO R0,_mobs+8
+	MVI V6,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #2464,R0
+	ADD V3,R0
+	MVO R0,_mobs+16
+	;[249] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",249
+	;[250] 	for a = 0 to 2 'check all three lanes for collision
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",250
+	CLRR R0
+	MVO R0,V1
+T67:
+	;[251] 		if (univclock%(highestDifficulty-dificulty) = 0 AND 4 + objectY(a) = playerY AND objectX(playerX) = objectX(a) AND jump = 0)then 'detects collision with objects
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",251
+	MVI V19,R0
+	MVII #7,R1
+	SUB V11,R1
+	BEQ T69
+T70:
+	SUBR R1,R0
+	BC T70
+	ADDR R1,R0
+T69:
+	TSTR R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVII #Q4,R3
+	ADD V1,R3
+	MVI@ R3,R1
+	ADDI #4,R1
+	CMP V5,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	MVII #Q3,R3
+	ADD V2,R3
+	MVI@ R3,R1
+	MVII #Q3,R3
+	ADD V1,R3
+	CMP@ R3,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	MVI V14,R1
+	TSTR R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T68
+	;[252] 			if object(a) = 1 AND invisible = 0 then lives = lives - 1 : gosub lose_points  'different behavior for various objects
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",252
+	ADDI #(Q5-Q3) AND $FFFF,R3
+	MVI@ R3,R0
+	CMPI #1,R0
+	MVII #-1,R0
+	BEQ $+3
+	INCR R0
+	MVI V7,R1
+	TSTR R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	ANDR R1,R0
+	BEQ T71
+	MVI V17,R0
+	DECR R0
+	MVO R0,V17
+	CALL Q45
+T71:
+	;[253] 			if object(a) = 2 then gosub add_points : gosub writescore
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",253
+	MVII #Q5,R3
+	ADD V1,R3
+	MVI@ R3,R0
+	CMPI #2,R0
+	BNE T72
+	CALL Q44
+	CALL Q36
+T72:
+	;[254] 			if object(a) = 3 then gosub add_points : #score = #score + 1 : lives = lives + 1 : gosub writescore : gosub drawheart
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",254
+	MVII #Q5,R3
+	ADD V1,R3
+	MVI@ R3,R0
+	CMPI #3,R0
+	BNE T73
+	CALL Q44
+	MVI V15,R0
+	INCR R0
+	MVO R0,V15
+	MVI V17,R0
+	INCR R0
+	MVO R0,V17
+	CALL Q36
+	CALL Q37
+T73:
+	;[255] 			if object(a) = 4 then invisible = 35 : power = 4 : gosub powerupAnimation
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",255
+	MVII #Q5,R3
+	ADD V1,R3
+	MVI@ R3,R0
+	CMPI #4,R0
+	BNE T74
+	MVII #35,R0
+	MVO R0,V7
+	MVII #4,R0
+	MVO R0,V21
+	CALL Q46
+T74:
+	;[256] 			if object(a) = 5 then bonus_exp = 5 : power = 5 : gosub powerupAnimation
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",256
+	MVII #Q5,R3
+	ADD V1,R3
+	MVI@ R3,R0
+	CMPI #5,R0
+	BNE T75
+	MVII #5,R0
+	MVO R0,V8
+	MVO R0,V21
+	CALL Q46
+T75:
+	;[257] 			if object(a) = 6 then gosub add_points : bonus_lives = 5 : power = 6 : gosub powerupAnimation
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",257
+	MVII #Q5,R3
+	ADD V1,R3
+	MVI@ R3,R0
+	CMPI #6,R0
+	BNE T76
+	CALL Q44
+	MVII #5,R0
+	MVO R0,V9
+	MVII #6,R0
+	MVO R0,V21
+	CALL Q46
+T76:
+	;[258] 		end if
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",258
+T68:
+	;[259] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",259
+	;[260] 	next a
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",260
+	MVI V1,R0
+	INCR R0
+	MVO R0,V1
+	CMPI #2,R0
+	BLE T67
+	;[261] 	return
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",261
+	RETURN
+	;[262] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",262
+	ENDP
+	;[263] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",263
+	;[264] levelupAnimation: procedure 'animation when there is increase in level
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",264
+	; LEVELUPANIMATION
+Q24:	PROC
+	BEGIN
+	;[265] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",265
+	CALL _wait
+	;[266] 	gosub clearAll
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",266
+	CALL Q31
+	;[267] 	for a = 0 to 75
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",267
+	CLRR R0
+	MVO R0,V1
+T77:
+	;[268] 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1 'chance player frame
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",268
+	MVI V1,R0
+T79:
+	SUBI #3,R0
+	BC T79
+	ADDI #3,R0
+	BNE T78
+	MVI V16,R0
+	INCR R0
+	ANDI #1,R0
+	MVO R0,V16
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
+	CMPI #4,R0
+	MVII #-1,R0
+	BGE $+3
+	INCR R0
+	MVI V6,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BLE $+3
+	INCR R1
+	COMR R1
+	ANDR R1,R0
+	COMR R1
+	XORR R1,R0
+	BEQ T80
+	MVI V4,R0
+	MVII #65535,R5
+	CLRR R4
+	CLRC
+	RRC R0,1
+	BEQ T82
+T81:
+	BNC $+3
+	ADDR R5,R4
+	ADDR R5,R5
+	SARC R0,1
+	BNE T81
+T82:
+	BNC $+3
+	ADDR R5,R4
+	MOVR R4,R0
+	MVO R0,V4
+T80:
+T78:
+	;[269] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",269
+	;[270] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(3, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED 'paint player red
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",270
+	MVII #1616,R0
+	MVO R0,_mobs
+	MVII #800,R0
+	MVO R0,_mobs+8
+	MVI V6,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #2466,R0
+	MVO R0,_mobs+16
+	;[271] 		
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",271
+	;[272] 		print at (SCREENPOS(7, 5)) color CS_RED, (level%10+16)*8+6 'print which level we are going to
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",272
+	MVII #619,R0
+	MVO R0,_screen
+	MVII #2,R0
+	MVO R0,_color
+	MVI V18,R0
+T83:
+	SUBI #10,R0
+	BC T83
+	ADDI #26,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #6,R0
+	MVI _screen,R4
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[273] 		print at (SCREENPOS(12, 5)) color CS_RED, (level%10+16)*8+6
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",273
+	MVII #624,R0
+	MVO R0,_screen
+	MVII #2,R0
+	MVO R0,_color
+	MVI V18,R0
+T84:
+	SUBI #10,R0
+	BC T84
+	ADDI #26,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #6,R0
+	MVI _screen,R4
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[274] 		wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",274
+	CALL _wait
+	;[275] 		wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",275
+	CALL _wait
+	;[276] 		wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",276
+	CALL _wait
+	;[277] 	next a
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",277
+	MVI V1,R0
+	INCR R0
+	MVO R0,V1
+	CMPI #75,R0
+	BLE T77
+	;[278] 	gosub clearAll
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",278
+	CALL Q31
+	;[279] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",279
+	RETURN
+	ENDP
+	;[280] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",280
+	;[281] powerupAnimation: procedure 'animation when there is a power up
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",281
+	; POWERUPANIMATION
+Q46:	PROC
+	BEGIN
+	;[282] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",282
+	CALL _wait
+	;[283] 	gosub clearAll
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",283
+	CALL Q31
+	;[284] 	MODE SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK 'need in order to use print at
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",284
 	MVII #20480,R0
 	MVO R0,_color
 	MVII #2,R0
 	MVO R0,_mode_select
-	;[185] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",185
+	;[285] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",285
 	CALL _wait
-	;[186] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",186
-	;[187] 	print at SCREENPOS(4, 2) color CS_RED,"PAUSED"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",187
+	;[286] 	for a = 0 to 75
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",286
+	CLRR R0
+	MVO R0,V1
+T85:
+	;[287] 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1 'chance player frame
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",287
+	MVI V1,R0
+T87:
+	SUBI #3,R0
+	BC T87
+	ADDI #3,R0
+	BNE T86
+	MVI V16,R0
+	INCR R0
+	ANDI #1,R0
+	MVO R0,V16
+	MVI V6,R0
+	ADD V4,R0
+	MVO R0,V6
+	MVI V6,R0
+	CMPI #4,R0
+	MVII #-1,R0
+	BGE $+3
+	INCR R0
+	MVI V6,R1
+	CMPI #0,R1
+	MVII #-1,R1
+	BLE $+3
+	INCR R1
+	COMR R1
+	ANDR R1,R0
+	COMR R1
+	XORR R1,R0
+	BEQ T88
+	MVI V4,R0
+	MVII #65535,R5
+	CLRR R4
+	CLRC
+	RRC R0,1
+	BEQ T90
+T89:
+	BNC $+3
+	ADDR R5,R4
+	ADDR R5,R5
+	SARC R0,1
+	BNE T89
+T90:
+	BNC $+3
+	ADDR R5,R4
+	MOVR R4,R0
+	MVO R0,V4
+T88:
+T86:
+	;[288] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",288
+	;[289] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(3, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_BLUE 'paint player blue
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",289
+	MVII #1616,R0
+	MVO R0,_mobs
+	MVII #800,R0
+	MVO R0,_mobs+8
+	MVI V6,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #2465,R0
+	MVO R0,_mobs+16
+	;[290] 		
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",290
+	;[291] 		if power = 4 then print at (SCREENPOS(7, 5)) color CS_BLUE, "\319" : print at (SCREENPOS(12, 5)) color CS_BLUE, "\319" 'print which power we obtained
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",291
+	MVI V21,R0
+	CMPI #4,R0
+	BNE T91
+	MVII #619,R0
+	MVO R0,_screen
+	MVII #1,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2552,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	MVII #624,R0
+	MVO R0,_screen
+	MVII #1,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2552,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+T91:
+	;[292] 		if power = 5 then print at (SCREENPOS(7, 5)) color CS_WHITE, "\320" : print at (SCREENPOS(12, 5)) color CS_WHITE, "\320"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",292
+	MVI V21,R0
+	CMPI #5,R0
+	BNE T92
+	MVII #619,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2560,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	MVII #624,R0
+	MVO R0,_screen
+	MVII #7,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2560,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+T92:
+	;[293] 		if power = 6 then print at (SCREENPOS(7, 5)) color CS_GREEN, "\321" : print at (SCREENPOS(12, 5)) color CS_GREEN, "\321"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",293
+	MVI V21,R0
+	CMPI #6,R0
+	BNE T93
+	MVII #619,R0
+	MVO R0,_screen
+	MVII #5,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2568,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+	MVII #624,R0
+	MVO R0,_screen
+	MVII #5,R0
+	MVO R0,_color
+	MVI _screen,R4
+	MVII #2568,R0
+	XOR _color,R0
+	MVO@ R0,R4
+	MVO R4,_screen
+T93:
+	;[294] 		
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",294
+	;[295] 		wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",295
+	CALL _wait
+	;[296] 		wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",296
+	CALL _wait
+	;[297] 		wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",297
+	CALL _wait
+	;[298] 	next a
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",298
+	MVI V1,R0
+	INCR R0
+	MVO R0,V1
+	CMPI #75,R0
+	BLE T85
+	;[299] 	gosub clearAll
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",299
+	CALL Q31
+	;[300] 	mode 1 'need for SCREEN command
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",300
+	MVII #3,R0
+	MVO R0,_mode_select
+	;[301] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",301
+	CALL _wait
+	;[302] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",302
+	RETURN
+	ENDP
+	;[303] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",303
+	;[304] 'Pause scene
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",304
+	;[305] pauseScene: procedure 'animation for when the game is paused
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",305
+	; PAUSESCENE
+Q42:	PROC
+	BEGIN
+	;[306] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",306
+	CALL _wait
+	;[307] 	gosub clearAll
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",307
+	CALL Q31
+	;[308] 	MODE SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK 'need in order to use print at
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",308
+	MVII #20480,R0
+	MVO R0,_color
+	MVII #2,R0
+	MVO R0,_mode_select
+	;[309] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",309
+	CALL _wait
+	;[310] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",310
+	CALL _wait
+	;[311] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",311
+	CALL _wait
+	;[312] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",312
+	CALL _wait
+	;[313] 	paused = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",313
+	CLRR R0
+	MVO R0,V22
+	;[314] 	a = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",314
+	MVO R0,V1
+	;[315] 	while paused = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",315
+T94:
+	MVI V22,R0
+	TSTR R0
+	BNE T95
+	;[316] 		print at SCREENPOS(4, 2) color CS_RED,"PAUSED"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",316
 	MVII #556,R0
 	MVO R0,_screen
 	MVII #2,R0
@@ -4303,8 +5431,8 @@ Q23:	PROC
 	XORI #8,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[188] 	print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",188
+	;[317] 		print at SCREENPOS(2, 3) color CS_WHITE,"Press 'Right' To:"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",317
 	MVII #574,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4345,8 +5473,8 @@ Q23:	PROC
 	XORI #680,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[189] 	print at SCREENPOS(2, 4) color CS_WHITE,"> Continue"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",189
+	;[318] 		print at SCREENPOS(2, 4) color CS_WHITE,"> Continue"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",318
 	MVII #594,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4374,8 +5502,8 @@ Q23:	PROC
 	XORI #128,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[190] 	print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",190
+	;[319] 		print at SCREENPOS(2, 5) color CS_WHITE,"Press 'Left' To:"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",319
 	MVII #614,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4414,8 +5542,8 @@ Q23:	PROC
 	XORI #680,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[191] 	print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",191
+	;[320] 		print at SCREENPOS(2, 6) color CS_WHITE,"> Quit"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",320
 	MVII #634,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4435,14 +5563,16 @@ Q23:	PROC
 	XORI #232,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[192] 	if univclock%15 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",192
-	MVI V19,R0
-T28:
-	SUBI #15,R0
-	BC T28
-	ADDI #15,R0
-	BNE T27
+	;[321] 		
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",321
+	;[322] 		if a%40 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1 'chance player frame
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",322
+	MVI V1,R0
+T97:
+	SUBI #40,R0
+	BC T97
+	ADDI #40,R0
+	BNE T96
 	MVI V16,R0
 	INCR R0
 	ANDI #1,R0
@@ -4464,30 +5594,30 @@ T28:
 	ANDR R1,R0
 	COMR R1
 	XORR R1,R0
-	BEQ T29
+	BEQ T98
 	MVI V4,R0
 	MVII #65535,R5
 	CLRR R4
 	CLRC
 	RRC R0,1
-	BEQ T31
-T30:
+	BEQ T100
+T99:
 	BNC $+3
 	ADDR R5,R4
 	ADDR R5,R5
 	SARC R0,1
-	BNE T30
-T31:
+	BNE T99
+T100:
 	BNC $+3
 	ADDR R5,R4
 	MOVR R4,R0
 	MVO R0,V4
-T29:
-T27:
-	;[193] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",193
-	;[194] 	SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED 'player animation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",194
+T98:
+T96:
+	;[323] 		
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",323
+	;[324] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(7, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED 'player animation
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",324
 	MVII #1616,R0
 	MVO R0,_mobs
 	MVII #832,R0
@@ -4497,15 +5627,15 @@ T27:
 	ADDR R0,R0
 	ADDI #2466,R0
 	MVO R0,_mobs+16
-	;[195] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",195
-	;[196] 	'right arrow animation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",196
-	;[197] 	if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",197
+	;[325] 		
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",325
+	;[326] 		'arrows animation
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",326
+	;[327] 		if heartrate then print at SCREENPOS(19, 11) color CS_WHITE,">" else print at SCREENPOS(19, 11) color CS_WHITE," "
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",327
 	MVI V16,R0
 	TSTR R0
-	BEQ T32
+	BEQ T101
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4515,8 +5645,8 @@ T27:
 	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	B T33
-T32:
+	B T102
+T101:
 	MVII #751,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4524,12 +5654,12 @@ T32:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-T33:
-	;[198] 	if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",198
+T102:
+	;[328] 		if heartrate then print at SCREENPOS(0, 11) color CS_WHITE,"<" else print at SCREENPOS(0, 11) color CS_WHITE," "
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",328
 	MVI V16,R0
 	TSTR R0
-	BEQ T34
+	BEQ T103
 	MVII #732,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4539,8 +5669,8 @@ T33:
 	XOR _color,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	B T35
-T34:
+	B T104
+T103:
 	MVII #732,R0
 	MVO R0,_screen
 	MVII #7,R0
@@ -4548,1188 +5678,105 @@ T34:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-T35:
-	;[199] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",199
-	;[200] 	if cont1.left then gosub clearAll : #score = 0 : lives = 3 : scene = 0 : level = 1 : univclock = 0 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",200
-	MVI 511,R0
-	COMR R0
-	ANDI #8,R0
-	BEQ T36
-	CALL Q32
-	CLRR R0
-	MVO R0,V15
-	MVII #3,R0
-	MVO R0,V17
-	CLRR R0
-	MVO R0,V13
-	MVII #1,R0
-	MVO R0,V18
-	CLRR R0
-	MVO R0,V19
-	CALL _wait
-	CALL _wait
-	CALL _wait
-	CALL _wait
-	CALL _wait
-	CALL _wait
-	CALL _wait
-	CALL _wait
-	CALL _wait
-	CALL _wait
-T36:
-	;[201] 	if cont1.right then scene = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",201
-	MVI 511,R0
-	COMR R0
-	ANDI #2,R0
-	BEQ T37
-	MVII #1,R0
-	MVO R0,V13
-T37:
-	;[202] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",202
-	RETURN
-	ENDP
-	;[203] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",203
-	;[204] background: procedure 'draw and writes extra details to background such as score and lives 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",204
-	; BACKGROUND
-Q29:	PROC
-	BEGIN
-	;[205] 	if (univclock % 4) = 0 then street_lineY = (street_lineY + 1) % 7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",205
-	MVI V19,R0
-	ANDI #3,R0
-	BNE T38
-	MVI V20,R0
-	INCR R0
-T39:
-	SUBI #7,R0
-	BC T39
-	ADDI #7,R0
-	MVO R0,V20
-T38:
-	;[206] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",206
-	;[207] 	SPRITE 5, SpritePosX(4 - street_lineY/2, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR59 + SPR_GREY 'draw lines in lanes
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",207
-	MVII #4,R0
-	MVI V20,R1
-	SLR R1,1
-	SUBR R1,R0
-	INCR R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #512,R0
-	MVO R0,_mobs+5
-	MVI V20,R0
-	ADDI #6,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #256,R0
-	MVO R0,_mobs+13
-	MVII #6616,R0
-	MVO R0,_mobs+21
-	;[208] 	SPRITE 6, SpritePosX(7, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR60 + SPR_GREY
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",208
-	MVII #576,R0
-	MVO R0,_mobs+6
-	MVI V20,R0
-	ADDI #6,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #256,R0
-	MVO R0,_mobs+14
-	MVII #6624,R0
-	MVO R0,_mobs+22
-	;[209] 	SPRITE 7, SpritePosX(9 + street_lineY/2, 0) + VISIBLE, SpritePosY(5 + street_lineY, 0) + ZOOMY2, SPR61 + SPR_GREY
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",209
-	MVI V20,R0
-	SLR R0,1
-	ADDI #10,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #512,R0
-	MVO R0,_mobs+7
-	MVI V20,R0
-	ADDI #6,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #256,R0
-	MVO R0,_mobs+15
-	MVII #6632,R0
-	MVO R0,_mobs+23
-	;[210] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",210
-	;[211] 	gosub writescore 'write score
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",211
-	CALL Q38
-	;[212] 	gosub drawheart  'draw heart and nothing of lives
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",212
-	CALL Q39
-	;[213] 	gosub writelevel 'write the current level
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",213
-	CALL Q40
-	;[214] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",214
-	;[215] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",215
-	RETURN
-	;[216] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",216
-	ENDP
-	;[217] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",217
-	;[218] drawObjects: procedure
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",218
-	; DRAWOBJECTS
-Q30:	PROC
-	BEGIN
-	;[219] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",219
-	;[220] 	for a = 0 to 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",220
-	CLRR R0
-	MVO R0,V1
-T40:
-	;[221] 		if (univclock % (highestDifficulty-dificulty)) = 0 then 'objects move at different rate depending on the dificulty
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",221
-	MVI V19,R0
-	MVII #7,R1
-	SUB V11,R1
-	BEQ T42
-T43:
-	SUBR R1,R0
-	BC T43
-	ADDR R1,R0
-T42:
-	TSTR R0
-	BNE T41
-	;[222] 			objectY(a) = (objectY(a) + 1) % 8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",222
-	MVII #Q4,R3
-	ADD V1,R3
-	MVI@ R3,R0
-	INCR R0
-	ANDI #7,R0
-	MVO@ R0,R3
-	;[223] 			if objectY(a) = 0 then gosub chooseObject : object(a) = chance
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",223
-	MVI@ R3,R0
-	TSTR R0
-	BNE T44
-	CALL Q42
-	MVI V10,R0
-	MVII #Q5,R3
-	ADD V1,R3
-	MVO@ R0,R3
-T44:
-	;[224] 		end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",224
-T41:
-	;[225] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",225
-	;[226] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",226
-	MVI V1,R0
-	INCR R0
-	MVO R0,V1
-	CMPI #2,R0
-	BLE T40
-	;[227] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",227
-	;[228] 	objectX(0) = 4 - objectY(0)/2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",228
-	MVII #4,R0
-	MVI Q4,R1
-	SLR R1,1
-	SUBR R1,R0
-	MVO R0,Q3
-	;[229] 	objectX(2) = 9 + objectY(2)/2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",229
-	MVI Q4+2,R0
-	SLR R0,1
-	ADDI #9,R0
-	MVO R0,Q3+2
-	;[230] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",230
-	;[231] 	for a = 1 to 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",231
-	MVII #1,R0
-	MVO R0,V1
-T45:
-	;[232] 		if object(a - 1) >= 4 then 'if statement to see if power up has appear; draw different color for power ups
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",232
-	MVII #Q5-1,R3
-	ADD V1,R3
-	MVI@ R3,R0
-	CMPI #4,R0
-	BLT T46
-	;[233] 			SPRITE a, SpritePosX(objectX(a - 1), 0) + VISIBLE, SpritePosY(4 + objectY(a - 1), 0) + ZOOMY2, SPR62 + (object(a - 1) - 3)* 8 + #objectColor(object(a - 1))
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",233
-	MVII #Q1,R0
-	ADD V1,R0
-	MOVR R0,R4
-	ADDI #(Q3-Q5) AND $FFFF,R3
-	MVI@ R3,R0
-	INCR R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #512,R0
-	MVO@ R0,R4
-	ADDI #(Q4-Q3) AND $FFFF,R3
-	MVI@ R3,R0
-	ADDI #5,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #256,R0
-	ADDI #7,R4
-	MVO@ R0,R4
-	ADDI #(Q5-Q4) AND $FFFF,R3
-	MVI@ R3,R0
-	SUBI #3,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #2544,R0
-	MVII #Q6,R1
-	ADD@ R3,R1
-	ADD@ R1,R0
-	ADDI #7,R4
-	MVO@ R0,R4
-	;[234] 			'if object(a - 1) = 4 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\319"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",234
-	;[235] 			'if object(a - 1) = 5 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\320"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",235
-	;[236] 			'if object(a - 1) = 6 then print to SCREENPOS(12 + object(a - 4), 9) color #objectColor(object(a - 1)), "\321"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",236
-	;[237] 		else 'if there is not power ups
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",237
-	B T47
-T46:
-	;[238] 			SPRITE a, SpritePosX(objectX(a - 1), 0) + VISIBLE, SpritePosY(4 + objectY(a - 1), 0) + ZOOMY2, SPR62 + object(a - 1) * 8 + #objectColor(object(a - 1))
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",238
-	MVII #Q1,R0
-	ADD V1,R0
-	MOVR R0,R4
-	MVII #Q3-1,R3
-	ADD V1,R3
-	MVI@ R3,R0
-	INCR R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #512,R0
-	MVO@ R0,R4
-	ADDI #(Q4-Q3) AND $FFFF,R3
-	MVI@ R3,R0
-	ADDI #5,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #256,R0
-	ADDI #7,R4
-	MVO@ R0,R4
-	ADDI #(Q5-Q4) AND $FFFF,R3
-	MVI@ R3,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #2544,R0
-	MVII #Q6,R1
-	ADD@ R3,R1
-	ADD@ R1,R0
-	ADDI #7,R4
-	MVO@ R0,R4
-	;[239] 		end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",239
-T47:
-	;[240] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",240
-	MVI V1,R0
-	INCR R0
-	MVO R0,V1
-	CMPI #3,R0
-	BLE T45
-	;[241] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",241
-	;[242] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",242
-	RETURN
-	;[243] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",243
-	ENDP
-	;[244] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",244
-	;[245] drawPlayer: procedure 'collision with the player and player's behavior
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",245
-	; DRAWPLAYER
-Q31:	PROC
-	BEGIN
-	;[246] 	if cont1.left AND univclock%5 = 0 then playerX = playerX - 1 'various commands: move right, move left, jump, pause
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",246
-	MVI 511,R0
-	COMR R0
-	ANDI #8,R0
-	MVI V19,R1
-T49:
-	SUBI #5,R1
-	BC T49
-	ADDI #5,R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T48
-	MVI V2,R0
-	DECR R0
-	MVO R0,V2
-T48:
-	;[247] 	if cont1.right AND univclock%5 = 0 then playerX = playerX + 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",247
-	MVI 511,R0
-	COMR R0
-	ANDI #2,R0
-	MVI V19,R1
-T51:
-	SUBI #5,R1
-	BC T51
-	ADDI #5,R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T50
-	MVI V2,R0
-	INCR R0
-	MVO R0,V2
-T50:
-	;[248] 	if cont1.up AND univclock%5 = 0 AND playerY = 10 then jump = 5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",248
-	MVI 511,R0
-	COMR R0
-	ANDI #4,R0
-	MVI V19,R1
-T53:
-	SUBI #5,R1
-	BC T53
-	ADDI #5,R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	MVI V5,R1
-	CMPI #10,R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T52
-	MVII #5,R0
-	MVO R0,V14
-T52:
-	;[249] 	if cont1.B0 AND univclock%5 = 0 then scene = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",249
-	MVI 511,R0
-	COMR R0
-	ANDI #224,R0
-	CMPI #160,R0
-	MVII #-1,R0
-	BEQ $+3
-	INCR R0
-	MVI V19,R1
-T55:
-	SUBI #5,R1
-	BC T55
-	ADDI #5,R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T54
-	MVII #3,R0
-	MVO R0,V13
-T54:
-	;[250] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",250
-	;[251] 	playerX = playerX % 3 'keep player within the three lanes: 0 = lane 1, 1 = lane 2, 2 = lane 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",251
-	MVI V2,R0
-T56:
-	SUBI #3,R0
-	BC T56
-	ADDI #3,R0
-	MVO R0,V2
-	;[252] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",252
-	;[253] 	if univclock%(highestDifficulty-dificulty) = 0 AND jump > 0 then playerY = 10 - jump + 2: jump = jump - 1 : playerF = 3 'check to see if condition for power ups and jump have been met
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",253
-	MVI V19,R0
-	MVII #7,R1
-	SUB V11,R1
-	BEQ T58
-T59:
-	SUBR R1,R0
-	BC T59
-	ADDR R1,R0
-T58:
-	TSTR R0
-	MVII #-1,R0
-	BEQ $+3
-	INCR R0
-	MVI V14,R1
-	CMPI #0,R1
-	MVII #-1,R1
-	BGT $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T57
-	MVII #10,R0
-	SUB V14,R0
-	ADDI #2,R0
-	MVO R0,V5
-	MVI V14,R0
-	DECR R0
-	MVO R0,V14
-	MVII #3,R0
-	MVO R0,V6
-T57:
-	;[254] 	if univclock%(highestDifficulty-dificulty) = 0 AND invisible > 0 then playerY = 8: invisible = invisible - 1 : playerF = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",254
-	MVI V19,R0
-	MVII #7,R1
-	SUB V11,R1
-	BEQ T61
-T62:
-	SUBR R1,R0
-	BC T62
-	ADDR R1,R0
-T61:
-	TSTR R0
-	MVII #-1,R0
-	BEQ $+3
-	INCR R0
-	MVI V7,R1
-	CMPI #0,R1
-	MVII #-1,R1
-	BGT $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T60
-	MVII #8,R0
-	MVO R0,V5
-	MVI V7,R0
-	DECR R0
-	MVO R0,V7
-	MVII #3,R0
-	MVO R0,V6
-T60:
-	;[255] 	if univclock%(highestDifficulty-dificulty) = 0 AND bonus_lives > 0 then gosub add_lives : bonus_lives = bonus_lives - 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",255
-	MVI V19,R0
-	MVII #7,R1
-	SUB V11,R1
-	BEQ T64
-T65:
-	SUBR R1,R0
-	BC T65
-	ADDR R1,R0
-T64:
-	TSTR R0
-	MVII #-1,R0
-	BEQ $+3
-	INCR R0
-	MVI V9,R1
-	CMPI #0,R1
-	MVII #-1,R1
-	BGT $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T63
-	CALL Q44
-	MVI V9,R0
-	DECR R0
-	MVO R0,V9
-T63:
-	;[256] 	if univclock%(highestDifficulty-dificulty) = 0 AND bonus_exp > 0 then gosub add_points : bonus_exp = bonus_exp - 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",256
-	MVI V19,R0
-	MVII #7,R1
-	SUB V11,R1
-	BEQ T67
-T68:
-	SUBR R1,R0
-	BC T68
-	ADDR R1,R0
-T67:
-	TSTR R0
-	MVII #-1,R0
-	BEQ $+3
-	INCR R0
-	MVI V8,R1
-	CMPI #0,R1
-	MVII #-1,R1
-	BGT $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T66
-	CALL Q45
-	MVI V8,R0
-	DECR R0
-	MVO R0,V8
-T66:
-	;[257] 	if univclock%(highestDifficulty-dificulty) = 0 AND jump = 0 AND invisible = 0 then playerY = 10: playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",257
-	MVI V19,R0
-	MVII #7,R1
-	SUB V11,R1
-	BEQ T70
-T71:
-	SUBR R1,R0
-	BC T71
-	ADDR R1,R0
-T70:
-	TSTR R0
-	MVII #-1,R0
-	BEQ $+3
-	INCR R0
-	MVI V14,R1
-	TSTR R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	MVI V7,R1
-	TSTR R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T69
-	MVII #10,R0
-	MVO R0,V5
-	MVI V6,R0
-	ADD V4,R0
-	MVO R0,V6
-	MVI V6,R0
-	CMPI #4,R0
-	MVII #-1,R0
-	BGE $+3
-	INCR R0
-	MVI V6,R1
-	CMPI #0,R1
-	MVII #-1,R1
-	BLE $+3
-	INCR R1
-	COMR R1
-	ANDR R1,R0
-	COMR R1
-	XORR R1,R0
-	BEQ T72
-	MVI V4,R0
-	MVII #65535,R5
-	CLRR R4
-	CLRC
-	RRC R0,1
-	BEQ T74
-T73:
-	BNC $+3
-	ADDR R5,R4
-	ADDR R5,R5
-	SARC R0,1
-	BNE T73
-T74:
-	BNC $+3
-	ADDR R5,R4
-	MOVR R4,R0
-	MVO R0,V4
-T72:
-T69:
-	;[258] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",258
-	;[259] 	if invisible > 0 then 'different color based on the power up
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",259
-	MVI V7,R0
-	CMPI #0,R0
-	BLE T75
-	;[260] 		#playerColor = SPR_BLUE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",260
-	MVII #1,R0
-	MVO R0,V3
-	;[261] 	elseif bonus_lives > 0 then
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",261
-	B T76
-T75:
-	MVI V9,R0
-	CMPI #0,R0
-	BLE T77
-	;[262] 		#playerColor = SPR_GREEN
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",262
-	MVII #5,R0
-	MVO R0,V3
-	;[263] 	elseif bonus_exp > 0 then
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",263
-	B T76
-T77:
-	MVI V8,R0
-	CMPI #0,R0
-	BLE T78
-	;[264] 		#playerColor = SPR_BLACK
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",264
-	CLRR R0
-	MVO R0,V3
-	;[265] 	else 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",265
-	B T76
-T78:
-	;[266] 		#playerColor = SPR_RED
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",266
-	MVII #2,R0
-	MVO R0,V3
-	;[267] 	end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",267
-T76:
-	;[268] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",268
-	;[269] 	SPRITE 0, SpritePosX(2 + 4 * playerX, 0) + VISIBLE + ZOOMX2, SpritePosY(playerY, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + #playerColor 'draw player
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",269
-	MVI V2,R0
-	SLL R0,2
-	ADDI #3,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #1536,R0
-	MVO R0,_mobs
-	MVI V5,R0
-	INCR R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #768,R0
-	MVO R0,_mobs+8
-	MVI V6,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #2464,R0
-	ADD V3,R0
-	MVO R0,_mobs+16
-	;[270] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",270
-	;[271] 	for a = 0 to 2 'check all three lanes for collision
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",271
-	CLRR R0
-	MVO R0,V1
-T79:
-	;[272] 		if (univclock%(highestDifficulty-dificulty) = 0 AND 4 + objectY(a) = playerY AND objectX(playerX) = objectX(a) AND jump = 0)then 'detects collision with objects
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",272
-	MVI V19,R0
-	MVII #7,R1
-	SUB V11,R1
-	BEQ T81
-T82:
-	SUBR R1,R0
-	BC T82
-	ADDR R1,R0
-T81:
-	TSTR R0
-	MVII #-1,R0
-	BEQ $+3
-	INCR R0
-	MVII #Q4,R3
-	ADD V1,R3
-	MVI@ R3,R1
-	ADDI #4,R1
-	CMP V5,R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	MVII #Q3,R3
-	ADD V2,R3
-	MVI@ R3,R1
-	MVII #Q3,R3
-	ADD V1,R3
-	CMP@ R3,R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	MVI V14,R1
-	TSTR R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T80
-	;[273] 			if object(a) = 1 AND invisible = 0 then lives = lives - 1 : gosub lose_points  'different behavior for various objects
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",273
-	ADDI #(Q5-Q3) AND $FFFF,R3
-	MVI@ R3,R0
-	CMPI #1,R0
-	MVII #-1,R0
-	BEQ $+3
-	INCR R0
-	MVI V7,R1
-	TSTR R1
-	MVII #-1,R1
-	BEQ $+3
-	INCR R1
-	ANDR R1,R0
-	BEQ T83
-	MVI V17,R0
-	DECR R0
-	MVO R0,V17
-	CALL Q46
-T83:
-	;[274] 			if object(a) = 2 then gosub add_points : gosub writescore
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",274
-	MVII #Q5,R3
-	ADD V1,R3
-	MVI@ R3,R0
-	CMPI #2,R0
-	BNE T84
-	CALL Q45
-	CALL Q38
-T84:
-	;[275] 			if object(a) = 3 then gosub add_points : #score = #score + 1 : lives = lives + 1 : gosub writescore : gosub drawheart
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",275
-	MVII #Q5,R3
-	ADD V1,R3
-	MVI@ R3,R0
-	CMPI #3,R0
-	BNE T85
-	CALL Q45
-	MVI V15,R0
-	INCR R0
-	MVO R0,V15
-	MVI V17,R0
-	INCR R0
-	MVO R0,V17
-	CALL Q38
-	CALL Q39
-T85:
-	;[276] 			if object(a) = 4 then invisible = 35 : power = 4 : gosub powerupAnimation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",276
-	MVII #Q5,R3
-	ADD V1,R3
-	MVI@ R3,R0
-	CMPI #4,R0
-	BNE T86
-	MVII #35,R0
-	MVO R0,V7
-	MVII #4,R0
-	MVO R0,V21
-	CALL Q47
-T86:
-	;[277] 			if object(a) = 5 then bonus_exp = 5 : power = 5 : gosub powerupAnimation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",277
-	MVII #Q5,R3
-	ADD V1,R3
-	MVI@ R3,R0
-	CMPI #5,R0
-	BNE T87
-	MVII #5,R0
-	MVO R0,V8
-	MVO R0,V21
-	CALL Q47
-T87:
-	;[278] 			if object(a) = 6 then gosub add_points : bonus_lives = 5 : power = 6 : gosub powerupAnimation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",278
-	MVII #Q5,R3
-	ADD V1,R3
-	MVI@ R3,R0
-	CMPI #6,R0
-	BNE T88
-	CALL Q45
-	MVII #5,R0
-	MVO R0,V9
-	MVII #6,R0
-	MVO R0,V21
-	CALL Q47
-T88:
-	;[279] 		end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",279
-T80:
-	;[280] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",280
-	;[281] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",281
-	MVI V1,R0
-	INCR R0
-	MVO R0,V1
-	CMPI #2,R0
-	BLE T79
-	;[282] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",282
-	RETURN
-	;[283] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",283
-	ENDP
-	;[284] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",284
-	;[285] levelupAnimation: procedure 'animation when there is increase in level
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",285
-	; LEVELUPANIMATION
-Q25:	PROC
-	BEGIN
-	;[286] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",286
-	CALL _wait
-	;[287] 	gosub clearAll
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",287
-	CALL Q32
-	;[288] 	for a = 0 to 75
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",288
-	CLRR R0
-	MVO R0,V1
-T89:
-	;[289] 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1 'chance player frame
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",289
-	MVI V1,R0
-T91:
-	SUBI #3,R0
-	BC T91
-	ADDI #3,R0
-	BNE T90
-	MVI V16,R0
-	INCR R0
-	ANDI #1,R0
-	MVO R0,V16
-	MVI V6,R0
-	ADD V4,R0
-	MVO R0,V6
-	MVI V6,R0
-	CMPI #4,R0
-	MVII #-1,R0
-	BGE $+3
-	INCR R0
-	MVI V6,R1
-	CMPI #0,R1
-	MVII #-1,R1
-	BLE $+3
-	INCR R1
-	COMR R1
-	ANDR R1,R0
-	COMR R1
-	XORR R1,R0
-	BEQ T92
-	MVI V4,R0
-	MVII #65535,R5
-	CLRR R4
-	CLRC
-	RRC R0,1
-	BEQ T94
-T93:
-	BNC $+3
-	ADDR R5,R4
-	ADDR R5,R5
-	SARC R0,1
-	BNE T93
-T94:
-	BNC $+3
-	ADDR R5,R4
-	MOVR R4,R0
-	MVO R0,V4
-T92:
-T90:
-	;[290] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",290
-	;[291] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(3, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_RED 'paint player red
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",291
-	MVII #1616,R0
-	MVO R0,_mobs
-	MVII #800,R0
-	MVO R0,_mobs+8
-	MVI V6,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #2466,R0
-	MVO R0,_mobs+16
-	;[292] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",292
-	;[293] 		print at (SCREENPOS(7, 5)) color CS_RED, (level%10+16)*8+6 'print which level we are going to
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",293
-	MVII #619,R0
-	MVO R0,_screen
-	MVII #2,R0
-	MVO R0,_color
-	MVI V18,R0
-T95:
-	SUBI #10,R0
-	BC T95
-	ADDI #26,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #6,R0
-	MVI _screen,R4
-	MVO@ R0,R4
-	MVO R4,_screen
-	;[294] 		print at (SCREENPOS(12, 5)) color CS_RED, (level%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",294
-	MVII #624,R0
-	MVO R0,_screen
-	MVII #2,R0
-	MVO R0,_color
-	MVI V18,R0
-T96:
-	SUBI #10,R0
-	BC T96
-	ADDI #26,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #6,R0
-	MVI _screen,R4
-	MVO@ R0,R4
-	MVO R4,_screen
-	;[295] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",295
-	CALL _wait
-	;[296] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",296
-	CALL _wait
-	;[297] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",297
-	CALL _wait
-	;[298] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",298
-	MVI V1,R0
-	INCR R0
-	MVO R0,V1
-	CMPI #75,R0
-	BLE T89
-	;[299] 	gosub clearAll
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",299
-	CALL Q32
-	;[300] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",300
-	RETURN
-	ENDP
-	;[301] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",301
-	;[302] powerupAnimation: procedure 'animation when there is a power up
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",302
-	; POWERUPANIMATION
-Q47:	PROC
-	BEGIN
-	;[303] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",303
-	CALL _wait
-	;[304] 	gosub clearAll
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",304
-	CALL Q32
-	;[305] 	MODE SCREEN_COLOR_STACK, STACK_BLACK, STACK_BLACK, STACK_GREEN, STACK_BLACK 'need in order to use print at
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",305
-	MVII #20480,R0
-	MVO R0,_color
-	MVII #2,R0
-	MVO R0,_mode_select
-	;[306] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",306
-	CALL _wait
-	;[307] 	for a = 0 to 75
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",307
-	CLRR R0
-	MVO R0,V1
-T97:
-	;[308] 		if a%3 = 0 then heartrate = (heartrate + 1) % 2 : playerF = playerF + playerDX : if playerF >= 4 OR playerF <= 0 then playerDX = playerDX * -1 'chance player frame
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",308
-	MVI V1,R0
-T99:
-	SUBI #3,R0
-	BC T99
-	ADDI #3,R0
-	BNE T98
-	MVI V16,R0
-	INCR R0
-	ANDI #1,R0
-	MVO R0,V16
-	MVI V6,R0
-	ADD V4,R0
-	MVO R0,V6
-	MVI V6,R0
-	CMPI #4,R0
-	MVII #-1,R0
-	BGE $+3
-	INCR R0
-	MVI V6,R1
-	CMPI #0,R1
-	MVII #-1,R1
-	BLE $+3
-	INCR R1
-	COMR R1
-	ANDR R1,R0
-	COMR R1
-	XORR R1,R0
-	BEQ T100
-	MVI V4,R0
-	MVII #65535,R5
-	CLRR R4
-	CLRC
-	RRC R0,1
-	BEQ T102
-T101:
-	BNC $+3
-	ADDR R5,R4
-	ADDR R5,R5
-	SARC R0,1
-	BNE T101
-T102:
-	BNC $+3
-	ADDR R5,R4
-	MOVR R4,R0
-	MVO R0,V4
-T100:
-T98:
-	;[309] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",309
-	;[310] 		SPRITE 0, SpritePosX(9, 0) + VISIBLE + ZOOMX2, SpritePosY(3, 0) + VISIBLE + ZOOMY2, SPR52 + (8)*playerF + SPR_BLUE 'paint player blue
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",310
-	MVII #1616,R0
-	MVO R0,_mobs
-	MVII #800,R0
-	MVO R0,_mobs+8
-	MVI V6,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #2465,R0
-	MVO R0,_mobs+16
-	;[311] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",311
-	;[312] 		if power = 4 then print at (SCREENPOS(7, 5)) color CS_BLUE, "\319" : print at (SCREENPOS(12, 5)) color CS_BLUE, "\319" 'print which power we obtained
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",312
-	MVI V21,R0
-	CMPI #4,R0
-	BNE T103
-	MVII #619,R0
-	MVO R0,_screen
-	MVII #1,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2552,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-	MVII #624,R0
-	MVO R0,_screen
-	MVII #1,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2552,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-T103:
-	;[313] 		if power = 5 then print at (SCREENPOS(7, 5)) color CS_WHITE, "\320" : print at (SCREENPOS(12, 5)) color CS_WHITE, "\320"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",313
-	MVI V21,R0
-	CMPI #5,R0
-	BNE T104
-	MVII #619,R0
-	MVO R0,_screen
-	MVII #7,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2560,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-	MVII #624,R0
-	MVO R0,_screen
-	MVII #7,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2560,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
 T104:
-	;[314] 		if power = 6 then print at (SCREENPOS(7, 5)) color CS_GREEN, "\321" : print at (SCREENPOS(12, 5)) color CS_GREEN, "\321"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",314
-	MVI V21,R0
-	CMPI #6,R0
-	BNE T105
-	MVII #619,R0
-	MVO R0,_screen
-	MVII #5,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2568,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
-	MVII #624,R0
-	MVO R0,_screen
-	MVII #5,R0
-	MVO R0,_color
-	MVI _screen,R4
-	MVII #2568,R0
-	XOR _color,R0
-	MVO@ R0,R4
-	MVO R4,_screen
+	;[329] 		
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",329
+	;[330] 		if cont1.left then scene = 1 : paused = 1 : wait : wait : wait : wait : wait : wait : wait : wait : wait : wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",330
+	MVI 511,R0
+	COMR R0
+	ANDI #8,R0
+	BEQ T105
+	MVII #1,R0
+	MVO R0,V13
+	MVO R0,V22
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
+	CALL _wait
 T105:
-	;[315] 		
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",315
-	;[316] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",316
-	CALL _wait
-	;[317] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",317
-	CALL _wait
-	;[318] 		wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",318
-	CALL _wait
-	;[319] 	next a
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",319
+	;[331] 		if cont1.right OR cont1.B0 then paused = 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",331
+	MVI 511,R0
+	COMR R0
+	ANDI #2,R0
+	MVI 511,R1
+	COMR R1
+	ANDI #224,R1
+	CMPI #160,R1
+	MVII #-1,R1
+	BEQ $+3
+	INCR R1
+	COMR R1
+	ANDR R1,R0
+	COMR R1
+	XORR R1,R0
+	BEQ T106
+	MVII #1,R0
+	MVO R0,V22
+T106:
+	;[332] 		a = a + 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",332
 	MVI V1,R0
 	INCR R0
 	MVO R0,V1
-	CMPI #75,R0
-	BLE T97
-	;[320] 	gosub clearAll
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",320
-	CALL Q32
-	;[321] 	mode 1 'need for SCREEN command
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",321
+	;[333] 	wend
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",333
+	B T94
+T95:
+	;[334] 	gosub clearAll
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",334
+	CALL Q31
+	;[335] 	mode 1 'need for SCREEN command
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",335
 	MVII #3,R0
 	MVO R0,_mode_select
-	;[322] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",322
+	;[336] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",336
 	CALL _wait
-	;[323] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",323
+	;[337] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",337
 	RETURN
 	ENDP
-	;[324] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",324
-	;[325] writescore: procedure 'print the current score
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",325
+	;[338] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",338
+	;[339] writescore: procedure 'print the current score
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",339
 	; WRITESCORE
-Q38:	PROC
+Q36:	PROC
 	BEGIN
-	;[326] 	if #score < 0 then #score = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",326
+	;[340] 	if #score < 0 then #score = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",340
 	MVI V15,R0
 	CMPI #0,R0
-	BGE T106
+	BGE T107
 	CLRR R0
 	MVO R0,V15
-T106:
-	;[327] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",327
-	;[328] 	print at (SCREENPOS(16, 2)) color CS_RED, (#score/100%10+16)*8+6 'first digit
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",328
+T107:
+	;[341] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",341
+	;[342] 	print at (SCREENPOS(16, 2)) color CS_RED, (#score/100%10+16)*8+6 'first digit
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",342
 	MVII #568,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
 	MVI V15,R0
 	MVII #-1,R4
-T107:
+T108:
 	INCR R4
 	SUBI #100,R0
-	BC T107
-	MOVR R4,R0
-T108:
-	SUBI #10,R0
 	BC T108
+	MOVR R4,R0
+T109:
+	SUBI #10,R0
+	BC T109
 	ADDI #26,R0
 	SLL R0,2
 	ADDR R0,R0
@@ -5737,36 +5784,19 @@ T108:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[329] 	print at (SCREENPOS(17, 2)) color CS_RED,(#score/10%10+16)*8+6	 'second digit
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",329
+	;[343] 	print at (SCREENPOS(17, 2)) color CS_RED,(#score/10%10+16)*8+6	 'second digit
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",343
 	MVII #569,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
 	MVI V15,R0
 	MVII #-1,R4
-T109:
+T110:
 	INCR R4
 	SUBI #10,R0
-	BC T109
-	MOVR R4,R0
-T110:
-	SUBI #10,R0
 	BC T110
-	ADDI #26,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #6,R0
-	MVI _screen,R4
-	MVO@ R0,R4
-	MVO R4,_screen
-	;[330] 	print at (SCREENPOS(18, 2)) color CS_RED,(#score%10+16)*8+6		 'third digit
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",330
-	MVII #570,R0
-	MVO R0,_screen
-	MVII #2,R0
-	MVO R0,_color
-	MVI V15,R0
+	MOVR R4,R0
 T111:
 	SUBI #10,R0
 	BC T111
@@ -5777,80 +5807,97 @@ T111:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[331] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",331
-	;[332] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",332
+	;[344] 	print at (SCREENPOS(18, 2)) color CS_RED,(#score%10+16)*8+6		 'third digit
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",344
+	MVII #570,R0
+	MVO R0,_screen
+	MVII #2,R0
+	MVO R0,_color
+	MVI V15,R0
+T112:
+	SUBI #10,R0
+	BC T112
+	ADDI #26,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #6,R0
+	MVI _screen,R4
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[345] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",345
+	;[346] 	return
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",346
 	RETURN
-	;[333] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",333
+	;[347] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",347
 	ENDP
-	;[334] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",334
-	;[335] chooseObject: procedure 'pick object to put on the list that will appear in the game
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",335
+	;[348] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",348
+	;[349] chooseObject: procedure 'pick object to put on the list that will appear in the game
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",349
 	; CHOOSEOBJECT
-Q42:	PROC
+Q40:	PROC
 	BEGIN
-	;[336] 	chance = RANDOM(256) 'percentage is based of 256, not 100
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",336
+	;[350] 	chance = RANDOM(256) 'percentage is based of 256, not 100
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",350
 	CALL _next_random
 	ANDI #255,R0
 	MVO R0,V10
-	;[337] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",337
-	;[338] 	if chance < percentage(0) then 'nothing chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",338
+	;[351] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",351
+	;[352] 	if chance < percentage(0) then 'nothing chances
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",352
 	MVI V10,R0
 	MVI Q7,R1
 	CMPR R1,R0
-	BGE T112
-	;[339] 		chance = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",339
+	BGE T113
+	;[353] 		chance = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",353
 	CLRR R0
 	MVO R0,V10
-	;[340] 	elseif chance < percentage(1) then 'rock chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",340
-	B T113
-T112:
+	;[354] 	elseif chance < percentage(1) then 'rock chances
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",354
+	B T114
+T113:
 	MVI V10,R0
 	MVI Q7+1,R1
 	CMPR R1,R0
-	BGE T114
-	;[341] 		chance = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",341
+	BGE T115
+	;[355] 		chance = 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",355
 	MVII #1,R0
 	MVO R0,V10
-	;[342] 	elseif chance < percentage(2) then 'coin chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",342
-	B T113
-T114:
+	;[356] 	elseif chance < percentage(2) then 'coin chances
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",356
+	B T114
+T115:
 	MVI V10,R0
 	MVI Q7+2,R1
 	CMPR R1,R0
-	BGE T115
-	;[343] 		chance = 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",343
+	BGE T116
+	;[357] 		chance = 2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",357
 	MVII #2,R0
 	MVO R0,V10
-	;[344] 	elseif chance < percentage(3) then 'apple chances
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",344
-	B T113
-T115:
+	;[358] 	elseif chance < percentage(3) then 'apple chances
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",358
+	B T114
+T116:
 	MVI V10,R0
 	MVI Q7+3,R1
 	CMPR R1,R0
-	BGE T116
-	;[345] 		chance = 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",345
+	BGE T117
+	;[359] 		chance = 3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",359
 	MVII #3,R0
 	MVO R0,V10
-	;[346] 	else 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",346
-	B T113
-T116:
-	;[347] 		chance = RANDOM(3) + 4 'Powerup
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",347
+	;[360] 	else 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",360
+	B T114
+T117:
+	;[361] 		chance = RANDOM(3) + 4 'Powerup
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",361
 	MVII #3,R1
 	CALL _next_random
 	CALL qs_mpy8
@@ -5858,13 +5905,13 @@ T116:
 	ANDI #255,R0
 	ADDI #4,R0
 	MVO R0,V10
-	;[348] 	end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",348
-T113:
-	;[349] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",349
-	;[350] 	if invisible > 0 AND a = 1 then chance = 2 'if invisible is activated, make the middle lane all gold
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",350
+	;[362] 	end if
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",362
+T114:
+	;[363] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",363
+	;[364] 	if invisible > 0 AND a = 1 then chance = 2 'if invisible is activated, make the middle lane all gold
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",364
 	MVI V7,R0
 	CMPI #0,R0
 	MVII #-1,R0
@@ -5876,43 +5923,43 @@ T113:
 	BEQ $+3
 	INCR R1
 	ANDR R1,R0
-	BEQ T117
+	BEQ T118
 	MVII #2,R0
 	MVO R0,V10
-T117:
-	;[351] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",351
-	;[352] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",352
+T118:
+	;[365] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",365
+	;[366] 	return
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",366
 	RETURN
-	;[353] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",353
+	;[367] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",367
 	ENDP
-	;[354] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",354
-	;[355] drawheart: procedure 'writes the number lives left and the heart animation
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",355
+	;[368] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",368
+	;[369] drawheart: procedure 'writes the number lives left and the heart animation
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",369
 	; DRAWHEART
-Q39:	PROC
+Q37:	PROC
 	BEGIN
-	;[356] 	if univclock%7 = 0 then heartrate = (heartrate + 1) % 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",356
+	;[370] 	if univclock%7 = 0 then heartrate = (heartrate + 1) % 2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",370
 	MVI V19,R0
-T119:
+T120:
 	SUBI #7,R0
-	BC T119
+	BC T120
 	ADDI #7,R0
-	BNE T118
+	BNE T119
 	MVI V16,R0
 	INCR R0
 	ANDI #1,R0
 	MVO R0,V16
-T118:
-	;[357] 	if heartrate then SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR57 + #playerColor else SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR58 + #playerColor
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",357
+T119:
+	;[371] 	if heartrate then SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR57 + #playerColor else SPRITE 4, SpritePosX(16, 0) + VISIBLE, SpritePosY(5, 0) + ZOOMY2, SPR58 + #playerColor
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",371
 	MVI V16,R0
 	TSTR R0
-	BEQ T120
+	BEQ T121
 	MVII #648,R0
 	MVO R0,_mobs+4
 	MVII #304,R0
@@ -5920,8 +5967,8 @@ T118:
 	MVII #2504,R0
 	ADD V3,R0
 	MVO R0,_mobs+20
-	B T121
-T120:
+	B T122
+T121:
 	MVII #648,R0
 	MVO R0,_mobs+4
 	MVII #304,R0
@@ -5929,37 +5976,20 @@ T120:
 	MVII #2512,R0
 	ADD V3,R0
 	MVO R0,_mobs+20
-T121:
-	;[358] 	print at (SCREENPOS(17, 5)) color CS_RED,(lives/10%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",358
+T122:
+	;[372] 	print at (SCREENPOS(17, 5)) color CS_RED,(lives/10%10+16)*8+6
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",372
 	MVII #629,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
 	MVI V17,R0
 	MVII #-1,R4
-T122:
+T123:
 	INCR R4
 	SUBI #10,R0
-	BC T122
-	MOVR R4,R0
-T123:
-	SUBI #10,R0
 	BC T123
-	ADDI #26,R0
-	SLL R0,2
-	ADDR R0,R0
-	ADDI #6,R0
-	MVI _screen,R4
-	MVO@ R0,R4
-	MVO R4,_screen
-	;[359] 	print at (SCREENPOS(18, 5)) color CS_RED,(lives%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",359
-	MVII #630,R0
-	MVO R0,_screen
-	MVII #2,R0
-	MVO R0,_color
-	MVI V17,R0
+	MOVR R4,R0
 T124:
 	SUBI #10,R0
 	BC T124
@@ -5970,28 +6000,13 @@ T124:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[360] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",360
-	RETURN
-	;[361] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",361
-	ENDP
-	;[362] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",362
-	;[363] writelevel: procedure 'writes the level at the bottom of the screen
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",363
-	; WRITELEVEL
-Q40:	PROC
-	BEGIN
-	;[364] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",364
-	;[365] 	print at (SCREENPOS(17, 8)) color CS_RED, (level%10+16)*8+6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",365
-	MVII #689,R0
+	;[373] 	print at (SCREENPOS(18, 5)) color CS_RED,(lives%10+16)*8+6
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",373
+	MVII #630,R0
 	MVO R0,_screen
 	MVII #2,R0
 	MVO R0,_color
-	MVI V18,R0
+	MVI V17,R0
 T125:
 	SUBI #10,R0
 	BC T125
@@ -6002,629 +6017,661 @@ T125:
 	MVI _screen,R4
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[366] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",366
-	;[367] 	return
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",367
+	;[374] 	return
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",374
 	RETURN
-	;[368] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",368
+	;[375] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",375
 	ENDP
-	;[369] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",369
-	;[370] determinelevel: procedure 'percentage is out of 256; likelihood of an object appearing go to line 25-28 to see what each percentage if for from the index
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",370
-	; DETERMINELEVEL
-Q28:	PROC
+	;[376] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",376
+	;[377] writelevel: procedure 'writes the level at the bottom of the screen
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",377
+	; WRITELEVEL
+Q38:	PROC
 	BEGIN
-	;[371] 	if(level = 1) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",371
+	;[378] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",378
+	;[379] 	print at (SCREENPOS(17, 8)) color CS_RED, (level%10+16)*8+6
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",379
+	MVII #689,R0
+	MVO R0,_screen
+	MVII #2,R0
+	MVO R0,_color
+	MVI V18,R0
+T126:
+	SUBI #10,R0
+	BC T126
+	ADDI #26,R0
+	SLL R0,2
+	ADDR R0,R0
+	ADDI #6,R0
+	MVI _screen,R4
+	MVO@ R0,R4
+	MVO R4,_screen
+	;[380] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",380
+	;[381] 	return
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",381
+	RETURN
+	;[382] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",382
+	ENDP
+	;[383] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",383
+	;[384] determinelevel: procedure 'percentage is out of 256; likelihood of an object appearing go to line 25-28 to see what each percentage if for from the index
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",384
+	; DETERMINELEVEL
+Q27:	PROC
+	BEGIN
+	;[385] 	if(level = 1) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",385
 	MVI V18,R0
 	CMPI #1,R0
-	BNE T126
-	;[372] 		dificulty=1 'rate of object showing up
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",372
+	BNE T127
+	;[386] 		dificulty=1 'rate of object showing up
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",386
 	MVII #1,R0
 	MVO R0,V11
-	;[373] 		#maximunScore = 100 'score needed to pass level
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",373
+	;[387] 		#maximunScore = 100 'score needed to pass level
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",387
 	MVII #100,R0
 	MVO R0,V12
-	;[374] 		percentage(0) = 51
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",374
+	;[388] 		percentage(0) = 51
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",388
 	MVII #51,R0
 	MVO R0,Q7
-	;[375] 		percentage(1) = percentage(0) + 51
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",375
+	;[389] 		percentage(1) = percentage(0) + 51
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",389
 	MVI Q7,R0
 	ADDI #51,R0
 	MVO R0,Q7+1
-	;[376] 		percentage(2) = percentage(1) + 122
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",376
+	;[390] 		percentage(2) = percentage(1) + 122
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",390
 	MVI Q7+1,R0
 	ADDI #122,R0
 	MVO R0,Q7+2
-	;[377] 		percentage(3) = percentage(2) + 25
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",377
+	;[391] 		percentage(3) = percentage(2) + 25
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",391
 	MVI Q7+2,R0
 	ADDI #25,R0
 	MVO R0,Q7+3
-	;[378] 	elseif(level = 2) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",378
-	B T127
-T126:
+	;[392] 	elseif(level = 2) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",392
+	B T128
+T127:
 	MVI V18,R0
 	CMPI #2,R0
-	BNE T128
-	;[379] 		dificulty=1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",379
+	BNE T129
+	;[393] 		dificulty=1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",393
 	MVII #1,R0
 	MVO R0,V11
-	;[380] 		#maximunScore = 110
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",380
+	;[394] 		#maximunScore = 110
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",394
 	MVII #110,R0
 	MVO R0,V12
-	;[381] 		percentage(0) = 64
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",381
+	;[395] 		percentage(0) = 64
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",395
 	MVII #64,R0
 	MVO R0,Q7
-	;[382] 		percentage(1) = percentage(0) + 64
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",382
+	;[396] 		percentage(1) = percentage(0) + 64
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",396
 	MVI Q7,R0
 	ADDI #64,R0
 	MVO R0,Q7+1
-	;[383] 		percentage(2) = percentage(1) + 97
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",383
+	;[397] 		percentage(2) = percentage(1) + 97
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",397
 	MVI Q7+1,R0
 	ADDI #97,R0
 	MVO R0,Q7+2
-	;[384] 		percentage(3) = percentage(2) + 25
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",384
+	;[398] 		percentage(3) = percentage(2) + 25
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",398
 	MVI Q7+2,R0
 	ADDI #25,R0
 	MVO R0,Q7+3
-	;[385] 	elseif(level = 3) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",385
-	B T127
-T128:
-	MVI V18,R0
-	CMPI #3,R0
-	BNE T129
-	;[386] 		dificulty=2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",386
-	MVII #2,R0
-	MVO R0,V11
-	;[387] 		#maximunScore = 130
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",387
-	MVII #130,R0
-	MVO R0,V12
-	;[388] 		percentage(0) = 97
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",388
-	MVII #97,R0
-	MVO R0,Q7
-	;[389] 		percentage(1) = percentage(0) + 58
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",389
-	MVI Q7,R0
-	ADDI #58,R0
-	MVO R0,Q7+1
-	;[390] 		percentage(2) = percentage(1) + 58
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",390
-	MVI Q7+1,R0
-	ADDI #58,R0
-	MVO R0,Q7+2
-	;[391] 		percentage(3) = percentage(2) + 25
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",391
-	MVI Q7+2,R0
-	ADDI #25,R0
-	MVO R0,Q7+3
-	;[392] 	elseif(level = 4) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",392
-	B T127
+	;[399] 	elseif(level = 3) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",399
+	B T128
 T129:
 	MVI V18,R0
-	CMPI #4,R0
+	CMPI #3,R0
 	BNE T130
-	;[393] 		dificulty=2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",393
+	;[400] 		dificulty=2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",400
 	MVII #2,R0
 	MVO R0,V11
-	;[394] 		#maximunScore = 150
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",394
-	MVII #150,R0
+	;[401] 		#maximunScore = 130
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",401
+	MVII #130,R0
 	MVO R0,V12
-	;[395] 		percentage(0) = 120
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",395
-	MVII #120,R0
+	;[402] 		percentage(0) = 97
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",402
+	MVII #97,R0
 	MVO R0,Q7
-	;[396] 		percentage(1) = percentage(0) + 58
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",396
+	;[403] 		percentage(1) = percentage(0) + 58
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",403
 	MVI Q7,R0
 	ADDI #58,R0
 	MVO R0,Q7+1
-	;[397] 		percentage(2) = percentage(1) + 58
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",397
+	;[404] 		percentage(2) = percentage(1) + 58
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",404
 	MVI Q7+1,R0
 	ADDI #58,R0
 	MVO R0,Q7+2
-	;[398] 		percentage(3) = percentage(2) + 17
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",398
+	;[405] 		percentage(3) = percentage(2) + 25
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",405
+	MVI Q7+2,R0
+	ADDI #25,R0
+	MVO R0,Q7+3
+	;[406] 	elseif(level = 4) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",406
+	B T128
+T130:
+	MVI V18,R0
+	CMPI #4,R0
+	BNE T131
+	;[407] 		dificulty=2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",407
+	MVII #2,R0
+	MVO R0,V11
+	;[408] 		#maximunScore = 150
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",408
+	MVII #150,R0
+	MVO R0,V12
+	;[409] 		percentage(0) = 120
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",409
+	MVII #120,R0
+	MVO R0,Q7
+	;[410] 		percentage(1) = percentage(0) + 58
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",410
+	MVI Q7,R0
+	ADDI #58,R0
+	MVO R0,Q7+1
+	;[411] 		percentage(2) = percentage(1) + 58
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",411
+	MVI Q7+1,R0
+	ADDI #58,R0
+	MVO R0,Q7+2
+	;[412] 		percentage(3) = percentage(2) + 17
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",412
 	MVI Q7+2,R0
 	ADDI #17,R0
 	MVO R0,Q7+3
-	;[399] 	elseif(level = 5) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",399
-	B T127
-T130:
+	;[413] 	elseif(level = 5) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",413
+	B T128
+T131:
 	MVI V18,R0
 	CMPI #5,R0
-	BNE T131
-	;[400] 		dificulty=3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",400
+	BNE T132
+	;[414] 		dificulty=3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",414
 	MVII #3,R0
 	MVO R0,V11
-	;[401] 		#maximunScore = 250
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",401
+	;[415] 		#maximunScore = 250
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",415
 	MVII #250,R0
 	MVO R0,V12
-	;[402] 		percentage(0) = 120
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",402
+	;[416] 		percentage(0) = 120
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",416
 	MVII #120,R0
 	MVO R0,Q7
-	;[403] 		percentage(1) = percentage(0) + 66
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",403
+	;[417] 		percentage(1) = percentage(0) + 66
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",417
 	MVI Q7,R0
 	ADDI #66,R0
 	MVO R0,Q7+1
-	;[404] 		percentage(2) = percentage(1) + 51
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",404
+	;[418] 		percentage(2) = percentage(1) + 51
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",418
 	MVI Q7+1,R0
 	ADDI #51,R0
 	MVO R0,Q7+2
-	;[405] 		percentage(3) = percentage(2) + 17
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",405
+	;[419] 		percentage(3) = percentage(2) + 17
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",419
 	MVI Q7+2,R0
 	ADDI #17,R0
 	MVO R0,Q7+3
-	;[406] 	elseif(level = 6) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",406
-	B T127
-T131:
+	;[420] 	elseif(level = 6) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",420
+	B T128
+T132:
 	MVI V18,R0
 	CMPI #6,R0
-	BNE T132
-	;[407] 		dificulty=3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",407
+	BNE T133
+	;[421] 		dificulty=3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",421
 	MVII #3,R0
 	MVO R0,V11
-	;[408] 		#maximunScore = 500
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",408
+	;[422] 		#maximunScore = 500
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",422
 	MVII #500,R0
 	MVO R0,V12
-	;[409] 		percentage(0) = 128
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",409
+	;[423] 		percentage(0) = 128
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",423
 	MVII #128,R0
 	MVO R0,Q7
-	;[410] 		percentage(1) = percentage(0) + 76
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",410
+	;[424] 		percentage(1) = percentage(0) + 76
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",424
 	MVI Q7,R0
 	ADDI #76,R0
 	MVO R0,Q7+1
-	;[411] 		percentage(2) = percentage(1) + 51
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",411
+	;[425] 		percentage(2) = percentage(1) + 51
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",425
 	MVI Q7+1,R0
 	ADDI #51,R0
 	MVO R0,Q7+2
-	;[412] 		percentage(3) = percentage(2) + 17
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",412
+	;[426] 		percentage(3) = percentage(2) + 17
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",426
 	MVI Q7+2,R0
 	ADDI #17,R0
 	MVO R0,Q7+3
-	;[413] 	elseif(level = 7) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",413
-	B T127
-T132:
+	;[427] 	elseif(level = 7) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",427
+	B T128
+T133:
 	MVI V18,R0
 	CMPI #7,R0
-	BNE T133
-	;[414] 		dificulty=4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",414
+	BNE T134
+	;[428] 		dificulty=4
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",428
 	MVII #4,R0
 	MVO R0,V11
-	;[415] 		#maximunScore = 650
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",415
+	;[429] 		#maximunScore = 650
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",429
 	MVII #650,R0
 	MVO R0,V12
-	;[416] 		percentage(0) = 117
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",416
+	;[430] 		percentage(0) = 117
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",430
 	MVII #117,R0
 	MVO R0,Q7
-	;[417] 		percentage(1) = percentage(0) + 58
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",417
+	;[431] 		percentage(1) = percentage(0) + 58
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",431
 	MVI Q7,R0
 	ADDI #58,R0
 	MVO R0,Q7+1
-	;[418] 		percentage(2) = percentage(1) + 58
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",418
+	;[432] 		percentage(2) = percentage(1) + 58
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",432
 	MVI Q7+1,R0
 	ADDI #58,R0
 	MVO R0,Q7+2
-	;[419] 		percentage(3) = percentage(2) + 12
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",419
+	;[433] 		percentage(3) = percentage(2) + 12
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",433
 	MVI Q7+2,R0
 	ADDI #12,R0
 	MVO R0,Q7+3
-	;[420] 	elseif(level = 8) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",420
-	B T127
-T133:
+	;[434] 	elseif(level = 8) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",434
+	B T128
+T134:
 	MVI V18,R0
 	CMPI #8,R0
-	BNE T134
-	;[421] 		dificulty=5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",421
+	BNE T135
+	;[435] 		dificulty=5
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",435
 	MVII #5,R0
 	MVO R0,V11
-	;[422] 		#maximunScore = 750
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",422
+	;[436] 		#maximunScore = 750
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",436
 	MVII #750,R0
 	MVO R0,V12
-	;[423] 		percentage(0) = 79
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",423
+	;[437] 		percentage(0) = 79
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",437
 	MVII #79,R0
 	MVO R0,Q7
-	;[424] 		percentage(1) = percentage(0) + 79
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",424
+	;[438] 		percentage(1) = percentage(0) + 79
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",438
 	MVI Q7,R0
 	ADDI #79,R0
 	MVO R0,Q7+1
-	;[425] 		percentage(2) = percentage(1) + 79
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",425
+	;[439] 		percentage(2) = percentage(1) + 79
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",439
 	MVI Q7+1,R0
 	ADDI #79,R0
 	MVO R0,Q7+2
-	;[426] 		percentage(3) = percentage(2) + 8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",426
+	;[440] 		percentage(3) = percentage(2) + 8
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",440
 	MVI Q7+2,R0
 	ADDI #8,R0
 	MVO R0,Q7+3
-	;[427] 	elseif(level = 9) then 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",427
-	B T127
-T134:
+	;[441] 	elseif(level = 9) then 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",441
+	B T128
+T135:
 	MVI V18,R0
 	CMPI #9,R0
-	BNE T135
-	;[428] 		dificulty=6
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",428
+	BNE T136
+	;[442] 		dificulty=6
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",442
 	MVII #6,R0
 	MVO R0,V11
-	;[429] 		#maximunScore = 1000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",429
+	;[443] 		#maximunScore = 1000
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",443
 	MVII #1000,R0
 	MVO R0,V12
-	;[430] 		percentage(0) = 81
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",430
+	;[444] 		percentage(0) = 81
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",444
 	MVII #81,R0
 	MVO R0,Q7
-	;[431] 		percentage(1) = percentage(0) + 84
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",431
+	;[445] 		percentage(1) = percentage(0) + 84
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",445
 	MVI Q7,R0
 	ADDI #84,R0
 	MVO R0,Q7+1
-	;[432] 		percentage(2) = percentage(1) + 50
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",432
+	;[446] 		percentage(2) = percentage(1) + 50
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",446
 	MVI Q7+1,R0
 	ADDI #50,R0
 	MVO R0,Q7+2
-	;[433] 		percentage(3) = percentage(2) + 4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",433
+	;[447] 		percentage(3) = percentage(2) + 4
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",447
 	MVI Q7+2,R0
 	ADDI #4,R0
 	MVO R0,Q7+3
-	;[434] 	else
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",434
-	B T127
-T135:
-	;[435] 		level = 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",435
+	;[448] 	else
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",448
+	B T128
+T136:
+	;[449] 		level = 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",449
 	MVII #1,R0
 	MVO R0,V18
-	;[436] 		lives = 10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",436
+	;[450] 		lives = 10
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",450
 	MVII #10,R0
 	MVO R0,V17
-	;[437] 		gosub determinelevel
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",437
-	CALL Q28
-	;[438] 	end if
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",438
-T127:
-	;[439] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",439
+	;[451] 		gosub determinelevel
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",451
+	CALL Q27
+	;[452] 	end if
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",452
+T128:
+	;[453] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",453
 	RETURN
 	ENDP
-	;[440] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",440
-	;[441] clearAll:procedure 'clear everything on the screen
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",441
+	;[454] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",454
+	;[455] clearAll:procedure 'clear everything on the screen
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",455
 	; CLEARALL
-Q32:	PROC
+Q31:	PROC
 	BEGIN
-	;[442] 	cls
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",442
+	;[456] 	cls
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",456
 	CALL CLRSCR
-	;[443] 	ResetSprite(0)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",443
+	;[457] 	ResetSprite(0)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",457
 	CLRR R0
 	MVO R0,_mobs
 	MVO R0,_mobs+8
 	NOP
 	MVO R0,_mobs+16
-	;[444] 	ResetSprite(1)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",444
+	;[458] 	ResetSprite(1)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",458
 	MVO R0,_mobs+1
 	NOP
 	MVO R0,_mobs+9
 	MVO R0,_mobs+17
-	;[445] 	ResetSprite(2)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",445
+	;[459] 	ResetSprite(2)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",459
 	NOP
 	MVO R0,_mobs+2
 	MVO R0,_mobs+10
 	NOP
 	MVO R0,_mobs+18
-	;[446] 	ResetSprite(3)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",446
+	;[460] 	ResetSprite(3)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",460
 	MVO R0,_mobs+3
 	NOP
 	MVO R0,_mobs+11
 	MVO R0,_mobs+19
-	;[447] 	ResetSprite(4)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",447
+	;[461] 	ResetSprite(4)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",461
 	NOP
 	MVO R0,_mobs+4
 	MVO R0,_mobs+12
 	NOP
 	MVO R0,_mobs+20
-	;[448] 	ResetSprite(5)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",448
+	;[462] 	ResetSprite(5)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",462
 	MVO R0,_mobs+5
 	NOP
 	MVO R0,_mobs+13
 	MVO R0,_mobs+21
-	;[449] 	ResetSprite(6)
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",449
+	;[463] 	ResetSprite(6)
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",463
 	NOP
 	MVO R0,_mobs+6
 	MVO R0,_mobs+14
 	NOP
 	MVO R0,_mobs+22
-	;[450] 	ResetSprite(7) 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",450
+	;[464] 	ResetSprite(7) 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",464
 	MVO R0,_mobs+7
 	NOP
 	MVO R0,_mobs+15
 	MVO R0,_mobs+23
-	;[451] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",451
+	;[465] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",465
 	RETURN
 	ENDP
-	;[452] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",452
-	;[453] clearPower:procedure 'reset powers and object shown
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",453
+	;[466] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",466
+	;[467] clearPower:procedure 'reset powers and object shown
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",467
 	; CLEARPOWER
-Q33:	PROC
+Q32:	PROC
 	BEGIN
-	;[454] 	invisible = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",454
+	;[468] 	invisible = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",468
 	CLRR R0
 	MVO R0,V7
-	;[455] 	jump = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",455
+	;[469] 	jump = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",469
 	MVO R0,V14
-	;[456] 	bonus_exp = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",456
+	;[470] 	bonus_exp = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",470
 	NOP
 	MVO R0,V8
-	;[457] 	bonus_lives = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",457
+	;[471] 	bonus_lives = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",471
 	MVO R0,V9
-	;[458] 	object(0) = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",458
+	;[472] 	object(0) = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",472
 	NOP
 	MVO R0,Q5
-	;[459] 	object(1) = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",459
+	;[473] 	object(1) = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",473
 	MVO R0,Q5+1
-	;[460] 	object(2) = 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",460
+	;[474] 	object(2) = 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",474
 	NOP
 	MVO R0,Q5+2
-	;[461] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",461
+	;[475] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",475
 	RETURN
 	ENDP
-	;[462] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",462
-	;[463] add_points:	PROCEDURE 'score gained sound effect
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",463
+	;[476] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",476
+	;[477] add_points:	PROCEDURE 'score gained sound effect
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",477
 	; ADD_POINTS
-Q45:	PROC
+Q44:	PROC
 	BEGIN
-	;[464] 	#score = #score + 5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",464
+	;[478] 	#score = #score + 5
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",478
 	MVI V15,R0
 	ADDI #5,R0
 	MVO R0,V15
-	;[465] 	SOUND 1,400,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",465
+	;[479] 	SOUND 1,400,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",479
 	MVII #400,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[466] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",466
+	;[480] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",480
 	CALL _wait
-	;[467] 	SOUND 1,300,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",467
+	;[481] 	SOUND 1,300,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",481
 	MVII #300,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[468] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",468
+	;[482] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",482
 	CALL _wait
-	;[469] 	SOUND 1,500,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",469
+	;[483] 	SOUND 1,500,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",483
 	MVII #500,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[470] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",470
+	;[484] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",484
 	CALL _wait
-	;[471] 	SOUND 1,,0 ' Turn volume to zero
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",471
+	;[485] 	SOUND 1,,0 ' Turn volume to zero
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",485
 	CLRR R0
 	MVO R0,508
-	;[472] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",472
+	;[486] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",486
 	RETURN
 	ENDP
-	;[473] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",473
-	;[474] lose_points:	PROCEDURE 'score loss sound effect
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",474
+	;[487] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",487
+	;[488] lose_points:	PROCEDURE 'score loss sound effect
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",488
 	; LOSE_POINTS
-Q46:	PROC
+Q45:	PROC
 	BEGIN
-	;[475] 	#score = #score - 10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",475
+	;[489] 	#score = #score - 15
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",489
 	MVI V15,R0
-	SUBI #10,R0
+	SUBI #15,R0
 	MVO R0,V15
-	;[476] 	SOUND 1,100,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",476
+	;[490] 	SOUND 1,100,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",490
 	MVII #100,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[477] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",477
+	;[491] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",491
 	CALL _wait
-	;[478] 	SOUND 1,500,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",478
+	;[492] 	SOUND 1,500,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",492
 	MVII #500,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[479] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",479
+	;[493] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",493
 	CALL _wait
-	;[480] 	SOUND 1,300,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",480
+	;[494] 	SOUND 1,300,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",494
 	MVII #300,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[481] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",481
+	;[495] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",495
 	CALL _wait
-	;[482] 	SOUND 1,,0 ' Turn volume to zero
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",482
+	;[496] 	SOUND 1,,0 ' Turn volume to zero
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",496
 	CLRR R0
 	MVO R0,508
-	;[483] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",483
+	;[497] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",497
 	RETURN
 	ENDP
-	;[484] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",484
-	;[485] add_lives:	PROCEDURE 'life gained sound effect
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",485
+	;[498] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",498
+	;[499] add_lives:	PROCEDURE 'life gained sound effect
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",499
 	; ADD_LIVES
-Q44:	PROC
+Q43:	PROC
 	BEGIN
-	;[486] 	lives = lives + 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",486
+	;[500] 	lives = lives + 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",500
 	MVI V17,R0
 	INCR R0
 	MVO R0,V17
-	;[487] 	SOUND 1,200,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",487
+	;[501] 	SOUND 1,200,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",501
 	MVII #200,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[488] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",488
+	;[502] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",502
 	CALL _wait
-	;[489] 	SOUND 1,300,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",489
+	;[503] 	SOUND 1,300,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",503
 	MVII #300,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[490] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",490
+	;[504] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",504
 	CALL _wait
-	;[491] 	SOUND 1,400,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",491
+	;[505] 	SOUND 1,400,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",505
 	MVII #400,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[492] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",492
+	;[506] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",506
 	CALL _wait
-	;[493] 	SOUND 1,500,14
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",493
+	;[507] 	SOUND 1,500,14
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",507
 	MVII #500,R0
 	MVO R0,497
 	SWAP R0
 	MVO R0,501
 	MVII #14,R0
 	MVO R0,508
-	;[494] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",494
+	;[508] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",508
 	CALL _wait
-	;[495] 	SOUND 1,,0 ' Turn volume to zero
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",495
+	;[509] 	SOUND 1,,0 ' Turn volume to zero
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",509
 	CLRR R0
 	MVO R0,508
-	;[496] end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",496
+	;[510] end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",510
 	RETURN
 	ENDP
-	;[497] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",497
-	;[498] end:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",498
+	;[511] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",511
+	;[512] end:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",512
 	; END
-Q35:	;[499] 	wait
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",499
+Q34:	;[513] 	wait
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",513
 	CALL _wait
-	;[500] 	print at SCREENPOS(6, 5) color CS_RED, "Good Bye!"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",500
+	;[514] 	print at SCREENPOS(6, 5) color CS_RED, "Good Bye!"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",514
 	MVII #618,R0
 	MVO R0,_screen
 	MVII #2,R0
@@ -6649,663 +6696,663 @@ Q35:	;[499] 	wait
 	XORI #544,R0
 	MVO@ R0,R4
 	MVO R4,_screen
-	;[501] 	goto end
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",501
-	B Q35
-	;[502] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",502
-	;[503] 	'graphics
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",503
-	;[504] player:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",504
+	;[515] 	goto end
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",515
+	B Q34
+	;[516] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",516
+	;[517] 	'graphics
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",517
+	;[518] player:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",518
 	; PLAYER
-Q12:	;[505] 	'frame 0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",505
-	;[506] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",506
-	;[507] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",507
-	DECLE 48188
-	;[508] 	BITMAP "#.######"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",508
-	;[509] 	BITMAP "######.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",509
-	DECLE 64959
-	;[510] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",510
-	;[511] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",511
-	DECLE 15677
-	;[512] 	BITMAP "..#....."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",512
-	;[513] 	BITMAP "..#....."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",513
-	DECLE 8224
-	;[514] 	'frame 1
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",514
-	;[515] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",515
-	;[516] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",516
-	DECLE 15420
-	;[517] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",517
-	;[518] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",518
-	DECLE 65468
-	;[519] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",519
+Q12:	;[519] 	'frame 0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",519
 	;[520] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",520
-	DECLE 15421
-	;[521] 	BITMAP "..#..#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",521
-	;[522] 	BITMAP "..#....."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",522
-	DECLE 8228
-	;[523] 	'frame 2
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",523
-	;[524] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",524
-	;[525] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",525
-	DECLE 15420
-	;[526] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",526
-	;[527] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",527
-	DECLE 65340
-	;[528] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",528
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",520
+	;[521] 	BITMAP "#.####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",521
+	DECLE 48188
+	;[522] 	BITMAP "#.######"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",522
+	;[523] 	BITMAP "######.#"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",523
+	DECLE 64959
+	;[524] 	BITMAP "..####.#"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",524
+	;[525] 	BITMAP "..####.#"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",525
+	DECLE 15677
+	;[526] 	BITMAP "..#....."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",526
+	;[527] 	BITMAP "..#....."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",527
+	DECLE 8224
+	;[528] 	'frame 1
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",528
 	;[529] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",529
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",529
+	;[530] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",530
 	DECLE 15420
-	;[530] 	BITMAP "..#..#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",530
-	;[531] 	BITMAP "..#..#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",531
-	DECLE 9252
-	;[532] 	'frame 3
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",532
-	;[533] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",533
+	;[531] 	BITMAP "#.####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",531
+	;[532] 	BITMAP "########"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",532
+	DECLE 65468
+	;[533] 	BITMAP "..####.#"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",533
 	;[534] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",534
-	DECLE 15420
-	;[535] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",535
-	;[536] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",536
-	DECLE 65341
-	;[537] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",537
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",534
+	DECLE 15421
+	;[535] 	BITMAP "..#..#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",535
+	;[536] 	BITMAP "..#....."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",536
+	DECLE 8228
+	;[537] 	'frame 2
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",537
 	;[538] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",538
-	DECLE 15548
-	;[539] 	BITMAP "..#..#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",539
-	;[540] 	BITMAP ".....#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",540
-	DECLE 1060
-	;[541] 	'frame 4
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",541
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",538
+	;[539] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",539
+	DECLE 15420
+	;[540] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",540
+	;[541] 	BITMAP "########"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",541
+	DECLE 65340
 	;[542] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",542
-	;[543] 	BITMAP "..####.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",543
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",542
+	;[543] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",543
+	DECLE 15420
+	;[544] 	BITMAP "..#..#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",544
+	;[545] 	BITMAP "..#..#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",545
+	DECLE 9252
+	;[546] 	'frame 3
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",546
+	;[547] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",547
+	;[548] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",548
+	DECLE 15420
+	;[549] 	BITMAP "..####.#"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",549
+	;[550] 	BITMAP "########"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",550
+	DECLE 65341
+	;[551] 	BITMAP "#.####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",551
+	;[552] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",552
+	DECLE 15548
+	;[553] 	BITMAP "..#..#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",553
+	;[554] 	BITMAP ".....#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",554
+	DECLE 1060
+	;[555] 	'frame 4
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",555
+	;[556] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",556
+	;[557] 	BITMAP "..####.#"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",557
 	DECLE 15676
-	;[544] 	BITMAP "######.#"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",544
-	;[545] 	BITMAP "#.######"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",545
+	;[558] 	BITMAP "######.#"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",558
+	;[559] 	BITMAP "#.######"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",559
 	DECLE 49149
-	;[546] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",546
-	;[547] 	BITMAP "#.####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",547
+	;[560] 	BITMAP "#.####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",560
+	;[561] 	BITMAP "#.####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",561
 	DECLE 48316
-	;[548] 	BITMAP ".....#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",548
-	;[549] 	BITMAP ".....#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",549
+	;[562] 	BITMAP ".....#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",562
+	;[563] 	BITMAP ".....#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",563
 	DECLE 1028
-	;[550] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",550
-	;[551] tiles:	'heart icon
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",551
+	;[564] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",564
+	;[565] tiles:	'heart icon
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",565
 	; TILES
-Q13:	;[552] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",552
-	;[553] 	BITMAP ".##.##.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",553
+Q13:	;[566] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",566
+	;[567] 	BITMAP ".##.##.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",567
 	DECLE 27648
-	;[554] 	BITMAP "#.##.##."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",554
-	;[555] 	BITMAP "#######."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",555
+	;[568] 	BITMAP "#.##.##."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",568
+	;[569] 	BITMAP "#######."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",569
 	DECLE 65206
-	;[556] 	BITMAP ".#####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",556
-	;[557] 	BITMAP "..###..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",557
+	;[570] 	BITMAP ".#####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",570
+	;[571] 	BITMAP "..###..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",571
 	DECLE 14460
-	;[558] 	BITMAP "...#...."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",558
-	;[559] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",559
+	;[572] 	BITMAP "...#...."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",572
+	;[573] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",573
 	DECLE 16
-	;[560] 	'empty heart icon
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",560
-	;[561] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",561
-	;[562] 	BITMAP ".##.##.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",562
+	;[574] 	'empty heart icon
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",574
+	;[575] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",575
+	;[576] 	BITMAP ".##.##.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",576
 	DECLE 27648
-	;[563] 	BITMAP "##.##.#."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",563
-	;[564] 	BITMAP "#.....#."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",564
+	;[577] 	BITMAP "##.##.#."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",577
+	;[578] 	BITMAP "#.....#."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",578
 	DECLE 33498
-	;[565] 	BITMAP ".#...#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",565
-	;[566] 	BITMAP "..#.#..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",566
+	;[579] 	BITMAP ".#...#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",579
+	;[580] 	BITMAP "..#.#..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",580
 	DECLE 10308
-	;[567] 	BITMAP "...#...."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",567
-	;[568] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",568
+	;[581] 	BITMAP "...#...."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",581
+	;[582] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",582
 	DECLE 16
-	;[569] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",569
-	;[570] street:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",570
+	;[583] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",583
+	;[584] street:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",584
 	; STREET
-Q14:	;[571] 	'left
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",571
-	;[572] 	BITMAP "....##.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",572
-	;[573] 	BITMAP "....##.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",573
+Q14:	;[585] 	'left
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",585
+	;[586] 	BITMAP "....##.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",586
+	;[587] 	BITMAP "....##.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",587
 	DECLE 3084
-	;[574] 	BITMAP "....##.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",574
-	;[575] 	BITMAP "...###.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",575
+	;[588] 	BITMAP "....##.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",588
+	;[589] 	BITMAP "...###.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",589
 	DECLE 7180
-	;[576] 	BITMAP "...##..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",576
-	;[577] 	BITMAP "...##..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",577
+	;[590] 	BITMAP "...##..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",590
+	;[591] 	BITMAP "...##..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",591
 	DECLE 6168
-	;[578] 	BITMAP "...##..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",578
-	;[579] 	BITMAP "...##..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",579
+	;[592] 	BITMAP "...##..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",592
+	;[593] 	BITMAP "...##..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",593
 	DECLE 6168
-	;[580] 	'center
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",580
-	;[581] 	BITMAP "##......"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",581
-	;[582] 	BITMAP "##......"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",582
+	;[594] 	'center
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",594
+	;[595] 	BITMAP "##......"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",595
+	;[596] 	BITMAP "##......"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",596
 	DECLE 49344
-	;[583] 	BITMAP "##......"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",583
-	;[584] 	BITMAP "##......"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",584
+	;[597] 	BITMAP "##......"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",597
+	;[598] 	BITMAP "##......"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",598
 	DECLE 49344
-	;[585] 	BITMAP "##......"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",585
-	;[586] 	BITMAP "##......"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",586
+	;[599] 	BITMAP "##......"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",599
+	;[600] 	BITMAP "##......"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",600
 	DECLE 49344
-	;[587] 	BITMAP "##......"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",587
-	;[588] 	BITMAP "##......"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",588
+	;[601] 	BITMAP "##......"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",601
+	;[602] 	BITMAP "##......"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",602
 	DECLE 49344
-	;[589] 	'left
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",589
-	;[590] 	BITMAP "..##...."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",590
-	;[591] 	BITMAP "..##...."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",591
+	;[603] 	'left
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",603
+	;[604] 	BITMAP "..##...."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",604
+	;[605] 	BITMAP "..##...."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",605
 	DECLE 12336
-	;[592] 	BITMAP "..##...."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",592
-	;[593] 	BITMAP "..##...."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",593
+	;[606] 	BITMAP "..##...."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",606
+	;[607] 	BITMAP "..##...."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",607
 	DECLE 12336
-	;[594] 	BITMAP "..###..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",594
-	;[595] 	BITMAP "...##..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",595
+	;[608] 	BITMAP "..###..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",608
+	;[609] 	BITMAP "...##..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",609
 	DECLE 6200
-	;[596] 	BITMAP "...##..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",596
-	;[597] 	BITMAP "...##..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",597
+	;[610] 	BITMAP "...##..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",610
+	;[611] 	BITMAP "...##..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",611
 	DECLE 6168
-	;[598] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",598
-	;[599] apple:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",599
+	;[612] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",612
+	;[613] apple:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",613
 	; APPLE
-Q18:	;[600] 	BITMAP ".....#.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",600
-	;[601] 	BITMAP "....#..."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",601
+Q18:	;[614] 	BITMAP ".....#.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",614
+	;[615] 	BITMAP "....#..."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",615
 	DECLE 2052
-	;[602] 	BITMAP "..##.##."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",602
-	;[603] 	BITMAP ".#######"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",603
+	;[616] 	BITMAP "..##.##."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",616
+	;[617] 	BITMAP ".#######"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",617
 	DECLE 32566
-	;[604] 	BITMAP ".#######"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",604
-	;[605] 	BITMAP ".#######"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",605
+	;[618] 	BITMAP ".#######"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",618
+	;[619] 	BITMAP ".#######"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",619
 	DECLE 32639
-	;[606] 	BITMAP "..#####."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",606
-	;[607] 	BITMAP "..##.##."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",607
+	;[620] 	BITMAP "..#####."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",620
+	;[621] 	BITMAP "..##.##."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",621
 	DECLE 13886
-	;[608] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",608
-	;[609] nothing:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",609
+	;[622] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",622
+	;[623] nothing:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",623
 	; NOTHING
-Q15:	;[610] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",610
-	;[611] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",611
+Q15:	;[624] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",624
+	;[625] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",625
 	DECLE 0
-	;[612] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",612
-	;[613] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",613
+	;[626] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",626
+	;[627] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",627
 	DECLE 0
-	;[614] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",614
-	;[615] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",615
+	;[628] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",628
+	;[629] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",629
 	DECLE 0
-	;[616] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",616
-	;[617] 	BITMAP "........"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",617
+	;[630] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",630
+	;[631] 	BITMAP "........"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",631
 	DECLE 0
-	;[618] 	
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",618
-	;[619] rock:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",619
+	;[632] 	
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",632
+	;[633] rock:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",633
 	; ROCK
-Q16:	;[620] 	BITMAP "..#####."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",620
-	;[621] 	BITMAP ".#.#####"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",621
+Q16:	;[634] 	BITMAP "..#####."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",634
+	;[635] 	BITMAP ".#.#####"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",635
 	DECLE 24382
-	;[622] 	BITMAP "####..##"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",622
-	;[623] 	BITMAP "####.###"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",623
+	;[636] 	BITMAP "####..##"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",636
+	;[637] 	BITMAP "####.###"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",637
 	DECLE 63475
-	;[624] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",624
-	;[625] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",625
+	;[638] 	BITMAP "########"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",638
+	;[639] 	BITMAP "########"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",639
 	DECLE 65535
-	;[626] 	BITMAP ".###.##."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",626
-	;[627] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",627
+	;[640] 	BITMAP ".###.##."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",640
+	;[641] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",641
 	DECLE 15478
-	;[628] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",628
-	;[629] coin:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",629
+	;[642] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",642
+	;[643] coin:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",643
 	; COIN
-Q17:	;[630] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",630
-	;[631] 	BITMAP ".######."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",631
+Q17:	;[644] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",644
+	;[645] 	BITMAP ".######."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",645
 	DECLE 32316
-	;[632] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",632
-	;[633] 	BITMAP "###..###"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",633
+	;[646] 	BITMAP "########"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",646
+	;[647] 	BITMAP "###..###"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",647
 	DECLE 59391
-	;[634] 	BITMAP "###..###"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",634
-	;[635] 	BITMAP "########"
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",635
+	;[648] 	BITMAP "###..###"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",648
+	;[649] 	BITMAP "########"
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",649
 	DECLE 65511
-	;[636] 	BITMAP ".######."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",636
-	;[637] 	BITMAP "..####.."
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",637
+	;[650] 	BITMAP ".######."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",650
+	;[651] 	BITMAP "..####.."
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",651
 	DECLE 15486
-	;[638] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",638
-	;[639] 	' 49 bitmaps
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",639
-	;[640] screen_bitmaps_0:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",640
+	;[652] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",652
+	;[653] 	' 49 bitmaps
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",653
+	;[654] screen_bitmaps_0:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",654
 	; SCREEN_BITMAPS_0
-Q8:	;[641] 	DATA $FFFF,$E0FF,$E0E0,$E0E0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",641
+Q8:	;[655] 	DATA $FFFF,$E0FF,$E0E0,$E0E0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",655
 	DECLE 65535
 	DECLE 57599
 	DECLE 57568
 	DECLE 57568
-	;[642] 	DATA $FFFF,$00FF,$0000,$0000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",642
+	;[656] 	DATA $FFFF,$00FF,$0000,$0000
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",656
 	DECLE 65535
 	DECLE 255
 	DECLE 0
 	DECLE 0
-	;[643] 	DATA $FFFF,$07FF,$0707,$0707
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",643
+	;[657] 	DATA $FFFF,$07FF,$0707,$0707
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",657
 	DECLE 65535
 	DECLE 2047
 	DECLE 1799
 	DECLE 1799
-	;[644] 	DATA $0100,$0D07,$1F1F,$FF7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",644
+	;[658] 	DATA $0100,$0D07,$1F1F,$FF7F
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",658
 	DECLE 256
 	DECLE 3335
 	DECLE 7967
 	DECLE 65407
-	;[645] 	DATA $76E0,$BA6F,$F7CD,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",645
+	;[659] 	DATA $76E0,$BA6F,$F7CD,$FFFF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",659
 	DECLE 30432
 	DECLE 47727
 	DECLE 63437
 	DECLE 65535
-	;[646] 	DATA $E0E0,$E0E0,$E0E0,$E0E0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",646
+	;[660] 	DATA $E0E0,$E0E0,$E0E0,$E0E0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",660
 	DECLE 57568
 	DECLE 57568
 	DECLE 57568
 	DECLE 57568
-	;[647] 	DATA $6000,$C390,$1424,$6394
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",647
+	;[661] 	DATA $6000,$C390,$1424,$6394
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",661
 	DECLE 24576
 	DECLE 50064
 	DECLE 5156
 	DECLE 25492
-	;[648] 	DATA $0000,$3B00,$45C5,$3BC5
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",648
+	;[662] 	DATA $0000,$3B00,$45C5,$3BC5
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",662
 	DECLE 0
 	DECLE 15104
 	DECLE 17861
 	DECLE 15301
-	;[649] 	DATA $0000,$D900,$3C24,$9D20
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",649
+	;[663] 	DATA $0000,$D900,$3C24,$9D20
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",663
 	DECLE 0
 	DECLE 55552
 	DECLE 15396
 	DECLE 40224
-	;[650] 	DATA $0707,$0707,$0707,$0707
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",650
+	;[664] 	DATA $0707,$0707,$0707,$0707
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",664
 	DECLE 1799
 	DECLE 1799
 	DECLE 1799
 	DECLE 1799
-	;[651] 	DATA $E000,$4542,$4242,$FF4A
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",651
+	;[665] 	DATA $E000,$4542,$4242,$FF4A
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",665
 	DECLE 57344
 	DECLE 17730
 	DECLE 16962
 	DECLE 65354
-	;[652] 	DATA $0000,$A600,$AFA9,$47C8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",652
+	;[666] 	DATA $0000,$A600,$AFA9,$47C8
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",666
 	DECLE 0
 	DECLE 42496
 	DECLE 44969
 	DECLE 18376
-	;[653] 	DATA $0000,$3C00,$3040,$7408
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",653
+	;[667] 	DATA $0000,$3C00,$3040,$7408
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",667
 	DECLE 0
 	DECLE 15360
 	DECLE 12352
 	DECLE 29704
-	;[654] 	DATA $FFFF,$FEFE,$FCFC,$F8F8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",654
+	;[668] 	DATA $FFFF,$FEFE,$FCFC,$F8F8
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",668
 	DECLE 65535
 	DECLE 65278
 	DECLE 64764
 	DECLE 63736
-	;[655] 	DATA $0F00,$1F1F,$3F3F,$7F7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",655
+	;[669] 	DATA $0F00,$1F1F,$3F3F,$7F7F
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",669
 	DECLE 3840
 	DECLE 7967
 	DECLE 16191
 	DECLE 32639
-	;[656] 	DATA $FF00,$FFFF,$FFFF,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",656
+	;[670] 	DATA $FF00,$FFFF,$FFFF,$FFFF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",670
 	DECLE 65280
 	DECLE 65535
 	DECLE 65535
 	DECLE 65535
-	;[657] screen_bitmaps_1:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",657
+	;[671] screen_bitmaps_1:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",671
 	; SCREEN_BITMAPS_1
-Q9:	;[658] 	DATA $FE00,$FEFE,$FEFE,$FEFE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",658
+Q9:	;[672] 	DATA $FE00,$FEFE,$FEFE,$FEFE
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",672
 	DECLE 65024
 	DECLE 65278
 	DECLE 65278
 	DECLE 65278
-	;[659] 	DATA $7F00,$7F7F,$7F7F,$BF7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",659
+	;[673] 	DATA $7F00,$7F7F,$7F7F,$BF7F
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",673
 	DECLE 32512
 	DECLE 32639
 	DECLE 32639
 	DECLE 49023
-	;[660] 	DATA $F000,$F8F8,$FCFC,$FEFE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",660
+	;[674] 	DATA $F000,$F8F8,$FCFC,$FEFE
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",674
 	DECLE 61440
 	DECLE 63736
 	DECLE 64764
 	DECLE 65278
-	;[661] 	DATA $0101,$0000,$0000,$0000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",661
+	;[675] 	DATA $0101,$0000,$0000,$0000
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",675
 	DECLE 257
 	DECLE 0
 	DECLE 0
 	DECLE 0
-	;[662] 	DATA $FFFF,$7FFF,$3F7F,$1F1F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",662
+	;[676] 	DATA $FFFF,$7FFF,$3F7F,$1F1F
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",676
 	DECLE 65535
 	DECLE 32767
 	DECLE 16255
 	DECLE 7967
-	;[663] 	DATA $F0F0,$C0E0,$80C0,$0080
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",663
+	;[677] 	DATA $F0F0,$C0E0,$80C0,$0080
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",677
 	DECLE 61680
 	DECLE 49376
 	DECLE 32960
 	DECLE 128
-	;[664] 	DATA $0000,$0101,$0303,$0707
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",664
+	;[678] 	DATA $0000,$0101,$0303,$0707
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",678
 	DECLE 0
 	DECLE 257
 	DECLE 771
 	DECLE 1799
-	;[665] 	DATA $FDFD,$FDFD,$FDFD,$FBFD
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",665
+	;[679] 	DATA $FDFD,$FDFD,$FDFD,$FBFD
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",679
 	DECLE 65021
 	DECLE 65021
 	DECLE 65021
 	DECLE 64509
-	;[666] 	DATA $BFBF,$BFBF,$BFBF,$DFDF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",666
+	;[680] 	DATA $BFBF,$BFBF,$BFBF,$DFDF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",680
 	DECLE 49087
 	DECLE 49087
 	DECLE 49087
 	DECLE 57311
-	;[667] 	DATA $0000,$8080,$C0C0,$E0E0
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",667
+	;[681] 	DATA $0000,$8080,$C0C0,$E0E0
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",681
 	DECLE 0
 	DECLE 32896
 	DECLE 49344
 	DECLE 57568
-	;[668] 	DATA $070F,$0307,$0101,$0000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",668
+	;[682] 	DATA $070F,$0307,$0101,$0000
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",682
 	DECLE 1807
 	DECLE 775
 	DECLE 257
 	DECLE 0
-	;[669] 	DATA $FFFF,$FFFF,$FFFF,$7FFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",669
+	;[683] 	DATA $FFFF,$FFFF,$FFFF,$7FFF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",683
 	DECLE 65535
 	DECLE 65535
 	DECLE 65535
 	DECLE 32767
-	;[670] 	DATA $FEFF,$FCFE,$F8FC,$F0F8
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",670
+	;[684] 	DATA $FEFF,$FCFE,$F8FC,$F0F8
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",684
 	DECLE 65279
 	DECLE 64766
 	DECLE 63740
 	DECLE 61688
-	;[671] 	DATA $0F0F,$1F1F,$3F3F,$7F7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",671
+	;[685] 	DATA $0F0F,$1F1F,$3F3F,$7F7F
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",685
 	DECLE 3855
 	DECLE 7967
 	DECLE 16191
 	DECLE 32639
-	;[672] 	DATA $FBFB,$FBFB,$FBFB,$F7F7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",672
+	;[686] 	DATA $FBFB,$FBFB,$FBFB,$F7F7
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",686
 	DECLE 64507
 	DECLE 64507
 	DECLE 64507
 	DECLE 63479
-	;[673] 	DATA $DFDF,$DFDF,$EFDF,$EFEF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",673
+	;[687] 	DATA $DFDF,$DFDF,$EFDF,$EFEF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",687
 	DECLE 57311
 	DECLE 57311
 	DECLE 61407
 	DECLE 61423
-	;[674] screen_bitmaps_2:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",674
+	;[688] screen_bitmaps_2:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",688
 	; SCREEN_BITMAPS_2
-Q10:	;[675] 	DATA $F0F0,$F8F8,$FCFC,$FEFE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",675
+Q10:	;[689] 	DATA $F0F0,$F8F8,$FCFC,$FEFE
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",689
 	DECLE 61680
 	DECLE 63736
 	DECLE 64764
 	DECLE 65278
-	;[676] 	DATA $3F7F,$1F1F,$070F,$0307
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",676
+	;[690] 	DATA $3F7F,$1F1F,$070F,$0307
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",690
 	DECLE 16255
 	DECLE 7967
 	DECLE 1807
 	DECLE 775
-	;[677] 	DATA $E000,$4340,$4744,$FB4C
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",677
+	;[691] 	DATA $E000,$4340,$4744,$FB4C
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",691
 	DECLE 57344
 	DECLE 17216
 	DECLE 18244
 	DECLE 64332
-	;[678] 	DATA $0000,$3400,$9595,$8819
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",678
+	;[692] 	DATA $0000,$3400,$9595,$8819
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",692
 	DECLE 0
 	DECLE 13312
 	DECLE 38293
 	DECLE 34841
-	;[679] 	DATA $0C00,$C604,$E424,$EE04
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",679
+	;[693] 	DATA $0C00,$C604,$E424,$EE04
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",693
 	DECLE 3072
 	DECLE 50692
 	DECLE 58404
 	DECLE 60932
-	;[680] 	DATA $E0E0,$C0C0,$8080,$0000
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",680
+	;[694] 	DATA $E0E0,$C0C0,$8080,$0000
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",694
 	DECLE 57568
 	DECLE 49344
 	DECLE 32896
 	DECLE 0
-	;[681] 	DATA $F7F7,$F7F7,$EFF7,$EFEF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",681
+	;[695] 	DATA $F7F7,$F7F7,$EFF7,$EFEF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",695
 	DECLE 63479
 	DECLE 63479
 	DECLE 61431
 	DECLE 61423
-	;[682] 	DATA $EFEF,$EFEF,$F7F7,$F7F7
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",682
+	;[696] 	DATA $EFEF,$EFEF,$F7F7,$F7F7
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",696
 	DECLE 61423
 	DECLE 61423
 	DECLE 63479
 	DECLE 63479
-	;[683] 	DATA $EFEF,$EFEF,$DFDF,$DFDF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",683
+	;[697] 	DATA $EFEF,$EFEF,$DFDF,$DFDF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",697
 	DECLE 61423
 	DECLE 61423
 	DECLE 57311
 	DECLE 57311
-	;[684] 	DATA $F7F7,$FBF7,$FBFB,$FBFB
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",684
+	;[698] 	DATA $F7F7,$FBF7,$FBFB,$FBFB
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",698
 	DECLE 63479
 	DECLE 64503
 	DECLE 64507
 	DECLE 64507
-	;[685] 	DATA $DFDF,$BFDF,$BFBF,$BFBF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",685
+	;[699] 	DATA $DFDF,$BFDF,$BFBF,$BFBF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",699
 	DECLE 57311
 	DECLE 49119
 	DECLE 49087
 	DECLE 49087
-	;[686] 	DATA $FBFB,$FDFD,$FDFD,$FDFD
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",686
+	;[700] 	DATA $FBFB,$FDFD,$FDFD,$FDFD
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",700
 	DECLE 64507
 	DECLE 65021
 	DECLE 65021
 	DECLE 65021
-	;[687] 	DATA $BFBF,$7F7F,$7F7F,$7F7F
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",687
+	;[701] 	DATA $BFBF,$7F7F,$7F7F,$7F7F
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",701
 	DECLE 49087
 	DECLE 32639
 	DECLE 32639
 	DECLE 32639
-	;[688] 	DATA $FEFD,$FEFE,$FEFE,$FEFE
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",688
+	;[702] 	DATA $FEFD,$FEFE,$FEFE,$FEFE
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",702
 	DECLE 65277
 	DECLE 65278
 	DECLE 65278
 	DECLE 65278
-	;[689] 	DATA $E0E0,$E0E0,$FFE0,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",689
+	;[703] 	DATA $E0E0,$E0E0,$FFE0,$FFFF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",703
 	DECLE 57568
 	DECLE 57568
 	DECLE 65504
 	DECLE 65535
-	;[690] 	DATA $0000,$0000,$FF00,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",690
+	;[704] 	DATA $0000,$0000,$FF00,$FFFF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",704
 	DECLE 0
 	DECLE 0
 	DECLE 65280
 	DECLE 65535
-	;[691] screen_bitmaps_3:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",691
+	;[705] screen_bitmaps_3:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",705
 	; SCREEN_BITMAPS_3
-Q11:	;[692] 	DATA $0707,$0707,$FF07,$FFFF
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",692
+Q11:	;[706] 	DATA $0707,$0707,$FF07,$FFFF
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",706
 	DECLE 1799
 	DECLE 1799
 	DECLE 65287
 	DECLE 65535
-	;[693] 
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",693
-	;[694] 	REM 20x12 cards
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",694
-	;[695] screen_cards:
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",695
+	;[707] 
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",707
+	;[708] 	REM 20x12 cards
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",708
+	;[709] screen_cards:
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",709
 	; SCREEN_CARDS
-Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E00,$1E08,$1E08,$1E08,$1E10
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",696
+Q26:	;[710] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E00,$1E08,$1E08,$1E08,$1E10
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",710
 	DECLE 4608
 	DECLE 4608
 	DECLE 4608
@@ -7326,8 +7373,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 7688
 	DECLE 7688
 	DECLE 7696
-	;[697] 	DATA $1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1E28,$1E37,$1E3F,$1E47,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",697
+	;[711] 	DATA $1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1E28,$1E37,$1E3F,$1E47,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",711
 	DECLE 4608
 	DECLE 6687
 	DECLE 6695
@@ -7348,8 +7395,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 7743
 	DECLE 7751
 	DECLE 7752
-	;[698] 	DATA $1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",698
+	;[712] 	DATA $1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",712
 	DECLE 4608
 	DECLE 4608
 	DECLE 4608
@@ -7370,8 +7417,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[699] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",699
+	;[713] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1A1F,$1A27,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",713
 	DECLE 4608
 	DECLE 4608
 	DECLE 4608
@@ -7392,8 +7439,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[700] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1E57,$1E5F,$1E67,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",700
+	;[714] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1E28,$1E57,$1E5F,$1E67,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",714
 	DECLE 4608
 	DECLE 4608
 	DECLE 4608
@@ -7414,8 +7461,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 7775
 	DECLE 7783
 	DECLE 7752
-	;[701] 	DATA $2400,$186E,$1000,$1874,$187C,$1884,$187C,$187C,$188C,$187C,$1894,$189E,$18A6,$2400,$2400,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",701
+	;[715] 	DATA $2400,$186E,$1000,$1874,$187C,$1884,$187C,$187C,$188C,$187C,$1894,$189E,$18A6,$2400,$2400,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",715
 	DECLE 9216
 	DECLE 6254
 	DECLE 4096
@@ -7436,8 +7483,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[702] 	DATA $2400,$18AE,$18B4,$2000,$2000,$18BC,$2000,$2000,$18C4,$2000,$2000,$18CC,$18D6,$18DE,$2400,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",702
+	;[716] 	DATA $2400,$18AE,$18B4,$2000,$2000,$18BC,$2000,$2000,$18C4,$2000,$2000,$18CC,$18D6,$18DE,$2400,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",716
 	DECLE 9216
 	DECLE 6318
 	DECLE 6324
@@ -7458,8 +7505,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[703] 	DATA $18E6,$1000,$18EC,$2000,$2000,$18F4,$2000,$2000,$18FC,$2000,$2000,$1904,$1000,$190E,$2400,$1E28,$1F17,$1F1F,$1F27,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",703
+	;[717] 	DATA $18E6,$1000,$18EC,$2000,$2000,$18F4,$2000,$2000,$18FC,$2000,$2000,$1904,$1000,$190E,$2400,$1E28,$1F17,$1F1F,$1F27,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",717
 	DECLE 6374
 	DECLE 4096
 	DECLE 6380
@@ -7480,8 +7527,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 7967
 	DECLE 7975
 	DECLE 7752
-	;[704] 	DATA $192E,$18B4,$2000,$2000,$2000,$1934,$2000,$2000,$193C,$2000,$2000,$2000,$18CC,$189E,$18A6,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",704
+	;[718] 	DATA $192E,$18B4,$2000,$2000,$2000,$1934,$2000,$2000,$193C,$2000,$2000,$2000,$18CC,$189E,$18A6,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",718
 	DECLE 6446
 	DECLE 6324
 	DECLE 8192
@@ -7502,8 +7549,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[705] 	DATA $1000,$18EC,$2000,$2000,$2000,$1944,$2000,$2000,$194C,$2000,$2000,$2000,$1904,$1000,$18D6,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",705
+	;[719] 	DATA $1000,$18EC,$2000,$2000,$2000,$1944,$2000,$2000,$194C,$2000,$2000,$2000,$1904,$1000,$18D6,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",719
 	DECLE 4096
 	DECLE 6380
 	DECLE 8192
@@ -7524,8 +7571,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[706] 	DATA $18B4,$2000,$2000,$2000,$2000,$1954,$2000,$2000,$195C,$2000,$2000,$2000,$2000,$18CC,$1000,$1E28,$1600,$1600,$1600,$1E48
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",706
+	;[720] 	DATA $18B4,$2000,$2000,$2000,$2000,$1954,$2000,$2000,$195C,$2000,$2000,$2000,$2000,$18CC,$1000,$1E28,$1600,$1600,$1600,$1E48
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",720
 	DECLE 6324
 	DECLE 8192
 	DECLE 8192
@@ -7546,8 +7593,8 @@ Q27:	;[696] 	DATA $1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1200,$1
 	DECLE 5632
 	DECLE 5632
 	DECLE 7752
-	;[707] 	DATA $18EC,$2000,$2000,$2000,$2000,$1964,$2000,$2000,$196C,$2000,$2000,$2000,$2000,$1904,$1000,$1F70,$1F78,$1F78,$1F78,$1F80
-	SRCFILE "C:\IntyBASIC SDK\Projects\runnerZ\runnerZ.BAS",707
+	;[721] 	DATA $18EC,$2000,$2000,$2000,$2000,$1964,$2000,$2000,$196C,$2000,$2000,$2000,$2000,$1904,$1000,$1F70,$1F78,$1F78,$1F78,$1F80
+	SRCFILE "C:\Users\Josue\OneDrive\Documents\UMass Dartmouth\Classes\Fall 2017\CIS 272\Honor Project\RUNNERZ\runnerZ.BAS",721
 	DECLE 6380
 	DECLE 8192
 	DECLE 8192
@@ -10583,6 +10630,7 @@ V7:	RMB 1	; INVISIBLE
 V14:	RMB 1	; JUMP
 V18:	RMB 1	; LEVEL
 V17:	RMB 1	; LIVES
+V22:	RMB 1	; PAUSED
 V4:	RMB 1	; PLAYERDX
 V6:	RMB 1	; PLAYERF
 V2:	RMB 1	; PLAYERX

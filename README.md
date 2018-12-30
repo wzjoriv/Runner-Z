@@ -1,5 +1,7 @@
-# RUNNERZ--intellivision_Game
-Game created for the intellivision console
+# Runner-Z -- Intellivision Game
+Runner-Z is a video game created for the Intellivision console of 1979
+
+# Set up
 
 To test it in a computer, an emulator is required. Intybasic SDK can be found here: http://atariage.com/forums/topic/240526-introducing-the-intybasic-sdk/. Once the SDK is installed, either go to the shortcut named "IntyBASIC SDK Command Console" inside the IntyBasic SDK folder or using command promprt, navivate to the folder holding the project. Once there, type "intyrun [name of the program]" to complile and assemble the code. This will create a rom file that can be used to play the game on an intellivision console. As mentioned before for those who do not have a console, the SDK also brings an emulator. To access it, type "jzintv [the name of the game] -p [the address of the folder 'IntyBASIC SDK\bin\roms']" and press enter. This will open an small window where the game will run.
 

@@ -1,22 +1,54 @@
 # Runner-Z -- Intellivision Game
-Runner-Z is a video game created for the Intellivision console of 1979
+Runner-Z is a video game created for the Intellivision console of 1979. It was develop using BASIC and the intillivision compiler Intybasic. The game consist of the classical genre of games where a player runs while avoiding various obstacles as he/she does. The game allows for functions such as jumping and quickly changing lanes to avoid that obstacles. One of its lastest features, it is the ability to obtain power up; ghostly invisibility, bonus points and bonus lives. In order to obtain them, they must be acquired during the short period of time that they appear in the game. They look like other objects but have unique attributes. One can proceed throught the levels by acquiring the coins need to move on to the next level but be warm each level increases in difficulty that I challenge you pass level 8 of the game.
 
-# Set up
+## Getting Started
+The following are instructions to run the project for development or testing purposes. See deployment if you would only like to play the game.
 
-To test it in a computer, an emulator is required. Intybasic SDK can be found here: http://atariage.com/forums/topic/240526-introducing-the-intybasic-sdk/. Once the SDK is installed, either go to the shortcut named "IntyBASIC SDK Command Console" inside the IntyBasic SDK folder or using command promprt, navivate to the folder holding the project. Once there, type "intyrun [name of the program]" to complile and assemble the code. This will create a rom file that can be used to play the game on an intellivision console. As mentioned before for those who do not have a console, the SDK also brings an emulator. To access it, type "jzintv [the name of the game] -p [the address of the folder 'IntyBASIC SDK\bin\roms']" and press enter. This will open an small window where the game will run.
+### Prerequisites
+To test or contribute changes to the software, the
+```
+Intybasic compiler and SDK
+```
+is neeeded. This can be download from the following link: [SDK](http://atariage.com/forums/topic/240526-introducing-the-intybasic-sdk/)
+
+Another tool that is useful to have is a good BASIC text editor. I had issued finding one, but I though notepad++ had the best performance.
+
+### Installing
+Once you have the Intybasic SDK downloaded, download the Runner-Z project from github and move into the Projects folder inside of the SDK.
+Open the command promp inside the runnerZ folder. Then, run the compiler
+``` 
+intybasic runnerZ.bas asm/runnerZ.asm ../../lib
+```
+This will produce an ASM file that needs to go through the assembler to produce the bin and rom file that can be used to run the game
+```
+as1600 -o bin/snake_run asm/snake_run.asm
+```
+Lastly, open the jzintv intillivision emulator with the following command
+```
+jzintv bin/snake_run -p ../../bin/roms
+```
 
 UPDATE: Another great emulator that does not require the Command Prompt is Bliss: http://www.intellivisionworld.com/english/resources/emulators.asp. In order to run it you will need to take miniexec.bin and minigrom.bin from the "IntyBASIC SDK\bin\roms" folder mentioned above, and copy them, move them to the folder "\Bliss" and rename them to exec.bin and grom.bin. Once you are done with this, just go to the application, open it, click on "open" at the top, look for it and click on the rom file.
 
-# Overview:
+## Deployment
+To run the game, an intillivision console emulator is needed. [Bliss](http://www.intellivisionbrasil.com.br/Menu_Emuladores.htm) is a popular options due to the fact that it has a GUI.
+Now that you have an emaulator, open the rom file of the game inside the rom folder of the project via the emulator. 
 
-  - The game is a clasical mobile running game adapted for the this console. The character can do things such as jumping and switching lanes. One of it lastest features, it is the ability to obtain power up. The game currently only has 3: short ghostly invisibility, bonus points, bonus lives. In order to obtain them, you need to find them in the game. They look like other object but have a different color. They are also rare to find. If you find one, a back screen will appear with your character and the power up you obtain.
-  
-  - The game also has different stages each stage will contain more challenges to face. When you pass to a new level an black screen will appear with the level you reach.
-  
-# Controllers:
+### Keys to play the game:
   - jump = up button
   - move to the right = right button
   - move to the left = left button
-  - pause = pause key (not tested)
+  - pause = pause key
 
--For macs's users, I do not know of any emulator but you are welcome to look it up in the forum: http://atariage.com/forums/forum/144-intellivision-programming/.
+## Built With
+* [Intybasic](http://atariage.com/forums/forum/144-intellivision-programming/) - used to compile the game
+## Contributing
+Everyone is welcome to contribute to the game. I want to see that you can do with it.
+## Author
+* **Josue N Rivera** - Computer Science Student at the University of Massachusetts Dartmouth
+## License
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
+
+## Acknowledgments
+* My professor Clinton Rogers
+* [The Intellivision programming community](http://atariage.com/forums/forum/144-intellivision-programming/)

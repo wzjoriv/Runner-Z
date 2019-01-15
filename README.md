@@ -28,8 +28,6 @@ Lastly, open the jzintv intillivision emulator with the following command
 jzintv bin/runnerZ -p ../../bin/roms
 ```
 
-UPDATE: Another great emulator that does not require the Command Prompt is Bliss: http://www.intellivisionworld.com/english/resources/emulators.asp. In order to run it you will need to take miniexec.bin and minigrom.bin from the "IntyBASIC SDK\bin\roms" folder mentioned above, and copy them, move them to the folder "\Bliss" and rename them to exec.bin and grom.bin. Once you are done with this, just go to the application, open it, click on "open" at the top, look for it and click on the rom file.
-
 ## Deployment
 To run the game, an intillivision console emulator is needed. [Bliss](http://www.intellivisionbrasil.com.br/Menu_Emuladores.htm) is a popular options due to the fact that it has a GUI.
 Now that you have an emaulator, open the rom file of the game inside the rom folder of the project via the emulator. 

@@ -14,7 +14,7 @@ is neeeded. This can be download from the following link: [SDK](http://atariage.
 Another tool that is useful to have is a good BASIC text editor. I had issued finding one, but I though notepad++ had the best performance.
 
 ### Installing
-Once you have the Intybasic SDK downloaded, download the Runner-Z project from github and move into the Projects folder inside of the SDK.
+Once you have the Intybasic SDK downloaded, download the Runner-Z project from github and move it into the Projects folder inside of the SDK.
 Open the command promp inside the runnerZ folder. Then, run the compiler
 ``` 
 intybasic runnerZ.bas asm/runnerZ.asm ../../lib

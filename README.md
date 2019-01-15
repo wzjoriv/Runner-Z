@@ -21,11 +21,11 @@ intybasic runnerZ.bas asm/runnerZ.asm ../../lib
 ```
 This will produce an ASM file that needs to go through the assembler to produce the bin and rom file that can be used to run the game
 ```
-as1600 -o bin/snake_run asm/snake_run.asm
+as1600 -o bin/runnerZ asm/runnerZ.asm
 ```
 Lastly, open the jzintv intillivision emulator with the following command
 ```
-jzintv bin/snake_run -p ../../bin/roms
+jzintv bin/runnerZ -p ../../bin/roms
 ```
 
 UPDATE: Another great emulator that does not require the Command Prompt is Bliss: http://www.intellivisionworld.com/english/resources/emulators.asp. In order to run it you will need to take miniexec.bin and minigrom.bin from the "IntyBASIC SDK\bin\roms" folder mentioned above, and copy them, move them to the folder "\Bliss" and rename them to exec.bin and grom.bin. Once you are done with this, just go to the application, open it, click on "open" at the top, look for it and click on the rom file.

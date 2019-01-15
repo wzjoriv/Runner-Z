@@ -23,7 +23,7 @@ This will produce an ASM file that needs to go through the assembler to produce 
 ```
 as1600 -o bin/runnerZ asm/runnerZ.asm
 ```
-Lastly, open the jzintv intillivision emulator with the following command
+Lastly, open the jzintv intellivision emulator with the following command
 ```
 jzintv bin/runnerZ -p ../../bin/roms
 ```

@@ -48,5 +48,5 @@ Everyone is welcome to contribute to the game. I want to see that you can do wit
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
-* My professor Clinton Rogers
+* My professor, Clinton Rogers
 * [The Intellivision programming community](http://atariage.com/forums/forum/144-intellivision-programming/)
